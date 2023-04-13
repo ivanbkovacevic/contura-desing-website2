@@ -1,11 +1,11 @@
 import React from 'react';
-import style from './AboutPage.module.scss'
+import style from './About.module.scss'
 
-interface AboutPageProps {
+interface AboutProps {
     some?: string;
   }
 
-const AboutPage:React.FC<AboutPageProps> = ({some}) => {
+const About:React.FC<AboutProps> = ({some}) => {
   return (
     <div className={style.wrapper}>
       <h1>About Page contura design!</h1>
@@ -14,4 +14,4 @@ const AboutPage:React.FC<AboutPageProps> = ({some}) => {
   );
 };
 
-export default AboutPage;
+export default About;

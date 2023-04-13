@@ -1,4 +1,4 @@
-import AboutPage from '../components/AboutPage/AboutPage'
+import AboutPage from '../components/About/About'
 import Layout from '../components/Layout/Layout'
 
 const About = () => {
