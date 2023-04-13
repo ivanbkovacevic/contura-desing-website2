@@ -27,6 +27,9 @@ dd {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%; 
+}
 /* Set default font size and family */
 body {
   font-size: 16px;

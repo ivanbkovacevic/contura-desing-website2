@@ -1,0 +1,14 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    border: 1px solid red;
+    display: flex;
+
+    .leftWrapper {
+        flex-grow: 1;
+    }
+    .rightWrapper {
+        flex-grow: 1;
+    }
+
+}
