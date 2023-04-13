@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: $headerHeight;
+    background-color: $headerBcgColor;
+    border: 1px solid green;
+    text-transform: uppercase;
+
+    h1 {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

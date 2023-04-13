@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.wrapper {
+    flex-grow: 1;
+    border: 1px solid red;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

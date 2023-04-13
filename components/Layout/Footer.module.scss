@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: $footerHeight;
+    background-color: $footerBcgColor;
+    border: 1px solid rgb(1, 26, 1);
+    text-transform: uppercase;
+}
