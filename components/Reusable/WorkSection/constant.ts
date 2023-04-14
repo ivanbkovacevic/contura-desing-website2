@@ -19,21 +19,21 @@ export const WORK_LIST:Work[]=[
     {
         description: 'test jedan',
         title: 'test 1',
-        img: '/assets/images/work/profesorImageDeseta.png',
+        img: '/assets/images/work/imageBilbordPrva.png',
         color: COLORS.GREEN,
         order: ORDER.PICTURE_UP
     },
     {
         description: 'test jedan',
         title: 'test 1',
-        img: '/assets/images/work/profesorImageDeseta.png',
+        img: '/assets/images/work/imageBilbordPrva.png',
         color: COLORS.BLUE,
         order: ORDER.PICTURE_DOWN
     },
     {
         description: 'test jedan',
         title: 'test 1',
-        img: '/assets/images/work/profesorImageDeseta.png',
+        img: '/assets/images/work/imageBilbordPrva.png',
         color: COLORS.RED,
         order: ORDER.PICTURE_UP
     },

@@ -17,7 +17,7 @@ const Home = ({some}:HomeProps) => {
         <DesignStrategySection />
         <Clients backgroundtype='black' />
         <div className={style.linkBtn}>
-          <LinkButton title="see more work" link="/" />
+          <LinkButton title="see more work" link="/work" />
         </div>
         <WorkSection />
     </div>
