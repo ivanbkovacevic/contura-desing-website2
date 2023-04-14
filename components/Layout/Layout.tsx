@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import Header from './Header/Header'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import style from './Layout.module.scss'
 import FAQ from '../Home/FAQ/FAQ'
 
