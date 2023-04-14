@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
-import Logo from '../../Logo/Logo';
+import Logo from '../../Reusable/Logo/Logo';
 import cn from 'classnames';
 import style from './Header.module.scss';
 

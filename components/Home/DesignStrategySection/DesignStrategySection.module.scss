@@ -3,12 +3,14 @@
 .wrapper {
     border: 1px solid red;
     display: flex;
+    height: 60rem;
 
     .leftWrapper {
-        flex-grow: 1;
+        width: 50%;
     }
     .rightWrapper {
-        flex-grow: 1;
+        width: 50%;
+
     }
 
 }
