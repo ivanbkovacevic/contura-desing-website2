@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import Header from './Header'
+import Header from './Header/Header'
 import Footer from './Footer'
 import style from './Layout.module.scss'
 
@@ -17,10 +17,12 @@ const Layout = ({ children, title = 'Contura Design' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-   <Header />
-   <main>
-     {children}
-   </main>
+    <div className={style.contentCentered}>
+      <Header />
+        <main>
+          {children}
+        </main>
+    </div>
    <Footer />
   </div>
 )

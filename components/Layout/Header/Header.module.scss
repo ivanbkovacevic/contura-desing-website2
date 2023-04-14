@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: $headerHeight;
+    background-color: $headerBcgColor;
+    border: 1px solid green;
+
+    .navigationAllWrapper {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        border: 1px solid red;
+        .hamburgerMenuWrapper {
+            height: 2rem;
+            width: 2rem;
+            background-color: black;
+           }
+        
+        .justNavigationWrapper {
+        border: 1px solid red;
+          position: absolute;
+          left: 0%;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}
