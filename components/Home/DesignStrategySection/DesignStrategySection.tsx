@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './DesignStrategySection.module.scss'
 import Accordion from '../../Reusable/Accordion/Accordion';
 import {ACCORDIONS} from '../../Reusable/Accordion/constants';
 import Image from 'next/image';
+import style from './DesignStrategySection.module.scss'
 
 const DesignStrategySection:React.FC = ({}) => {
   const accordions = () => {

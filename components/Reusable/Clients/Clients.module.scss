@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    gap:5rem;
+
+    .clientWrapper {
+        min-width: 12rem;
+        min-height: 5rem;
+
+        .image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            img {
+                object-fit: contain;
+            }
+          }
+    }
+
+}
+.backgroundWhite {
+    background-color: $white;
+}
+
+.backgroundBlack {
+    background-color: $black;
+}
