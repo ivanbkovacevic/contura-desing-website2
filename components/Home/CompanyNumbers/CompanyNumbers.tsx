@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './CompanyNumbers.module.scss';
 import LinkButton from '../../Reusable/LinkButton/LinkButton';
+import style from './CompanyNumbers.module.scss';
 
 
 const CompanyNumbers = () => {

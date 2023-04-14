@@ -4,8 +4,9 @@ import DesignStrategySection from './DesignStrategySection/DesignStrategySection
 import Clients from '../Reusable/Clients/Clients';
 import LinkButton from '../Reusable/LinkButton/LinkButton';
 import WorkSection from './WorkSection/WorkSection';
-import CompanyNumbers from './CompanyNumbers/companyNumbers';
+import CompanyNumbers from './CompanyNumbers/CompanyNumbers';
 import style from './Home.module.scss'
+import OfferSection from './OfferSection/OfferSection';
 
 interface HomeProps {
     some?: string;
@@ -28,6 +29,7 @@ const Home = ({some}:HomeProps) => {
         <div className={style.linkBtn}>
           <LinkButton title="see more work" link="/work" />
         </div>
+        <OfferSection />
     </div>
   );
 };
