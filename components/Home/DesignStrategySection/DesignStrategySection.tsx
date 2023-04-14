@@ -7,7 +7,7 @@ import style from './DesignStrategySection.module.scss'
 const DesignStrategySection:React.FC = ({}) => {
   const accordions = () => {
       return ACCORDIONS.map((item) => {
-        return <Accordion title={item.title} content={item.content} />
+        return <Accordion key={item.title} title={item.title} content={item.content} />
       })
   };
 
