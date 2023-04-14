@@ -2,5 +2,11 @@
 
 .wrapper {
     background-color: $homePageBcgColor;
-    min-height: 60vh;
+
+    .linkBtn {
+        padding: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

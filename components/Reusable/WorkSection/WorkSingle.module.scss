@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    width: 40%;
+    .wrapperImgAndDescription {
+        display: flex;
+
+        .description {
+            padding: 6rem 2rem;
+        }
+        .image {
+            height: 35rem;
+            position: relative;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+          }
+    }
+
+    .bcgRed {
+        background-color: $red;
+    }
+    .bcgBlue {
+        background-color: $blue;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+
+    .orderImageUp {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.orderImageDown {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    }
+}

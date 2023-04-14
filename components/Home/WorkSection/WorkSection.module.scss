@@ -1,0 +1,8 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
