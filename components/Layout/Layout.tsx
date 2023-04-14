@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from './Header/Header'
 import Footer from './Footer'
 import style from './Layout.module.scss'
+import FAQ from '../Home/FAQ/FAQ'
 
 
 type Props = {
@@ -23,6 +24,7 @@ const Layout = ({ children, title = 'Contura Design' }: Props) => (
           {children}
         </main>
     </div>
+    <FAQ />
    <Footer />
   </div>
 )

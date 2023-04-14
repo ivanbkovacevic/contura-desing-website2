@@ -23,7 +23,10 @@
     .rightWrapper {
         width: 50%;
 
-        .accordionWrapper {
+        .accordionsWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
             max-width: 50%;
         }
     }

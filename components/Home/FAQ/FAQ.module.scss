@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: $white;
+    background-color: $black;
+    padding-left: 45rem;
+    padding-top: 25rem;
+    padding-right: 40rem;
+    padding-bottom: 25rem;
+    
+    button {
+        color: $white;
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+}

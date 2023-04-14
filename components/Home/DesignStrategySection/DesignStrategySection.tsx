@@ -24,7 +24,7 @@ const DesignStrategySection:React.FC = ({}) => {
           </div>
         </div>
         <div className={style.rightWrapper}>
-          <div className={style.accordionWrapper}>
+          <div className={style.accordionsWrapper}>
             {accordions()}
           </div>
         </div>
