@@ -1,6 +1,6 @@
 import React from 'react';
-import { WORK_LIST } from '../../Reusable/WorkSection/constant';
-import WorkSingle from '../../Reusable/WorkSection/WorkSingle';
+import { WORK_LIST } from '../../Reusable/WorkSingle/constant';
+import WorkSingle from '../../Reusable/WorkSingle/WorkSingle';
 import style from './WorkSection.module.scss'
 
 const WorkSection:React.FC = ({}) => {
