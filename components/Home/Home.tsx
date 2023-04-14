@@ -8,6 +8,7 @@ import CompanyNumbers from './CompanyNumbers/CompanyNumbers';
 import style from './Home.module.scss'
 import OfferSection from './OfferSection/OfferSection';
 
+
 interface HomeProps {
     some?: string;
   }
