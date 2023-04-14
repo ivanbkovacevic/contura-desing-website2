@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import React from 'react'
-import style from './LinkButton.module.scss'
+import style from './ButtonLink.module.scss'
 
-
-
-interface LinkButtonProps {
+interface ButtonLinkProps {
 title: string;
 link: string;
 }
 
-const LinkButton:React.FC<LinkButtonProps> = ({title, link}) => {
+const ButtonLink:React.FC<ButtonLinkProps> = ({title, link}) => {
   
   return (
     <div className={style.wrapper}>
@@ -21,4 +19,4 @@ const LinkButton:React.FC<LinkButtonProps> = ({title, link}) => {
   )
 }
 
-export default LinkButton
+export default ButtonLink

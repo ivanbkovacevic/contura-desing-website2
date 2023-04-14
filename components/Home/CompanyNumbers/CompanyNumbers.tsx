@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkButton from '../../Reusable/LinkButton/LinkButton';
+import LinkButton from '../../Reusable/ButtonLink/ButtonLink';
 import style from './CompanyNumbers.module.scss';
 
 
