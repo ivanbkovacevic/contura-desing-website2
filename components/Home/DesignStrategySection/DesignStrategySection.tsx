@@ -2,6 +2,7 @@ import React from 'react';
 import style from './DesignStrategySection.module.scss'
 import Accordion from '../../Reusable/Accordion/Accordion';
 import {ACCORDIONS} from '../../Reusable/Accordion/constants';
+import Image from 'next/image';
 
 const DesignStrategySection:React.FC = ({}) => {
   const accordions = () => {
@@ -13,11 +14,19 @@ const DesignStrategySection:React.FC = ({}) => {
   return (
     <div className={style.wrapper}>
         <div className={style.leftWrapper}>
-          left
+          <h3 className={style.heading}>We create world-class digital products, web design, and branding. </h3>
+          <div className={style.image}>
+            <Image
+              src='/assets/images/prolece.png'
+              alt="prolece"
+              fill
+              />
+          </div>
         </div>
         <div className={style.rightWrapper}>
-          right
-        {accordions()}
+          <div className={style.accordionWrapper}>
+            {accordions()}
+          </div>
         </div>
     </div>
   );

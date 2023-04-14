@@ -3,14 +3,29 @@
 .wrapper {
     border: 1px solid red;
     display: flex;
-    height: 60rem;
+    gap: 6rem;
 
     .leftWrapper {
         width: 50%;
+     .heading {
+        padding: 5rem;
+     }
+      .image {
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+        }
+      }
     }
     .rightWrapper {
         width: 50%;
 
+        .accordionWrapper {
+            max-width: 50%;
+        }
     }
 
 }
