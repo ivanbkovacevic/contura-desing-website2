@@ -17,7 +17,9 @@ const contentStyle = cn(
 
   return (
     <div className={style.wrapper}>
-      <button onClick={() => setShowAccordion(!showAccordion)}>{title} X</button>
+      <button onClick={() => setShowAccordion(!showAccordion)}>
+        {title} X
+      </button>
         <div className={contentStyle}>
          {content}
         </div>

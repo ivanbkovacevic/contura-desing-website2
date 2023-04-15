@@ -1,12 +1,12 @@
 import React from 'react';
 import Accordion from '../../Reusable/Accordion/Accordion';
-import {ACCORDIONS} from '../../Reusable/Accordion/constants';
 import Image from 'next/image';
+import { DESIGN_STRATEGY_LIST } from './constants';
 import style from './DesignStrategySection.module.scss'
 
 const DesignStrategySection:React.FC = ({}) => {
   const accordions = () => {
-      return ACCORDIONS.map((item) => {
+      return DESIGN_STRATEGY_LIST.map((item) => {
         return <Accordion key={item.title} title={item.title} content={item.content} />
       })
   };
