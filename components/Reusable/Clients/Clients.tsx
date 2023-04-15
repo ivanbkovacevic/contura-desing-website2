@@ -7,14 +7,19 @@ import cn from 'classnames';
 interface ClientsProps {
     backgroundtype: string;
     centered?: string;
+    contentCentered?: string;
 }
 
-const Clients:React.FC<ClientsProps> = ({backgroundtype, centered='yes'}) => {
+const Clients:React.FC<ClientsProps> = ({backgroundtype, centered='yes', contentCentered}) => {
 
  const wrapperStyle = cn(
     style.wrapper,
     {[style.backgroundBlack]: backgroundtype === 'black'},
     {[style.backgroundWhite]: backgroundtype === 'white'},
+ )
+ const contentStyle = cn(
+    style.content,
+    {[style.contentCentered]: contentCentered === 'yes'},
  )
   const generateClients = () => {
     return CLIENTS.map((item) => {
@@ -34,7 +39,9 @@ const Clients:React.FC<ClientsProps> = ({backgroundtype, centered='yes'}) => {
 
   return (
     <section className={wrapperStyle} data-centered={centered}>
+      <div className={contentStyle}>
         {generateClients()}
+      </div>
     </section>
   )
 }

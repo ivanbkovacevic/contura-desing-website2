@@ -16,7 +16,7 @@ const About:React.FC<AboutProps> = ({some}) => {
       <HeroSection />
       <WorkSection />
       <Capabilites />
-      <Clients backgroundtype='black' centered="no" />
+      <Clients backgroundtype='black' centered="no" contentCentered='yes'/>
       <Slider variant={{slidesPerView: 1}} />
       <Slider variant={{slidesPerView: 5}}/>
     </div>
