@@ -32,9 +32,9 @@ const Clients:React.FC<ClientsProps> = ({backgroundtype}) => {
   };
 
   return (
-    <div className={wrapperStyle}>
+    <section className={wrapperStyle} data-centered='yes'>
         {generateClients()}
-    </div>
+    </section>
   )
 }
 

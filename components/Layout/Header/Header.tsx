@@ -21,7 +21,7 @@ const Header:React.FC<HeaderProps> = () => {
   )
 
   return (
-    <header className={style.wrapper}>
+    <header className={style.wrapper} data-centered='yes'>
        <Logo />
        <div className={style.navigationAllWrapper}>
           <div className={navigationStyle}>

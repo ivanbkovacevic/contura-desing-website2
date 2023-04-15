@@ -3,14 +3,18 @@
 
 .wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    color: $white;
+    justify-content: center;
     background-color: $black;
-    padding-left: 45rem;
     padding-top: 25rem;
-    padding-right: 40rem;
     padding-bottom: 25rem;
+    width: 100%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        color: $white;
+    }
     
     button {
         color: $white;

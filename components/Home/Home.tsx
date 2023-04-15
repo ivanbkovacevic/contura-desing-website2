@@ -5,8 +5,10 @@ import Clients from '../Reusable/Clients/Clients';
 import ButtonLink from '../Reusable/ButtonLink/ButtonLink';
 import WorkSection from './WorkSection/WorkSection';
 import CompanyNumbers from './CompanyNumbers/CompanyNumbers';
-import style from './Home.module.scss'
 import OfferSection from './OfferSection/OfferSection';
+import Slider from '../Reusable/Slider/Slider';
+import FAQ from './FAQ/FAQ';
+import style from './Home.module.scss'
 
 
 interface HomeProps {
@@ -31,6 +33,8 @@ const Home = ({some}:HomeProps) => {
           <ButtonLink title="see more work" link="/work" />
         </div>
         <OfferSection />
+        <Slider />
+         <FAQ />
     </div>
   );
 };

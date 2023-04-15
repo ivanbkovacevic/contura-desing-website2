@@ -5,7 +5,7 @@ import style from './CompanyNumbers.module.scss';
 
 const CompanyNumbers = () => {
   return (
-    <div className={style.wrapper}>
+    <section className={style.wrapper} data-centered='yes'>
         <div className={style.description}>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro quaerat aperiam, repellendus esse rerum dolorum, perferendis saepe eius dolorem mollitia accusantium quidem ea nam corporis quam ipsa laboriosam in voluptates error inventore fugiat debitis consequatur minima. Beatae, vel magni et aliquam illum pariatur hic recusandae laboriosam optio, perferendis provident.</p>
             <div className={style.linkBtn}>
@@ -18,7 +18,7 @@ const CompanyNumbers = () => {
             <p>10+</p>
             <p>vdsijv</p>
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -16,10 +16,12 @@ const FAQ:React.FC = ({}) => {
     };
 
   return (
-    <div className={style.wrapper}>
+    <section className={style.wrapper}>
+      <div className={style.content}>
         <h2>FAQ</h2>
        {faqList()}
-    </div>
+      </div>
+    </section>
   );
 };
 

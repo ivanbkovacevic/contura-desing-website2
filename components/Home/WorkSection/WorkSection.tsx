@@ -19,9 +19,9 @@ const WorkSection:React.FC = ({}) => {
     };
 
   return (
-    <div className={style.wrapper}>
+    <section className={style.wrapper} data-centered='yes'>
        {workList()}
-    </div>
+    </section>
   );
 };
 

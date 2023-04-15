@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: stretch;
     gap: 5rem;
-    padding: 14rem;
+    padding: 14rem 0;
     background-color: $footerBcgColor;
+    width: 100%;
 
     .getInTouch {
         color: $white;

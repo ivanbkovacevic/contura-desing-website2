@@ -2,6 +2,9 @@
 
 .wrapper {
     background-color: $homePageBcgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .linkBtn {
         padding: 10rem;

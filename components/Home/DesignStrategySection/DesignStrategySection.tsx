@@ -12,7 +12,7 @@ const DesignStrategySection:React.FC = ({}) => {
   };
 
   return (
-    <div className={style.wrapper}>
+    <section className={style.wrapper} data-centered='yes'>
         <div className={style.leftWrapper}>
           <h3 className={style.heading}>We create world-class digital products, web design, and branding. </h3>
           <div className={style.image}>
@@ -28,7 +28,7 @@ const DesignStrategySection:React.FC = ({}) => {
             {accordions()}
           </div>
         </div>
-    </div>
+    </section>
   );
 };
 
