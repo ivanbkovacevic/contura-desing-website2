@@ -12,9 +12,9 @@ const Footer:React.FC<FooterProps> = () => {
     <footer className={style.wrapper}>
      <div className={style.getInTouch}>
         <p>Get in Touch</p>
-        <p>email</p>
-        <p>Adress</p>
-        <p>Adress</p>
+        <a href="mailto:igor@mijucic.com">my.web@site.com</a>
+        <p>Alekse Šantića 19,</p>
+        <p>Vojvodina, Novi Sad, 21000</p>
         <div className={style.image}>
             <Image
               src='/assets/images/prolece.png'
