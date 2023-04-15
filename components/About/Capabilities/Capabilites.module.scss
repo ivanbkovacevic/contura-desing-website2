@@ -1,7 +1,7 @@
 @import '../../../styles/variables';
 
 .wrapper {
-    border: 1px solid red;
+    background-color: lightgray;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,11 +10,13 @@
     .innerWrapper {
         width: 60%;
         display: flex;
+        gap:3rem;
         justify-content: space-between;
         border: 5px solid orange;
         
         .heading {
             border: 1px solid green;
+            padding: 2rem;
         }
         
         .capabilitiesList {
@@ -26,7 +28,7 @@
 
             .singleCapabilitiWrapper {
                 border: 1px solid red;
-                max-width: 40%;
+                min-width: 40%;
             }
         }
     }

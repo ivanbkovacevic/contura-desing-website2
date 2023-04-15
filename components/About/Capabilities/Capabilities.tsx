@@ -9,7 +9,11 @@ const Capabilites:React.FC = () => {
         return (
         <div className={style.singleCapabilitiWrapper}>
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <p>{item.description_1}</p>
+            <p>{item.description_2}</p>
+            <p>{item.description_3}</p>
+            <p>{item.description_4}</p>
+            <p>{item.description_5}</p>
         </div>
         )
     })
