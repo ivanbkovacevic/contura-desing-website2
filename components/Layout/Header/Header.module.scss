@@ -12,7 +12,6 @@
 
     .navigationAllWrapper {
         position: relative;
-        width: 50%;
         height: 100%;
         display: flex;
         justify-content: flex-end;
@@ -24,9 +23,9 @@
            }
         
         .justNavigationWrapper {
-        border: 1px solid red;
+          border: 1px solid red;
           position: absolute;
-          left: 0%;
+          right: 0%;
         }
     }
 
