@@ -12,10 +12,15 @@
 
         
         .testemonialSlider {
-          
             background-color: $black;
             width: 60%;
+            height: 60rem;
             border: 3px solid green;
+            margin: 0 auto;
+      }
+
+      .workSliderWrapper {
+        height: 40rem;
       }
     }
 }

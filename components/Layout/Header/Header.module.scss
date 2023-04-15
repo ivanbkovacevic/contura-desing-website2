@@ -23,9 +23,10 @@
            }
         
         .justNavigationWrapper {
-          border: 1px solid red;
-          position: absolute;
-          right: 0%;
+            position: absolute;
+            border: 1px solid red;
+            right: 0%;
+            z-index: 1000;
         }
     }
 

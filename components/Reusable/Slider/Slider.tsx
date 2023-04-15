@@ -6,9 +6,25 @@ import Image from 'next/image';
 interface SliderProps {
     variant: {
         slidesPerView: number;
+        slidesList: any[];
     };
 }
 const Slider:React.FC<SliderProps> = ({variant}) => {
+
+    const generateSlides = () => {
+       return variant.slidesList.map((item) => {
+            return (
+                <SwiperSlide>
+                    <div className={style.slideSingle}>
+                  <Image src={item.img} alt={item.title} fill
+                //   width={300} height={400} 
+                  />
+                    </div>
+                </SwiperSlide>
+        )
+    });
+}
+
     return (
         <section className={style.wrapper}>
             <Swiper
@@ -17,30 +33,7 @@ const Slider:React.FC<SliderProps> = ({variant}) => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
-            <SwiperSlide>
-                <Image src="/assets/images/work/fromScratchImageSesta.png" alt="My work" width={200} height={200} />
-                </SwiperSlide>
+            {generateSlides()}
             </Swiper>
         </section>
       );
