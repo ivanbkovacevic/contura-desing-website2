@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Logo from '../../Reusable/Logo/Logo';
 import cn from 'classnames';
 import style from './Header.module.scss';
+import Image from 'next/image';
 
 interface HeaderProps {
 
@@ -28,6 +29,12 @@ const Header:React.FC<HeaderProps> = () => {
             <Navigation close={closeNavigation} />
           </div>
           <button onClick={() => setShowNAvigation(!showNavigation)} className={style.hamburgerMenuWrapper}>
+          <Image
+            src={"./assets/icons/hamburger.svg"} 
+            alt="openMenu"
+            width={50}
+            height={50} 
+         />
           </button>
         </div>
     </header>

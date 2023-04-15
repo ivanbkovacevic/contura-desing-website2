@@ -13,9 +13,24 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        .headingWrappr {
+        .headingWrapper {
             margin: 0 auto;
             padding-top: 10rem;
+
+            h1 {
+                font-weight: 700;
+                font-size: 8rem;
+                line-height: 106.3%;
+                text-align: center;
+            }
+
+            h4 {
+                font-weight: 350;
+                font-size: 3rem;
+                line-height: 116.8%;
+                text-align: center;
+            }
         }
     }
 }
+

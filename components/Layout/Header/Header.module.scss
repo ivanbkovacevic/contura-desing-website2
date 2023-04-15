@@ -8,23 +8,19 @@
     padding: 1rem;
     min-height: $headerHeight;
     background-color: $headerBcgColor;
-    border: 1px solid green;
 
     .navigationAllWrapper {
         position: relative;
         height: 100%;
         display: flex;
         justify-content: flex-end;
-        border: 1px solid red;
         .hamburgerMenuWrapper {
-            height: 2rem;
-            width: 2rem;
-            background-color: black;
+            border: none;
+            background: none;
            }
         
         .justNavigationWrapper {
             position: absolute;
-            border: 1px solid red;
             right: 0%;
             z-index: 1000;
         }

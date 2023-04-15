@@ -2,7 +2,6 @@
 
 .wrapper {
     flex-grow: 1;
-    border: 1px solid blue;
     background-color: rgba($navigationGreen, 0.95);
     min-width: 30rem;
     min-height: 30rem;
@@ -24,7 +23,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        border: 1px solid red;
 
         li {
             color: $white;
