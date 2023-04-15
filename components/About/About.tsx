@@ -17,8 +17,12 @@ const About:React.FC<AboutProps> = ({some}) => {
       <WorkSection />
       <Capabilites />
       <Clients backgroundtype='black' centered="no" contentCentered='yes'/>
-      <Slider variant={{slidesPerView: 1}} />
-      <Slider variant={{slidesPerView: 5}}/>
+      <div className={style.slidersWrapper}>
+        <div className={style.testemonialSlider}>
+          <Slider variant={{slidesPerView: 1}} />
+        </div>
+        <Slider variant={{slidesPerView: 5}}/>
+      </div>
     </div>
   );
 };

@@ -32,7 +32,9 @@ const Home = ({some}:HomeProps) => {
           <ButtonLink title="see more work" link="/work" />
         </div>
         <OfferSection />
-        <Slider variant={{slidesPerView: 5}}/>
+        <div className={style.sliderWrapper}>
+          <Slider variant={{slidesPerView: 5}}/>
+        </div>
          <FAQ />
     </div>
   );

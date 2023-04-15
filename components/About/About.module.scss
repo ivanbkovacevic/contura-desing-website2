@@ -5,4 +5,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .slidersWrapper {
+        width: 100%;
+        background-color: $black;
+
+        
+        .testemonialSlider {
+          
+            background-color: $black;
+            width: 60%;
+            border: 3px solid green;
+      }
+    }
 }
