@@ -10,7 +10,6 @@ import Slider from '../Reusable/Slider/Slider';
 import FAQ from './FAQ/FAQ';
 import style from './Home.module.scss'
 
-
 interface HomeProps {
     some?: string;
   }
@@ -33,7 +32,7 @@ const Home = ({some}:HomeProps) => {
           <ButtonLink title="see more work" link="/work" />
         </div>
         <OfferSection />
-        <Slider />
+        <Slider variant={{slidesPerView: 5}}/>
          <FAQ />
     </div>
   );

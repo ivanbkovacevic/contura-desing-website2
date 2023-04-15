@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.wrapper {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+
+    .innerWrapper {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        border: 5px solid orange;
+        
+        .heading {
+            border: 1px solid green;
+        }
+        
+        .capabilitiesList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            border: 2px solid black;
+            gap: 2rem;
+
+            .singleCapabilitiWrapper {
+                border: 1px solid red;
+                max-width: 40%;
+            }
+        }
+    }
+}

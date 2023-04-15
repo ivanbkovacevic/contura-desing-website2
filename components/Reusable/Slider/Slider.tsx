@@ -3,12 +3,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import style from './Slider.module.scss'
 import Image from 'next/image';
 
-const Slider = () => {
+interface SliderProps {
+    variant: {
+        slidesPerView: number;
+    };
+}
+const Slider:React.FC<SliderProps> = ({variant}) => {
     return (
         <section className={style.wrapperr}>
             <Swiper
             spaceBetween={50}
-            slidesPerView={5}
+            slidesPerView={variant.slidesPerView}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             >

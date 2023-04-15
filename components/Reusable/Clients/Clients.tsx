@@ -6,9 +6,10 @@ import cn from 'classnames';
 
 interface ClientsProps {
     backgroundtype: string;
+    centered?: string;
 }
 
-const Clients:React.FC<ClientsProps> = ({backgroundtype}) => {
+const Clients:React.FC<ClientsProps> = ({backgroundtype, centered='yes'}) => {
 
  const wrapperStyle = cn(
     style.wrapper,
@@ -32,7 +33,7 @@ const Clients:React.FC<ClientsProps> = ({backgroundtype}) => {
   };
 
   return (
-    <section className={wrapperStyle} data-centered='yes'>
+    <section className={wrapperStyle} data-centered={centered}>
         {generateClients()}
     </section>
   )
