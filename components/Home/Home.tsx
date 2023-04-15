@@ -9,6 +9,7 @@ import OfferSection from './OfferSection/OfferSection';
 import Slider from '../Reusable/Slider/Slider';
 import FAQ from './FAQ/FAQ';
 import style from './Home.module.scss'
+import { SLIDES_WORK } from '../Reusable/Slider/constant';
 
 interface HomeProps {
     some?: string;
@@ -33,7 +34,11 @@ const Home = ({some}:HomeProps) => {
         </div>
         <OfferSection />
         <div className={style.sliderWrapper}>
-          <Slider variant={{slidesPerView: 5}}/>
+        <Slider variant={{
+            slidesPerView: 5,
+            slidesList: SLIDES_WORK,
+            height: 20
+          }} />
         </div>
          <FAQ />
     </div>
