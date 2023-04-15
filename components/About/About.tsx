@@ -22,13 +22,15 @@ const About:React.FC<AboutProps> = ({some}) => {
         <div className={style.testemonialSlider}>
           <Slider variant={{
             slidesPerView: 1,
-            slidesList: SLIDES_WORK
+            slidesList: SLIDES_WORK,
+            height: 50
           }} />
         </div>
         <div className={style.workSliderWrapper}>
         <Slider variant={{
             slidesPerView: 5,
-            slidesList: SLIDES_WORK
+            slidesList: SLIDES_WORK,
+            height: 20
           }} />
         </div>
       </div>
