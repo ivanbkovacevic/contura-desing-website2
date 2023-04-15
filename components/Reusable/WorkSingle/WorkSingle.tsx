@@ -12,12 +12,6 @@ const WorkSingle:React.FC<Work> = ({description,
   color,
   order,}) => {
 
-    const descriptionStyle = cn(
-      style.description,
-      {[style.bcgRed]: color === COLORS.RED},
-      {[style.bcgBlue]: color === COLORS.BLUE}
-    );
-
     const wrapperImgAndDescription = cn(
       style.wrapperImgAndDescription,
       {[style.orderImageUp]: order === ORDER.PICTURE_UP},
@@ -28,7 +22,7 @@ const WorkSingle:React.FC<Work> = ({description,
     return (
       <div className={style.wrapper}>
         <div key={title} className={wrapperImgAndDescription}>
-          <div className={descriptionStyle}>
+          <div className={style.description} style={{backgroundColor: color}}>
             <h3>{description}</h3>
           </div>
             <div className={style.image}>

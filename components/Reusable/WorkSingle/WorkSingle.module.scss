@@ -1,14 +1,19 @@
 @import '../../../styles/variables';
 
 .wrapper {
-    min-width: 45%;
-    border: 1px solid red;
+    width: 42rem;
+    max-width: 45%;
     .wrapperImgAndDescription {
-        border: 1px solid green;
         display: flex;
 
         .description {
             padding: 6rem 2rem;
+            h3 {
+                font-weight: 500;
+                font-size: 3.2rem;
+                line-height: 120.3%;
+                max-width: 65%;
+            }
         }
         .image {
             width: 100%;
@@ -21,15 +26,10 @@
           }
     }
 
-    .bcgRed {
-        background-color: $red;
-    }
-    .bcgBlue {
-        background-color: $blue;
-    }
-
     p {
         margin-top: 2rem;
+        font-weight: 700;
+        font-size: 2rem;
     }
 
     .orderImageUp {
