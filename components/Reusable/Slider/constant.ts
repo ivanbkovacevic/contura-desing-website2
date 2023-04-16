@@ -33,7 +33,7 @@ export const SLIDES_HOME = [
   },
   {
     img: "/assets/images/work/fromScratchImageSesta.png",
-    alt: "idfjis44jd ",
+    alt: "idfjisrrrr44jd ",
   },
   {
     img: "/assets/images/work/knedlaImageDvanajsta.png",
