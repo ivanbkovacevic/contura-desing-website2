@@ -6,10 +6,10 @@ import ButtonLink from "../Reusable/ButtonLink/ButtonLink";
 import WorkSection from "./WorkSection/WorkSection";
 import CompanyNumbers from "./CompanyNumbers/CompanyNumbers";
 import OfferSection from "./OfferSection/OfferSection";
-import Slider from "../Reusable/Slider/Slider";
 import FAQ from "./FAQ/FAQ";
-import { SLIDES_HOME } from "../Reusable/Slider/constant";
 import style from "./Home.module.scss";
+import MySlider from "../Reusable/MySlider/MySlider";
+import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 
 interface HomeProps {
   some?: string;
@@ -28,11 +28,10 @@ const Home = ({ some }: HomeProps) => {
       <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       <OfferSection />
       <div className={style.sliderWrapper}>
-        <Slider
+        <MySlider
           variant={{
             slidesPerView: 5,
             slidesList: SLIDES_HOME,
-            height: 45,
           }}
         />
       </div>

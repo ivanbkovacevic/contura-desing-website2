@@ -1,12 +1,8 @@
 @import './fonts';
 @import './mixins';
 @import './variables';
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
-@import 'swiper/css/scrollbar';
-@import '../components/Reusable/Slider/swiperOverride.css';
-
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 /* Box sizing rules */
 *,
 *::before,
@@ -84,3 +80,10 @@ button {
   }
 }
 
+.slick-prev:before, .slick-next:before {
+  color: rgb(20, 20, 201) !important; // Change the color of the arrows
+}
+
+.slick-slide {
+  margin: 0 10px; // set the margin between slides
+}

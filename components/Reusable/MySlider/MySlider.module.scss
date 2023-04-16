@@ -1,24 +1,17 @@
 @import "../../../styles/variables";
 
 .wrapper {
+  margin-bottom: 3rem;
+  height: 45rem;
 
   .slideSingle {
-    // width: 35rem;
+    width: 100%;
     height: 45rem;
     position: relative;
     overflow: hidden;
     img {
-      object-fit: contain;
+      object-fit: cover;
     }
   }
-
-}
-
-.height45 {
-  height: 45rem;
-  border: 1px solid red;
-}
-.height20 {
-  height: 20rem;
 }
 

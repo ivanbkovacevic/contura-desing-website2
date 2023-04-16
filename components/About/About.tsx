@@ -1,11 +1,11 @@
 import React from "react";
 import WorkSection from "../Home/WorkSection/WorkSection";
 import Clients from "../Reusable/Clients/Clients";
-import Slider from "../Reusable/Slider/Slider";
+import MySlider from "../Reusable/MySlider/MySlider";
 import HeroSection from "./HeroSection/HeroSection";
 import Capabilites from "./Capabilities/Capabilities";
 import style from "./About.module.scss";
-import { SLIDES_HOME } from "../Reusable/Slider/constant";
+import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 
 interface AboutProps {
   some?: string;
@@ -20,20 +20,18 @@ const About: React.FC<AboutProps> = ({ some }) => {
       <Clients backgroundtype="black" centered="no" contentCentered="yes" />
       <div className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>
-          <Slider
+          <MySlider
             variant={{
               slidesPerView: 1,
               slidesList: SLIDES_HOME,
-              height: 50,
             }}
           />
         </div>
         <div className={style.workSliderWrapper}>
-          <Slider
+          <MySlider
             variant={{
               slidesPerView: 5,
               slidesList: SLIDES_HOME,
-              height: 20,
             }}
           />
         </div>
