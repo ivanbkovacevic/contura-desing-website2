@@ -14,15 +14,12 @@ const CompanyNumbers = () => {
           minima. Beatae, vel magni et aliquam illum pariatur hic recusandae
           laboriosam optio, perferendis provident.
         </p>
-        <div className={style.linkBtn}>
-          <LinkButton title="see more work" link="/work" />
-        </div>
       </div>
       <div className={style.numbersWrapper}>
         <p>1000+</p>
-        <p>vdsijv</p>
+        <p>the clients</p>
         <p>10+</p>
-        <p>vdsijv</p>
+        <p>Years in bussines</p>
       </div>
     </section>
   );

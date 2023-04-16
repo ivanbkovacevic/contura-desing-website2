@@ -3,15 +3,25 @@
 .wrapper {
   display: flex;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 25rem;
   padding-top: 20rem;
 
   .description {
     p {
-      max-width: 51rem;
+      max-width: 50rem;
+      font-weight: 350;
+      font-size: 3rem;
+      line-height: 128.8%;
     }
   }
 
   .numbersWrapper {
+    p:nth-of-type(odd) {
+      font-weight: 700;
+      font-size: 7.2rem;
+    }
+    p:nth-of-type(even) {
+      max-width: 10rem;
+    }
   }
 }

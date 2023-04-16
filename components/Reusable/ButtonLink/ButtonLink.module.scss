@@ -2,4 +2,14 @@
 
 .wrapper {
   color: $jet;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.left {
+    justify-content: flex-start;
+}
+.center {
+    justify-content: center;
 }

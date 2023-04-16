@@ -18,7 +18,7 @@ const FAQ: React.FC = ({}) => {
       return (
         <Accordion
           title={item.title}
-          content={item.content}
+             content={item.content}
           show={showAccordion}
           accClicked={() => toggleAcc(idx)}
         />
@@ -28,7 +28,7 @@ const FAQ: React.FC = ({}) => {
 
   return (
     <section className={style.wrapper}>
-      <div className={style.content}>
+         <div className={style.content}>
         <h2>FAQ</h2>
         {faqList()}
       </div>

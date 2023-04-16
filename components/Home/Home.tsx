@@ -8,30 +8,25 @@ import CompanyNumbers from "./CompanyNumbers/CompanyNumbers";
 import OfferSection from "./OfferSection/OfferSection";
 import Slider from "../Reusable/Slider/Slider";
 import FAQ from "./FAQ/FAQ";
-import style from "./Home.module.scss";
 import { SLIDES_WORK } from "../Reusable/Slider/constant";
+import style from "./Home.module.scss";
 
 interface HomeProps {
   some?: string;
 }
 
 const Home = ({ some }: HomeProps) => {
+
   return (
     <div className={style.wrapper}>
       <HeroSection />
       <DesignStrategySection />
       <Clients backgroundtype="black" />
-      <div className={style.linkBtn}>
         <ButtonLink title="see more work" link="/work" />
-      </div>
       <WorkSection />
-      <div className={style.linkBtn}>
         <ButtonLink title="see more work" link="/work" />
-      </div>
       <CompanyNumbers />
-      <div className={style.linkBtn}>
-        <ButtonLink title="see more work" link="/work" />
-      </div>
+        <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       <OfferSection />
       <div className={style.sliderWrapper}>
         <Slider
