@@ -1,26 +1,32 @@
 export interface Accordion {
     title: string;
     content: string;
+    id: number;
 }
 
 export const DESIGN_STRATEGY_LIST:Accordion[] = [
     {
+        id:0,
         title: 'Digital Strategy',
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam earum rem natus, fugiat explicabo, error accusantium, molestias consequuntur blanditiis repudiandae nam odit possimus. Temporibus eveniet nesciunt laboriosam sint est voluptatibus cum possimus, laudantium autem esse animi! Quibusdam ipsum libero eos repellat excepturi, rem eum, eveniet labore odit quas accusantium.'
     },
     {
+        id:1,
         title: 'Branding',
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam earum rem natus, fugiat explicabo, error accusantium, molestias consequuntur blanditiis repudiandae nam odit possimus. Temporibus eveniet nesciunt laboriosam sint est voluptatibus cum possimus, laudantium autem esse animi! Quibusdam ipsum libero eos repellat excepturi, rem eum, eveniet labore odit quas accusantium.'
     },
     {
+        id:2,
         title: 'User Experience',
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam earum rem natus, fugiat explicabo, error accusantium, molestias consequuntur blanditiis repudiandae nam odit possimus. Temporibus eveniet nesciunt laboriosam sint est voluptatibus cum possimus, laudantium autem esse animi! Quibusdam ipsum libero eos repellat excepturi, rem eum, eveniet labore odit quas accusantium.'
     },
     {
+        id:3,
         title: 'Web Design',
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam earum rem natus, fugiat explicabo, error accusantium, molestias consequuntur blanditiis repudiandae nam odit possimus. Temporibus eveniet nesciunt laboriosam sint est voluptatibus cum possimus, laudantium autem esse animi! Quibusdam ipsum libero eos repellat excepturi, rem eum, eveniet labore odit quas accusantium.'
     },
     {
+        id:4,
         title: 'Enterprise UX',
         content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam earum rem natus, fugiat explicabo, error accusantium, molestias consequuntur blanditiis repudiandae nam odit possimus. Temporibus eveniet nesciunt laboriosam sint est voluptatibus cum possimus, laudantium autem esse animi! Quibusdam ipsum libero eos repellat excepturi, rem eum, eveniet labore odit quas accusantium.'
     },

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from '../../Reusable/Accordion/Accordion';
 import Image from 'next/image';
 import { DESIGN_STRATEGY_LIST } from './constants';
 import style from './DesignStrategySection.module.scss'
 
 const DesignStrategySection:React.FC = ({}) => {
+const[idAccordion, setIdAccordion] = useState<number | null>(null);
+
+const toggleAcc = (id: number) => {
+    setIdAccordion(id);
+};
+
   const accordions = () => {
-      return DESIGN_STRATEGY_LIST.map((item) => {
-        return <Accordion key={item.title} title={item.title} content={item.content} />
+      return DESIGN_STRATEGY_LIST.map((item, idx) => {
+        return <Accordion 
+          key={item.title} 
+          title={item.title} 
+          content={item.content} 
+          show={idAccordion === idx}
+          accClicked={() => toggleAcc(item.id)} 
+        />
       })
   };
 
