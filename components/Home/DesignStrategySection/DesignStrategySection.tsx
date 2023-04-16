@@ -8,7 +8,11 @@ const DesignStrategySection:React.FC = ({}) => {
 const[idAccordion, setIdAccordion] = useState<number | null>(null);
 
 const toggleAcc = (id:number) => {
-setIdAccordion(id)
+  if ( idAccordion === id ) {
+    setIdAccordion(null);
+    return;
+  }
+    setIdAccordion(id)
 };
 
   const accordions = () => {
