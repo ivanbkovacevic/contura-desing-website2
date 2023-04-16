@@ -12,9 +12,9 @@ setIdAccordion(id)
 };
 
   const accordions = () => {
-      return DESIGN_STRATEGY_LIST.map((item, idx) => {
-
-          let showAccordion = false;
+    return DESIGN_STRATEGY_LIST.map((item, idx) => {
+      
+       let showAccordion = false;
           if(idAccordion === idx) {
            showAccordion = true;
           }
