@@ -1,21 +1,24 @@
 @import "../../../styles/variables";
 
 .wrapper {
-  border: 1px solid red;
 
   .slideSingle {
-    width: 100%;
+    // width: 35rem;
+    height: 45rem;
     position: relative;
     overflow: hidden;
     img {
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
-  .height50 {
-    height: 50rem;
-  }
-  .height20 {
-    height: 20rem;
-  }
 }
+
+.height45 {
+  height: 45rem;
+  border: 1px solid red;
+}
+.height20 {
+  height: 20rem;
+}
+

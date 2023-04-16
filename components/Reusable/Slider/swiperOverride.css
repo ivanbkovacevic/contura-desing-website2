@@ -1,0 +1,9 @@
+
+.swiper-slide {
+    width: 35rem !important;  
+   }
+
+   .myPrevButton {
+    color: white;
+    position: absolute;
+  }
