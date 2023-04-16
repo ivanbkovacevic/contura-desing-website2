@@ -1,42 +1,42 @@
 export const SLIDES_HOME = [
   {
     img: "/assets/images/sliderHome/miDrugaImageDemo.png",
-    alt: "idfjisjd ",
+    alt: "idfjisj2d ",
   },
   {
     img: "/assets/images/sliderHome/miCetvrtaImageDemo.png",
-    alt: "idfjisjd ",
+    alt: "idfjis3jd ",
   },
   {
     img: "/assets/images/sliderHome/miPetaImmageDemo.png",
-    alt: "idfjisjd ",
+    alt: "idfjisj4d ",
   },
   {
     img: "/assets/images/sliderHome/miPvaImageDemo.png",
-    alt: "idfjisjd ",
+    alt: "idfj5isjd ",
   },
   {
     img: "/assets/images/sliderHome/miTrecaImageDemo.png",
-    alt: "idfjisjd ",
+    alt: "idfjis6jd ",
   },
   {
     img: "/assets/images/work/fromScratchImageSesta.png",
-    alt: "idfjisjd ",
+    alt: "idfj6isjd ",
   },
   {
     img: "/assets/images/work/fromScratchImageSesta.png",
-    alt: "idfjisjd ",
+    alt: "idfjis5jd ",
   },
   {
     img: "/assets/images/work/knedlaImageDvanajsta.png",
-    alt: "idfjisjd ",
+    alt: "idfj33isjd ",
   },
   {
     img: "/assets/images/work/fromScratchImageSesta.png",
-    alt: "idfjisjd ",
+    alt: "idfjis44jd ",
   },
   {
     img: "/assets/images/work/knedlaImageDvanajsta.png",
-    alt: "idfjisjd ",
+    alt: "idfj666isjd ",
   },
 ];

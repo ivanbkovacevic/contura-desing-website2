@@ -13,6 +13,7 @@ const WorkSection: React.FC = ({}) => {
           img={item.img}
           color={item.color}
           order={item.order}
+          key={item.title}
         />
       );
     });

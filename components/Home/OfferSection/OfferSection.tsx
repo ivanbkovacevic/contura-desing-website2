@@ -7,7 +7,7 @@ const OfferSection = () => {
   const offerList = () => {
     return OFFER_LIST.map((item) => {
       return (
-        <div className={style.offerSingle}>
+        <div className={style.offerSingle} key={item.text}>
           <p>{item.text}</p>
           <div className={style.image}>
             <Image src={item.img} fill alt={item.text} />

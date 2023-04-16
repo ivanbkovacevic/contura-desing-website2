@@ -8,7 +8,7 @@ import Image from "next/image";
 interface SliderProps {
   variant: {
     slidesPerView: number;
-    slidesList: any[];
+    slidesList: {alt: string, img:string}[];
     height: number;
   };
 }
@@ -22,9 +22,9 @@ const Slider: React.FC<SliderProps> = ({ variant }) => {
   const generateSlides = () => {
     return variant.slidesList.map((item) => {
       return (
-        <SwiperSlide>
+        <SwiperSlide key={item.alt}>
           <div className={style.slideSingle}>
-            <Image src={item.img} alt={item.title} fill />
+            <Image src={item.img} alt={item.alt} fill />
           </div>
         </SwiperSlide>
       );

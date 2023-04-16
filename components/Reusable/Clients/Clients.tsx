@@ -26,7 +26,7 @@ const Clients: React.FC<ClientsProps> = ({
   const generateClients = () => {
     return CLIENTS.map((item) => {
       return (
-        <div className={style.clientWrapper}>
+        <div className={style.clientWrapper} key={item.title}>
           <div className={style.image}>
             <Image src={item.img} alt={item.title} fill />
           </div>

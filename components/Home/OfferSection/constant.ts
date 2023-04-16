@@ -8,7 +8,7 @@ export const OFFER_LIST = [
     img: "/assets/images/blog/blogDrugaImage.png",
   },
   {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    text: "Lorem ipsum dolor sit amdqdwqet, consectetur adipiscing elit",
     img: "/assets/images/blog/blogTrecaImage.png",
   },
 ];
