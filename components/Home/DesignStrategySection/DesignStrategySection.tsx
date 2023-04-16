@@ -7,17 +7,23 @@ import style from './DesignStrategySection.module.scss'
 const DesignStrategySection:React.FC = ({}) => {
 const[idAccordion, setIdAccordion] = useState<number | null>(null);
 
-const toggleAcc = (id: number) => {
-    setIdAccordion(id);
+const toggleAcc = (id:number) => {
+setIdAccordion(id)
 };
 
   const accordions = () => {
       return DESIGN_STRATEGY_LIST.map((item, idx) => {
+
+          let showAccordion = false;
+          if(idAccordion === idx) {
+           showAccordion = true;
+          }
+
         return <Accordion 
           key={item.title} 
           title={item.title} 
           content={item.content} 
-          show={idAccordion === idx}
+          show={showAccordion}
           accClicked={() => toggleAcc(item.id)} 
         />
       })
