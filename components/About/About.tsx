@@ -5,7 +5,7 @@ import Slider from "../Reusable/Slider/Slider";
 import HeroSection from "./HeroSection/HeroSection";
 import Capabilites from "./Capabilities/Capabilities";
 import style from "./About.module.scss";
-import { SLIDES_WORK } from "../Reusable/Slider/constant";
+import { SLIDES_HOME } from "../Reusable/Slider/constant";
 
 interface AboutProps {
   some?: string;
@@ -23,7 +23,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
           <Slider
             variant={{
               slidesPerView: 1,
-              slidesList: SLIDES_WORK,
+              slidesList: SLIDES_HOME,
               height: 50,
             }}
           />
@@ -32,7 +32,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
           <Slider
             variant={{
               slidesPerView: 5,
-              slidesList: SLIDES_WORK,
+              slidesList: SLIDES_HOME,
               height: 20,
             }}
           />
