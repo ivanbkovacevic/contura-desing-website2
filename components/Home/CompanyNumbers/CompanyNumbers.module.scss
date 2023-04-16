@@ -1,19 +1,17 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    display: flex;
-    justify-content: flex-start;
-    gap: 3rem;
-    padding-top: 20rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding-top: 20rem;
 
-    .description {
-
-        p {
-            max-width: 51rem;
-        }
+  .description {
+    p {
+      max-width: 51rem;
     }
+  }
 
-    .numbersWrapper {
-
-    }
+  .numbersWrapper {
+  }
 }

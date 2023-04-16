@@ -1,25 +1,24 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    
-    .offerSingle {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 6.7rem;
+  .offerSingle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.7rem;
 
-        p {
-            max-width: 43rem;
-            font-size: 3.6rem;
-        }
-
-        .image {
-            width: 20rem;
-            max-height: 12rem;
-            position: relative;
-            overflow: hidden;
-            img {
-                object-fit: cover;
-            }
-          }
+    p {
+      max-width: 43rem;
+      font-size: 3.6rem;
     }
+
+    .image {
+      width: 20rem;
+      max-height: 12rem;
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
 }

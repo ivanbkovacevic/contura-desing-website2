@@ -1,21 +1,21 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    border: 1px solid red;
-  
-    .slideSingle {
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        img {
-            object-fit: cover;
-        }
-    }
+  border: 1px solid red;
 
-    .height50 {
-        height: 50rem;
+  .slideSingle {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img {
+      object-fit: cover;
     }
-    .height20 {
-        height: 20rem;
-    }
+  }
+
+  .height50 {
+    height: 50rem;
+  }
+  .height20 {
+    height: 20rem;
+  }
 }

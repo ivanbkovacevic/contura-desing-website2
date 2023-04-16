@@ -1,40 +1,39 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+
+  .content {
     display: flex;
-    justify-content: center;
-    padding: 5rem;
+    flex-wrap: wrap;
+    gap: 5rem;
 
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        gap:5rem;
+    .clientWrapper {
+      min-width: 12rem;
+      min-height: 5rem;
 
-        .clientWrapper {
-            min-width: 12rem;
-            min-height: 5rem;
-        
-        .image {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            img {
-                object-fit: contain;
-            }
+      .image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        img {
+          object-fit: contain;
         }
+      }
     }
-}
+  }
 
-.contentCentered {
+  .contentCentered {
     width: 60%;
-}
-
+  }
 }
 .backgroundWhite {
-    background-color: $white;
+  background-color: $white;
 }
 
 .backgroundBlack {
-    background-color: $black;
+  background-color: $black;
 }

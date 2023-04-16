@@ -1,31 +1,31 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    flex-grow: 1;
-    background-color: rgba($navigationGreen, 0.95);
-    min-width: 30rem;
-    min-height: 30rem;
-    padding: 4rem;
+  flex-grow: 1;
+  background-color: rgba($navigationGreen, 0.95);
+  min-width: 30rem;
+  min-height: 30rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    align-self: flex-end;
+    min-width: 3rem;
+    border: none;
+    background: none;
+    color: $white;
+    font-size: 2rem;
+  }
+  ul {
+    height: 20rem;
     display: flex;
     flex-direction: column;
-    
-    button {
-        align-self: flex-end;
-        min-width: 3rem;
-        border: none;
-        background: none;
-        color: $white;
-        font-size: 2rem;
-    }
-    ul {
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
 
-        li {
-            color: $white;
-        }
+    li {
+      color: $white;
     }
+  }
 }

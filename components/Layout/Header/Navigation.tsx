@@ -1,22 +1,22 @@
-import React from 'react';
-import style from './Navigation.module.scss';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
+import style from "./Navigation.module.scss";
+import Link from "next/link";
+import Image from "next/image";
 
 interface NavigationProps {
-close: () => void;
+  close: () => void;
 }
 
-const Navigation:React.FC<NavigationProps> = ({close}) => {
+const Navigation: React.FC<NavigationProps> = ({ close }) => {
   return (
     <nav className={style.wrapper}>
       <button onClick={close}>
-      <Image
-            src={"./assets/icons/hamburgerClose.svg"} 
-            alt="closemenu"
-            width={20}
-            height={20} 
-         />
+        <Image
+          src={"./assets/icons/hamburgerClose.svg"}
+          alt="closemenu"
+          width={20}
+          height={20}
+        />
       </button>
       <ul>
         <li>
@@ -28,15 +28,13 @@ const Navigation:React.FC<NavigationProps> = ({close}) => {
         <li>
           <Link href="/about">About</Link>
         </li>
-        <li>
-         Lets get in touch
-        </li>
+        <li>Lets get in touch</li>
         <li>
           <a href="mailto:igor@mijucic.com">igor@mijucic.com</a>
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
 export default Navigation;

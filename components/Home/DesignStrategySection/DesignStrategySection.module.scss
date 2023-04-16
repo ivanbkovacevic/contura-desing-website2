@@ -1,41 +1,40 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    display: flex;
-    gap: 7.6rem;
+  display: flex;
+  gap: 7.6rem;
 
-    .leftWrapper {
-        width: 50%;
+  .leftWrapper {
+    width: 50%;
 
-     .heading {
-        padding: 5rem;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 116.8%;
-        color: $jet;
-        text-align: center;
-     }
-      .image {
-        max-width: 49rem;
-        height: 52rem;
-        position: relative;
-        overflow: hidden;
-        img {
-            object-fit: cover;
-        }
+    .heading {
+      padding: 5rem;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 116.8%;
+      color: $jet;
+      text-align: center;
+    }
+    .image {
+      max-width: 49rem;
+      height: 52rem;
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
       }
     }
+  }
 
-    .rightWrapper {
-        width: 50%;
+  .rightWrapper {
+    width: 50%;
 
-        .accordionsWrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            padding-top: 5rem;
-        }
+    .accordionsWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 5rem;
     }
-
+  }
 }

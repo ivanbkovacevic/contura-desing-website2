@@ -1,24 +1,23 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
+  button {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: 350;
+    line-height: 116.8%;
+  }
 
-    button {
-        border: none;
-        background: none;
-        font-size: 3rem;
-        font-weight: 350;
-        line-height: 116.8%;
-    }
+  .content {
+    padding: 2rem;
+    font-weight: 350;
+    font-size: 2rem;
+    line-height: 117.3%;
+    max-width: 100%;
+  }
 
-    .content {
-      padding: 2rem;
-      font-weight: 350;
-      font-size: 2rem;
-      line-height: 117.3%;
-      max-width: 100%;
-    }
-
-    .hide {
-        display: none;
-    }
+  .hide {
+    display: none;
+  }
 }
