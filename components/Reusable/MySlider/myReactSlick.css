@@ -7,12 +7,19 @@
   margin: 0 10px;
 }
 
-.testemonialSlider button {
-    top: 0;
-    right: -60px !important;
-  }
+.testemonialSlider .slick-next {
+  top: 0;
+  right: -60px !important;
+}
 
 .testemonialSlider .slick-prev {
-    top: 0;
-    left: 100% !important;
-  }
+  top: 0;
+  left: 100% !important;
+}
+.testemonialSlider .slick-next::before {
+  color: white !important;
+}
+
+.testemonialSlider .slick-prev::before {
+  color: white !important;
+}
