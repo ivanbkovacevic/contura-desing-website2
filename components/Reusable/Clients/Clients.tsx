@@ -5,14 +5,14 @@ import Image from "next/image";
 import cn from "classnames";
 
 interface ClientsProps {
-  backgroundtype: string;
+  backgroundtype?: string;
   centered?: string;
   contentCentered?: string;
   title?:boolean;
 }
 
 const Clients: React.FC<ClientsProps> = ({
-  backgroundtype,
+  backgroundtype="white",
   centered = "yes",
   contentCentered,
   title,

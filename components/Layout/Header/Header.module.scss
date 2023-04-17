@@ -1,12 +1,15 @@
 @import "../../../styles/variables";
 
 .wrapper {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: center;
   padding: 1rem;
   min-height: $headerHeight;
+  z-index: $header-z-index;
 
   .navigationAllWrapper {
     position: relative;
@@ -33,4 +36,7 @@
 .onAbout {
   width: 100%;
   background-color: $someLightBlue;
+}
+.onAll {
+  background-color: $white;
 }

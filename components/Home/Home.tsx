@@ -21,7 +21,7 @@ const Home = ({ some }: HomeProps) => {
     <div className={style.wrapper}>
       <HeroSection />
       <DesignStrategySection />
-      <Clients backgroundtype="black" />
+      <Clients />
       <ButtonLink title="see more work" link="/work" />
       <WorkSection list={WORK_LIST} />
       <ButtonLink title="see more work" link="/work" />

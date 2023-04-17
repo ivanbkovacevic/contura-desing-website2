@@ -24,13 +24,15 @@ const Header: React.FC<HeaderProps> = () => {
     [style.hide]: !showNavigation,
   });
 
-  const wrapperStyle = cn(style.wrapper, { [style.onAbout]: router.pathname === '/about' });
+  const wrapperStyle = cn(style.wrapper, 
+    { [style.onAbout]: router.pathname === '/about' },
+    { [style.onAll]: true },
+    );
 
   return (
     <header className={wrapperStyle} data-centered="yes">
       <Logo />
       <div ref={divRef} className={style.navigationAllWrapper}>
-        {" "}
         <div className={navigationStyle}>
           <Navigation close={closeNavigation} />
         </div>
