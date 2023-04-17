@@ -8,20 +8,22 @@ interface ClientsProps {
   backgroundtype: string;
   centered?: string;
   contentCentered?: string;
+  title?:boolean;
 }
 
 const Clients: React.FC<ClientsProps> = ({
   backgroundtype,
   centered = "yes",
   contentCentered,
+  title,
 }) => {
   const wrapperStyle = cn(
     style.wrapper,
     { [style.backgroundBlack]: backgroundtype === "black" },
     { [style.backgroundWhite]: backgroundtype === "white" }
   );
-  const contentStyle = cn(style.content, {
-    [style.contentCentered]: contentCentered === "yes",
+  const contentStyle = cn(style.contentWrapper, {
+    [style.contentCenteredInLayout]: contentCentered === "yes",
   });
   const generateClients = () => {
     return CLIENTS.map((item) => {
@@ -38,8 +40,10 @@ const Clients: React.FC<ClientsProps> = ({
   return (
     <section className={wrapperStyle} data-centered={centered}>
       <div className={contentStyle}>
-        <h5 className={style.title}>Clients</h5>
-        {generateClients()}
+        <div className={style.innerContentWrapper}>
+         {title && <h5 className={style.title}>Clients</h5>}
+          {generateClients()}
+        </div>
       </div>
     </section>
   );

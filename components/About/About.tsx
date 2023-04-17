@@ -17,7 +17,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
       <WeAreContura />
       <WorkSection />
       <Capabilites />
-      <Clients backgroundtype="black" centered="no" contentCentered="yes" />
+      <Clients title backgroundtype="black" centered="no" contentCentered="yes" />
       <div className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>
           <MySlider
