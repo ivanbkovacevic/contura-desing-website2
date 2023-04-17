@@ -10,7 +10,7 @@ interface WorkProps {
 const Work: React.FC<WorkProps> = ({ some }) => {
   return (
     <div className={style.wrapper}>
-      <h1>Work Page contura design!</h1>
+      <h1 data-centered="yes">Work</h1>
       <WorkSection />
       <Clients backgroundtype="black" />
       <p></p>

@@ -2,7 +2,7 @@ import React from "react";
 import WorkSection from "../Home/WorkSection/WorkSection";
 import Clients from "../Reusable/Clients/Clients";
 import MySlider from "../Reusable/MySlider/MySlider";
-import HeroSection from "./HeroSection/HeroSection";
+import WeAreContura from "./WeAreContura/WeAreContura";
 import Capabilites from "./Capabilities/Capabilities";
 import style from "./About.module.scss";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
@@ -14,7 +14,7 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ some }) => {
   return (
     <div className={style.wrapper}>
-      <HeroSection />
+      <WeAreContura />
       <WorkSection />
       <Capabilites />
       <Clients backgroundtype="black" centered="no" contentCentered="yes" />

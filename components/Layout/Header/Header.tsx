@@ -5,6 +5,7 @@ import cn from "classnames";
 import style from "./Header.module.scss";
 import Image from "next/image";
 import useClickOutside from "../../../utils/onClickOutside";
+import { useRouter } from "next/router";
 
 interface HeaderProps {}
 
@@ -12,6 +13,7 @@ const Header: React.FC<HeaderProps> = () => {
   const [showNavigation, setShowNAvigation] = useState<boolean>(false);
   const divRef = useRef(null);
 
+  const router = useRouter();
   const closeNavigation = () => {
     setShowNAvigation(false);
   };
@@ -22,10 +24,13 @@ const Header: React.FC<HeaderProps> = () => {
     [style.hide]: !showNavigation,
   });
 
+  const wrapperStyle = cn(style.wrapper, { [style.onAbout]: router.pathname === '/about' });
+
   return (
-    <header className={style.wrapper} data-centered="yes">
+    <header className={wrapperStyle} data-centered="yes">
       <Logo />
       <div ref={divRef} className={style.navigationAllWrapper}>
+        {" "}
         <div className={navigationStyle}>
           <Navigation close={closeNavigation} />
         </div>
