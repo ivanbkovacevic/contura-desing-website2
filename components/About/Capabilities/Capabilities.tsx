@@ -18,7 +18,7 @@ const Capabilites: React.FC = () => {
     });
   };
   return (
-    <section className={style.wrapper}>
+    <section className={style.wrapper} data-centered="yes">
       <div className={style.innerWrapper}>
         <div className={style.heading}>
           <h3>Capabilites</h3>

@@ -37,7 +37,10 @@ const Clients: React.FC<ClientsProps> = ({
 
   return (
     <section className={wrapperStyle} data-centered={centered}>
-      <div className={contentStyle}>{generateClients()}</div>
+      <div className={contentStyle}>
+        <h5 className={style.title}>Clients</h5>
+        {generateClients()}
+      </div>
     </section>
   );
 };

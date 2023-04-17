@@ -1,34 +1,44 @@
 @import "../../../styles/variables";
 
 .wrapper {
-  background-color: lightgray;
+  background-color: $someLightBlue;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10rem 0;
+  padding: 14rem 5rem;
 
   .innerWrapper {
     width: 60%;
     display: flex;
-    gap: 3rem;
     justify-content: space-between;
-    border: 5px solid orange;
+    gap: 3rem;
 
     .heading {
-      border: 1px solid green;
-      padding: 2rem;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 116.8%;
+      letter-spacing: 0.015em;
     }
 
     .capabilitiesList {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
-      border: 2px solid black;
-      gap: 2rem;
+      justify-content: flex-start;
+      gap:5rem;
 
       .singleCapabilitiWrapper {
-        border: 1px solid red;
         min-width: 40%;
+        h3 {
+          font-weight: 350;
+          font-size: 36px;
+          line-height: 18px;
+          margin-bottom: 4rem;
+        }
+        p {
+          font-weight: 350;
+          font-size: 20px;
+          line-height: 136.3%;
+        }
       }
     }
   }
