@@ -22,15 +22,15 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
     dots: false,
     infinite: true,
     arrows: true,
-    autoPlay: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: slidesPerView,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     adaptiveHeight: true,
     centerMode: true,
     focusOnSelect:true,
     swipeToSlide: true,
-    centerPadding: "0px",
+    centerPadding: "0px", 
+
   };
 
   const wrapperStyle =cn(
