@@ -18,10 +18,10 @@ const Header: React.FC<HeaderProps> = () => {
     setShowNAvigation(false);
   };
 
-  useClickOutside(divRef, closeNavigation, "hamburder");
+  useClickOutside(divRef, closeNavigation, "hamburger");
 
   const navigationStyle = cn(style.justNavigationWrapper, {
-    [style.hide]: !showNavigation,
+    [style.colapsed]: !showNavigation,
   });
 
   const wrapperStyle = cn(style.wrapper, 

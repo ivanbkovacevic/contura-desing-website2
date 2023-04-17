@@ -24,12 +24,16 @@
     .justNavigationWrapper {
       position: absolute;
       right: 0%;
-      z-index: 1000;
+      z-index: $navigation-z-index;
+      max-height: 30rem;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+
     }
   }
 
-  .hide {
-    display: none;
+  .colapsed {
+    max-height: 0px !important;
   }
 }
 
