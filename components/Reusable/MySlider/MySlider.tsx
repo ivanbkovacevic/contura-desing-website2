@@ -14,16 +14,16 @@ interface SliderProps {
       company:string
     }[];
     sliderType?: 'images' | 'testemonial';
-    arrowsTestemonial?: boolean;
 }
 
-const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[],slidesListTestemonial=[],sliderType='images', arrowsTestemonial=false }) => {
+const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[],slidesListTestemonial=[],sliderType='images'}) => {
 
   const settings = {
     dots: false,
     infinite: true,
     arrows: true,
-    speed: 500,
+    autoPlay: true,
+    speed: 1000,
     slidesToShow: slidesPerView,
     slidesToScroll: 3,
     adaptiveHeight: true,
@@ -33,10 +33,15 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
     centerPadding: "0px",
   };
 
+  const wrapperStyle =cn(
+    style.wrapper,
+    {'testemonialSlider': sliderType === 'testemonial'},
+  )
   const slideSingleStyle =cn(
     {[style.slideSingleImage]: sliderType === 'images'},
     {[style.slideSingleTestemonial]: sliderType === 'testemonial'},
   )
+
   const generateSlidesImages = () => {
     return slidesListImages.map((item) => {
       return (
@@ -65,7 +70,7 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
   };
 
   return (
-    <section className={style.wrapper}>
+    <section className={wrapperStyle}>
       <Slider {...settings}>{slidesListImages.length > 0 ? generateSlidesImages() : generateSlidesTestemonial()}</Slider>
     </section>
   );

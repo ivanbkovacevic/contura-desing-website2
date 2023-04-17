@@ -17,21 +17,22 @@ const About: React.FC<AboutProps> = ({ some }) => {
       <WeAreContura />
       <WorkSection />
       <Capabilites />
-      <Clients title backgroundtype="black" centered="no" contentCentered="yes" />
+      <Clients
+        title
+        backgroundtype="black"
+        centered="no"
+        contentCentered="yes"
+      />
       <div className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>
           <MySlider
-              sliderType="testemonial"
-              slidesPerView={1}
-              slidesListTestemonial={SLIDES_TESTEMONIAL}
-              arrowsTestemonial
+            sliderType="testemonial"
+            slidesPerView={1}
+            slidesListTestemonial={SLIDES_TESTEMONIAL}
           />
         </div>
         <div className={style.workSliderWrapper}>
-          <MySlider
-              slidesPerView={5}
-              slidesListImages={SLIDES_HOME}
-          />
+          <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
         </div>
       </div>
     </div>

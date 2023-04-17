@@ -1,0 +1,18 @@
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(20, 20, 201) !important;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.testemonialSlider button {
+    top: 0;
+    right: -60px !important;
+  }
+
+.testemonialSlider .slick-prev {
+    top: 0;
+    left: 100% !important;
+  }

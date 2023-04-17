@@ -28,12 +28,7 @@ const Home = ({ some }: HomeProps) => {
       <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       <OfferSection />
       <div className={style.sliderWrapper}>
-        <MySlider
-          variant={{
-            slidesPerView: 5,
-            slidesList: SLIDES_HOME,
-          }}
-        />
+        <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
       </div>
       <FAQ />
     </div>

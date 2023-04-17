@@ -3,6 +3,8 @@
 @import './variables';
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+@import "../components/Reusable/MySlider/myReactSlick.css";
+
 /* Box sizing rules */
 *,
 *::before,
@@ -78,12 +80,4 @@ button {
   @include laptop-greater {
     width: 60%;
   }
-}
-
-.slick-prev:before, .slick-next:before {
-  color: rgb(20, 20, 201) !important; // Change the color of the arrows
-}
-
-.slick-slide {
-  margin: 0 10px; // set the margin between slides
 }
