@@ -4,14 +4,21 @@
   margin-bottom: 3rem;
   height: 45rem;
 
-  .slideSingle {
+  .slideSingleImage {
     width: 100%;
-    height: 45rem;
     position: relative;
     overflow: hidden;
+    height: 45rem;
+
     img {
       object-fit: cover;
     }
   }
-}
 
+
+  .slideSingleTestemonial {
+   p{ 
+    color: $white;
+   }
+  }
+}

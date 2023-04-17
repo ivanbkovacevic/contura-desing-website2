@@ -5,7 +5,7 @@ import MySlider from "../Reusable/MySlider/MySlider";
 import WeAreContura from "./WeAreContura/WeAreContura";
 import Capabilites from "./Capabilities/Capabilities";
 import style from "./About.module.scss";
-import { SLIDES_HOME } from "../Reusable/MySlider/constant";
+import { SLIDES_HOME, SLIDES_TESTEMONIAL } from "../Reusable/MySlider/constant";
 
 interface AboutProps {
   some?: string;
@@ -21,18 +21,16 @@ const About: React.FC<AboutProps> = ({ some }) => {
       <div className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>
           <MySlider
-            variant={{
-              slidesPerView: 1,
-              slidesList: SLIDES_HOME,
-            }}
+              sliderType="testemonial"
+              slidesPerView={1}
+              slidesListTestemonial={SLIDES_TESTEMONIAL}
+              arrowsTestemonial
           />
         </div>
         <div className={style.workSliderWrapper}>
           <MySlider
-            variant={{
-              slidesPerView: 5,
-              slidesList: SLIDES_HOME,
-            }}
+              slidesPerView={5}
+              slidesListImages={SLIDES_HOME}
           />
         </div>
       </div>

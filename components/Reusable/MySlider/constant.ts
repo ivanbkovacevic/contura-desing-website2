@@ -40,3 +40,24 @@ export const SLIDES_HOME = [
     alt: "idfj666isjd ",
   },
 ];
+export const SLIDES_TESTEMONIAL = [
+  {
+    testemonial: "“I 1 have been working with ConturaDesign for a few months now. He has been very professional. His creativity and understanding of his clients’ needs is exceptional. He truly understood what our brand was about and gave it its identity. We continue to work with him on developing our website and look forward to future projects. ”",
+    author: "1 idfj5isjd ",
+    jobDescription: '1 dfdf',
+    company: '1 fdsfsdf',
+  },
+  {
+    testemonial: "“2 I have been working with ConturaDesign for a few months now. He has been very professional. His creativity and understanding of his clients’ needs is exceptional. He truly understood what our brand was about and gave it its identity. We continue to work with him on developing our website and look forward to future projects. ”",
+    author: "2idfj5isjd ",
+    jobDescription: '2 dfdf',
+    company: '2 fdsfsdf',
+  },
+  {
+    testemonial: "“3 I have been working with ConturaDesign for a few months now. He has been very professional. His creativity and understanding of his clients’ needs is exceptional. He truly understood what our brand was about and gave it its identity. We continue to work with him on developing our website and look forward to future projects. ”",
+    author: "3 idfj5isjd ",
+    jobDescription: '3 dfdf',
+    company: '3 fdsfsdf',
+  },
+
+];

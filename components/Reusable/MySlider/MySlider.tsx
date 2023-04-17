@@ -5,19 +5,26 @@ import Image from "next/image";
 import style from "./MySlider.module.scss";
 
 interface SliderProps {
-  variant: {
     slidesPerView: number;
-    slidesList: { alt: string; img: string }[];
-  };
+    slidesListImages?: { alt: string; img: string }[];
+    slidesListTestemonial?: {
+      testemonial:string, 
+      author: string, 
+      jobDescription:string, 
+      company:string
+    }[];
+    sliderType?: 'images' | 'testemonial';
+    arrowsTestemonial?: boolean;
 }
-const MySlider: React.FC<SliderProps> = ({ variant }) => {
+
+const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[],slidesListTestemonial=[],sliderType='images', arrowsTestemonial=false }) => {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     arrows: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: slidesPerView,
     slidesToScroll: 3,
     adaptiveHeight: true,
     centerMode: true,
@@ -26,12 +33,31 @@ const MySlider: React.FC<SliderProps> = ({ variant }) => {
     centerPadding: "0px",
   };
 
-  const generateSlides = () => {
-    return variant.slidesList.map((item) => {
+  const slideSingleStyle =cn(
+    {[style.slideSingleImage]: sliderType === 'images'},
+    {[style.slideSingleTestemonial]: sliderType === 'testemonial'},
+  )
+  const generateSlidesImages = () => {
+    return slidesListImages.map((item) => {
       return (
         <div key={item.alt}>
-          <div className={style.slideSingle}>
+          <div className={slideSingleStyle}>
             <Image src={item.img} alt={item.alt} fill />
+          </div>
+        </div>
+      );
+    });
+  };
+
+  const generateSlidesTestemonial = () => {
+    return slidesListTestemonial.map((item) => {
+      return (
+        <div key={item.author}>
+          <div className={slideSingleStyle}>
+            <p>{item.testemonial}</p>
+            <p>{item.author}</p>
+            <p>{item.jobDescription}</p>
+            <p>{item.company}</p>
           </div>
         </div>
       );
@@ -40,7 +66,7 @@ const MySlider: React.FC<SliderProps> = ({ variant }) => {
 
   return (
     <section className={style.wrapper}>
-      <Slider {...settings}>{generateSlides()}</Slider>
+      <Slider {...settings}>{slidesListImages.length > 0 ? generateSlidesImages() : generateSlidesTestemonial()}</Slider>
     </section>
   );
 };
