@@ -3,9 +3,13 @@ import { WORK_LIST } from "../../Reusable/WorkSingle/constant";
 import WorkSingle from "../../Reusable/WorkSingle/WorkSingle";
 import style from "./WorkSection.module.scss";
 
-const WorkSection: React.FC = ({}) => {
+interface WorkSectionProps {
+  list: any[]
+}
+
+const WorkSection: React.FC<WorkSectionProps> = ({list}) => {
   const workList = () => {
-    return WORK_LIST.map((item) => {
+    return list.map((item) => {
       return (
         <WorkSingle
           description={item.description}

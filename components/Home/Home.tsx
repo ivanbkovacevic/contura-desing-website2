@@ -7,9 +7,10 @@ import WorkSection from "./WorkSection/WorkSection";
 import CompanyNumbers from "./CompanyNumbers/CompanyNumbers";
 import OfferSection from "./OfferSection/OfferSection";
 import FAQ from "./FAQ/FAQ";
-import style from "./Home.module.scss";
 import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
+import { WORK_LIST } from "../Reusable/WorkSingle/constant";
+import style from "./Home.module.scss";
 
 interface HomeProps {
   some?: string;
@@ -22,7 +23,7 @@ const Home = ({ some }: HomeProps) => {
       <DesignStrategySection />
       <Clients backgroundtype="black" />
       <ButtonLink title="see more work" link="/work" />
-      <WorkSection />
+      <WorkSection list={WORK_LIST} />
       <ButtonLink title="see more work" link="/work" />
       <CompanyNumbers />
       <ButtonLink title="About ConturaDesign" link="/about" position="left" />
