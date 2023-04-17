@@ -14,11 +14,12 @@ const Accordion: React.FC<AccordionProps> = ({
   show,
   accClicked,
 }) => {
-  const contentStyle = cn(style.content, { [style.hide]: !show });
+  const contentStyle = cn(style.content, { [style.colapsed]: show === false });
+  const buttonStyle = cn({ [style.btnExpanded]: show });
 
   return (
     <div className={style.wrapper}>
-      <button onClick={accClicked}>{title} X</button>
+      <button className={buttonStyle} onClick={accClicked}>{title} X</button>
       <div className={contentStyle}>{content}</div>
     </div>
   );
