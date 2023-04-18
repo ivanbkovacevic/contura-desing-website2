@@ -23,7 +23,7 @@ const Clients: React.FC<ClientsProps> = ({
     { [style.backgroundWhite]: backgroundtype === "white" }
   );
   const contentStyle = cn(style.contentWrapper, {
-    [style.contentCenteredInLayout]: contentCentered === "yes",
+    [style.contentCenteredInSection]: contentCentered === "yes",
   });
   const generateClients = () => {
     return CLIENTS.map((item) => {

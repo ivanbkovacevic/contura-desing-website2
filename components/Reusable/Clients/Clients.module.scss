@@ -3,7 +3,8 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  padding: 10rem 0;
+  padding: 14rem 0;
+  width:100%;
 
   .contentWrapper {
     display: flex;
@@ -13,17 +14,18 @@
     .innerContentWrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 5rem;
+      justify-content: space-between;
+      row-gap: 10rem;
+      max-width: clamp(100rem,60%,110rem);
 
       .title {
         color: $white;
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
         width: 100%;
       }
 
       .clientWrapper {
-        min-width: 15rem;
+        min-width: 17rem;
         min-height: 5rem;
 
         .image {
@@ -39,7 +41,7 @@
     }
   }
 
-  .contentCenteredInLayout {
+  .contentCenteredInSection {
     width: 60%;
   }
 }
