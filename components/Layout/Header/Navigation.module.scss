@@ -30,6 +30,9 @@
       a {
         display: block;
         width: 100%;
+        &:hover {
+          color: $jet;
+        }
       }
     }
   }

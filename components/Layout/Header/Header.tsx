@@ -11,7 +11,7 @@ interface HeaderProps {
   isVisible: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({isVisible}) => {
+const Header: React.FC<HeaderProps> = ({ isVisible }) => {
   const [showNavigation, setShowNAvigation] = useState<boolean>(false);
   const divRef = useRef(null);
 
@@ -33,26 +33,28 @@ const Header: React.FC<HeaderProps> = ({isVisible}) => {
   );
 
   return (
-    <header className={wrapperStyle} data-centered="no">
-     <div style={{display: isVisible ? 'block' : 'none'}}>
-      <Logo />
-      </div> 
-      <div ref={divRef} className={style.navigationAllWrapper}>
-        <div className={navigationStyle}>
-          <Navigation close={closeNavigation} />
+    <header className={wrapperStyle}>
+      <div className={style.content}>
+        <div style={{ display: isVisible ? "block" : "none" }}>
+          <Logo />
         </div>
-        <button
-          id="hamburger"
-          onClick={() => setShowNAvigation(!showNavigation)}
-          className={style.hamburgerMenuWrapper}
-        >
-          <Image
-            src={"./assets/icons/hamburger.svg"}
-            alt="openMenu"
-            width={50}
-            height={50}
-          />
-        </button>
+        <div ref={divRef} className={style.navigationAllWrapper}>
+          <div className={navigationStyle}>
+            <Navigation close={closeNavigation} />
+          </div>
+          <button
+            id="hamburger"
+            onClick={() => setShowNAvigation(!showNavigation)}
+            className={style.hamburgerMenuWrapper}
+          >
+            <Image
+              src={"./assets/icons/hamburger.svg"}
+              alt="openMenu"
+              width={50}
+              height={50}
+            />
+          </button>
+        </div>
       </div>
     </header>
   );

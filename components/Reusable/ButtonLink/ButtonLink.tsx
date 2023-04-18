@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import cn from "classnames";
-
-import style from "./ButtonLink.module.scss";
 import ArrowRight from "../Icons/ArrowRight";
+import style from "./ButtonLink.module.scss";
 
 interface ButtonLinkProps {
   title: string;

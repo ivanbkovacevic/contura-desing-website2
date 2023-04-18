@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Navigation.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import style from "./Navigation.module.scss";
 
 interface NavigationProps {
   close: () => void;

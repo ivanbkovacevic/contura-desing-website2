@@ -31,9 +31,6 @@ const Home = ({ some }: HomeProps) => {
       <OfferSection />
       <div className={style.sliderWrapper}>
         <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
-        <div className={style.cubes}>
-          <Image src="/assets/images/objectCubes.svg" alt='cube' width={321} height={314} />
-        </div>
       </div>
       <FAQ />
     </div>

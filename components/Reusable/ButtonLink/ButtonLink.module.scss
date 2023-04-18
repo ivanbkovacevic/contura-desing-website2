@@ -10,6 +10,13 @@
     display: block;
     line-height: 1;
     border-bottom: 1px solid $navigationGreen;
+
+    &:hover {
+      color: $navigationGreen;
+    }
+    &:hover svg {
+      stroke: $navigationGreen;
+    }
     svg {
       width: 3rem;
       height: 1rem;
