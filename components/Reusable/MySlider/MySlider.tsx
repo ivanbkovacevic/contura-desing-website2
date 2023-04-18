@@ -27,6 +27,8 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
     slidesToScroll: 1,
     adaptiveHeight: true,
     swipeToSlide: true,
+    nextArrow: <p>e</p>,
+    prevArrow: <p>d</p>
   };
 
   const wrapperStyle =cn(

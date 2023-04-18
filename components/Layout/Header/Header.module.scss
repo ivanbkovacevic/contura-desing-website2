@@ -2,7 +2,6 @@
 
 .wrapper {
   position: fixed;
-  width: 100%;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -11,6 +10,8 @@
   padding: 1rem;
   min-height: $headerHeight;
   z-index: $header-z-index;
+  width: 70%;
+
 
   .navigationAllWrapper {
     position: relative;

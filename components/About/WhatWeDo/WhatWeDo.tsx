@@ -16,7 +16,7 @@ const WhatWeDo: React.FC = ({}) => {
             </p>
           </div>
           <div className={style.descriptionImage}>
-            <Image src="/assets/images/about/aboutImagePrva.png" alt="" fill />
+            <Image src="/assets/images/about/aboutImagePrva.png" alt="image" fill />
           </div>
         </div>
         <div className={style.image}>
