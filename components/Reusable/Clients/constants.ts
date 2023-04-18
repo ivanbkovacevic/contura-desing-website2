@@ -18,7 +18,7 @@ export const CLIENTS: Client[] = [
   },
   {
     title: "clien4t 1",
-    img: "/assets/images/clients/fromscratchLogo.png",
+    img: "/assets/images/clients/fromScratchLogo.svg",
   },
   {
     title: "client5 1",

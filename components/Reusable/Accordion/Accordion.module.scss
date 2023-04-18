@@ -1,13 +1,23 @@
 @import "../../../styles/variables";
 
 .wrapper {
-
+  
   button {
     border: none;
     background: none;
     font-size: 3rem;
     font-weight: 350;
-    line-height: 116.8%;
+    
+    .insideBtnWrapper {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+
+      .arrow {
+        margin-left: 1rem;
+        transition: all 0.4s ease-in-out;
+      }
+    }
   }
 
   .content {
@@ -23,10 +33,13 @@
 
   .colapsed {
     max-height: 0rem;
-
   }
 
   .btnExpanded {
     color: $navigationGreen;
+  }
+
+  .arrowExpanded {
+    transform: rotateZ(180deg);
   }
 }
