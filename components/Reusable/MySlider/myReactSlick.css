@@ -1,8 +1,3 @@
-.slick-prev:before,
-.slick-next:before {
-  color: rgb(20, 20, 201) !important;
-}
-
 
 .testemonialSlider .slick-next {
   top: 0;
@@ -15,8 +10,15 @@
 }
 .testemonialSlider .slick-next::before {
   color: white !important;
+  content: url('/assets/icons/ArrowRight.svg');
 }
 
 .testemonialSlider .slick-prev::before {
   color: white !important;
+  content: url('/assets/icons/ArrowLeft.svg');
 }
+
+.arrowPrevMyStyle {
+  display: block;
+  background-color: blue;
+ }
