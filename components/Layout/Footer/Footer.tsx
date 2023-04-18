@@ -9,7 +9,7 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className={style.wrapper}>
       <div className={style.getInTouch}>
-        <p>Get in Touch</p>
+        <p>Let's Get in Touch.</p>
         <a href="mailto:igor@mijucic.com">my.web@site.com</a>
         <p>Alekse Šantića 19,</p>
         <p>Vojvodina, Novi Sad, 21000</p>
@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = () => {
       </div>
       <div className={style.navigationWrapper}>
         <div className={style.imageLogo}>
-          <Image src="/assets/images/logoSymbol.svg" alt="logo" fill />
+          <Image src="/assets/images/logoSymbol.svg" alt="logo" width={85} height={79} />
         </div>
         <nav>
           <ul>
