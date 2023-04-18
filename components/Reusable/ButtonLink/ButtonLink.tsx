@@ -3,6 +3,7 @@ import React from "react";
 import cn from "classnames";
 
 import style from "./ButtonLink.module.scss";
+import ArrowRight from "../Icons/ArrowRight";
 
 interface ButtonLinkProps {
   title: string;
@@ -10,18 +11,22 @@ interface ButtonLinkProps {
   position?: "left" | "center" | "right";
 }
 
-const ButtonLink: React.FC<ButtonLinkProps> = ({ title, link, position='center' }) => {
+const ButtonLink: React.FC<ButtonLinkProps> = ({
+  title,
+  link,
+  position = "center",
+}) => {
   const btnLinkStyle = cn(
-    style.wrapper, 
-    {[style.center]: position === 'center'},
-    {[style.left]: position === 'left'}
+    style.wrapper,
+    { [style.center]: position === "center" },
+    { [style.left]: position === "left" }
   );
 
   return (
     <section className={btnLinkStyle} data-centered="yes">
       <Link href={link}>
         {title}
-        ----
+        <ArrowRight />
       </Link>
     </section>
   );
