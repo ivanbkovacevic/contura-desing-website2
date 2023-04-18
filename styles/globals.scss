@@ -78,6 +78,6 @@ button {
 [data-centered='yes'] {
   width: 100%;
   @include laptop-greater {
-    width: 60%;
+    width: $sectionCenteredWidth;
   }
 }
