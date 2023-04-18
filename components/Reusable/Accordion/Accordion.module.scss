@@ -2,7 +2,7 @@
 
 .wrapper {
   display:block;
-  
+
   button {
     border: none;
     background: none;
@@ -48,6 +48,9 @@
 
   .arrowExpanded {
     transform: rotateZ(-180deg);
+    svg {
+      stroke: $navigationGreen !important;
+    }
   }
 
   .arrowWhite {
