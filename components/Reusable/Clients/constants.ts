@@ -30,7 +30,7 @@ export const CLIENTS: Client[] = [
   },
   {
     title: "client71",
-    img: "/assets/images/clients/openseaLogo.png",
+    img: "/assets/images/clients/openseaLogo.svg",
   },
   {
     title: "client8 1",

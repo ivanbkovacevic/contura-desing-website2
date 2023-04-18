@@ -10,8 +10,8 @@ import FAQ from "./FAQ/FAQ";
 import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST } from "../Reusable/WorkSingle/constant";
-import style from "./Home.module.scss";
 import Image from "next/image";
+import style from "./Home.module.scss";
 
 interface HomeProps {
   some?: string;

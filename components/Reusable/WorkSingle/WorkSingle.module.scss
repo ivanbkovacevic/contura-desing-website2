@@ -3,6 +3,11 @@
 .wrapper {
     width: 42rem;
     max-width: 45%;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
     .wrapperImgAndDescription {
         display: flex;
 
