@@ -20,6 +20,7 @@ const FAQ: React.FC = ({}) => {
           title={item.title}
           content={item.content}
           show={showAccordion}
+          arrowColor="white"
           accClicked={() => toggleAcc(idx)}
           key={item.title}
           />
