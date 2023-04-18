@@ -14,8 +14,9 @@
     .innerContentWrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       row-gap: 10rem;
+      column-gap: 5rem;
       max-width: clamp(100rem, 60%, 110rem);
 
       .title {
@@ -25,7 +26,7 @@
       }
 
       .clientWrapper {
-        min-width: 17rem;
+        min-width: 20rem;
         min-height: 5rem;
 
         .image {

@@ -7,17 +7,12 @@ export interface Client {
 export const CLIENTS: Client[] = [
   {
     title: "client1 1",
-    img: "/assets/images/clients/AcrobitsCompany.png",
+    img: "/assets/images/clients/acrobitsCompany.svg",
     link: 'https://acrobits.net/',
   },
   {
     title: "client 21",
-    img: "/assets/images/clients/codefactoLogo.png",
-    link: '',
-  },
-  {
-    title: "client 31",
-    img: "/assets/images/clients/forwardizeLogo.png",
+    img: "/assets/images/clients/codefactoCompany.svg",
     link: '',
   },
   {
@@ -27,57 +22,37 @@ export const CLIENTS: Client[] = [
   },
   {
     title: "client5 1",
-    img: "/assets/images/clients/getvoipLogo.png",
+    img: "/assets/images/clients/getvoipCompany.svg",
     link: 'https://getvoip.com/',
   },
   {
     title: "client6 1",
-    img: "/assets/images/clients/kernpunktLogo.png",
-    link: '',
+    img: "/assets/images/clients/kernpunktCompany.svg",
+    link: 'fwef',
   },
   {
     title: "client71",
-    img: "/assets/images/clients/openseaLogo.svg",
+    img: "/assets/images/clients/openSeaLogo.svg",
     link: 'https://opensea.io/',
   },
   {
     title: "client8 1",
-    img: "/assets/images/clients/qckubLogo.png",
+    img: "/assets/images/clients/qclubCompany.svg",
     link: '',
   },
   {
     title: "client9 1",
-    img: "/assets/images/clients/quanthubLogo.png",
+    img: "/assets/images/clients/quanthubCompany.svg",
     link: '',
   },
   {
     title: "clien0t 1",
-    img: "/assets/images/clients/rouviaLogo.png",
+    img: "/assets/images/clients/rouviaCompany.svg",
     link: 'https://rouvia.com/',
   },
   {
     title: "clien-t 1",
-    img: "/assets/images/clients/sekopakLogo.png",
+    img: "/assets/images/clients/sekopakCompany.svg",
     link: 'https://sekopak.com/',
-  },
-  {
-    title: "clientd 1",
-    img: "/assets/images/clients/sekopakLogo.png",
-    link: '',
-  },
-  {
-    title: "cliewqents 1",
-    img: "/assets/images/clients/sekopakLogo.png",
-    link: '',
-  },
-  {
-    title: "clieeqant 1",
-    img: "/assets/images/clients/sekopakLogo.png",
-    link: '',
-  },
-  {
-    title: "clieewqnft 1",
-    img: "/assets/images/clients/sekopakLogo.png",
-    link: '',
   },
 ];
