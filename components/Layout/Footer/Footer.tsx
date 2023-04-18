@@ -15,7 +15,11 @@ const Footer: React.FC<FooterProps> = () => {
           <p>Alekse Šantića 19,</p>
           <p>Vojvodina, Novi Sad, 21000</p>
           <div className={style.image}>
-            <Image src="/assets/images/prolece.png" alt="prolece" fill />
+            <Image
+              src="/assets/images/footerImageMomci.png"
+              alt="prolece"
+              fill
+            />
           </div>
         </div>
         <div className={style.navigationWrapper}>

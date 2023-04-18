@@ -1,5 +1,8 @@
+@import "../../../styles/variables";
+
+
 .wrapper {
-    width: 60%;
+    width: $sectionCenteredWidth;
     padding: 26rem 0;
   .image {
     width: 100%;

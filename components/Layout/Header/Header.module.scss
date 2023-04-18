@@ -12,7 +12,6 @@
   z-index: $header-z-index;
   width: 70%;
 
-
   .navigationAllWrapper {
     position: relative;
     height: 100%;
@@ -30,7 +29,6 @@
       max-height: 30rem;
       overflow: hidden;
       transition: all 0.4s ease-in-out;
-
     }
   }
 
@@ -41,8 +39,8 @@
 
 .onAbout {
   width: 100%;
-  background-color: $someLightBlue;
+  background-color: rgba($someLightBlue, 0.5);
 }
 .onAll {
-  background-color: $white;
+  background-color: rgba($white, 0.5);
 }
