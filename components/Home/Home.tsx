@@ -11,6 +11,7 @@ import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST } from "../Reusable/WorkSingle/constant";
 import style from "./Home.module.scss";
+import Image from "next/image";
 
 interface HomeProps {
   some?: string;
@@ -30,6 +31,9 @@ const Home = ({ some }: HomeProps) => {
       <OfferSection />
       <div className={style.sliderWrapper}>
         <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
+        <div className={style.cubes}>
+          <Image src="/assets/images/objectCubes.svg" alt='cube' width={321} height={314} />
+        </div>
       </div>
       <FAQ />
     </div>
