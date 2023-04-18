@@ -1,13 +1,15 @@
+import AcroBits from "../Icons/AcroBits";
+
 export interface Client {
   title: string;
-  img: string;
+  img: React.ReactNode;
   link:string;
 }
 
 export const CLIENTS: Client[] = [
   {
     title: "client1 1",
-    img: "/assets/images/clients/acrobitsCompany.svg",
+    img: <AcroBits />,
     link: 'https://acrobits.net/',
   },
   {

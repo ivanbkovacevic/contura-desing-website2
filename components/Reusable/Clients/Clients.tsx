@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Clients.module.scss";
 import { CLIENTS } from "./constants";
-import Image from "next/image";
 import cn from "classnames";
 
 interface ClientsProps {
@@ -29,9 +28,9 @@ const Clients: React.FC<ClientsProps> = ({
     return CLIENTS.map((item) => {
       return (
         <a href={item.link} target="_blank" className={style.clientWrapper} key={item.title}>
-          <div className={style.image}>
-            <Image src={item.img} alt={item.title} fill />
-          </div>
+          {/* <div className={style.image}> */}
+            {item.img}
+            {/* </div> */}
         </a>
       );
     });
