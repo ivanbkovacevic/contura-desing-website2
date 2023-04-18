@@ -11,6 +11,7 @@ const WorkSingle: React.FC<Work> = ({
   img,
   color,
   order,
+  link,
 }) => {
   const wrapperImgAndDescription = cn(
     style.wrapperImgAndDescription,
@@ -19,7 +20,7 @@ const WorkSingle: React.FC<Work> = ({
   );
 
   return (
-    <div className={style.wrapper}>
+    <a href={link} className={style.wrapper} target="_blank">
       <div key={title} className={wrapperImgAndDescription}>
         <div className={style.description} style={{ backgroundColor: color }}>
           <h3>{description}</h3>
@@ -29,7 +30,7 @@ const WorkSingle: React.FC<Work> = ({
         </div>
       </div>
       <p>{title}</p>
-    </div>
+    </a>
   );
 };
 

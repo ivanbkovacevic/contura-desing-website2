@@ -6,6 +6,7 @@ export interface Work {
   img: string;
   color: string;
   order: string;
+  link: string;
 }
 
 export const WORK_LIST: Work[] = [
@@ -15,6 +16,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.PALE_LEMON,
     order: ORDER.PICTURE_DOWN,
+    link: "https://dribbble.com/shots/14976707-Billboard-Animal-Welfare-PSA",
   },
   {
     description: "Transport planning and management platform",
@@ -22,6 +24,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/imageBilbordPrva.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
+    link: "",
   },
   {
     description: "QClub application",
@@ -29,6 +32,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/imageBilbordPrva.png",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
+    link: "https://lnkd.in/d2qrjvGG",
   },
   {
     description: "cryptoCrazy Beavers - NFT Collection",
@@ -36,6 +40,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/imageBilbordPrva.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
+    link: "https://dribbble.com/shots/17424751-cryptoCrazy-Beavers-NFT",
   },
   {
     description: "GetVoIP ■ website redesign",
@@ -43,6 +48,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MAGNOLIA_DARK,
     order: ORDER.PICTURE_UP,
+    link: "https://getvoip.com/",
   },
   {
     description:
@@ -51,6 +57,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
+    link: "https://www.facebook.com/ffscratch",
   },
   {
     description: "Sekopak Instagram posts",
@@ -58,6 +65,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.ALICE_BLUE,
     order: ORDER.PICTURE_UP,
+    link: "https://sekopak.com/",
   },
   {
     description: "Dashboard project ■ aragon/blockchain app",
@@ -65,6 +73,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MINT_CREAM,
     order: ORDER.PICTURE_UP,
+    link: "https://dribbble.com/shots/14907864-UI-UX-Dashboard-project",
   },
   {
     description: "CasinoGold app ■ main screens",
@@ -72,6 +81,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.COSMIC_LATTE,
     order: ORDER.PICTURE_DOWN,
+    link: "",
   },
   {
     description: "Euclid School ■ Landing Page",
@@ -79,6 +89,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.ALICE_BLUELIGHT,
     order: ORDER.PICTURE_UP,
+    link: "https://dribbble.com/shots/14305872-Euclid-School-Landing-Page",
   },
   {
     description: "Music Player ■ Mobile app",
@@ -86,6 +97,7 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
+    link: "",
   },
   {
     description: "Notorious Potato ■ Social Media",
@@ -93,5 +105,6 @@ export const WORK_LIST: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
+    link: "https://www.instagram.com/notoriouspotato_gr/",
   },
 ];

@@ -18,6 +18,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({list}) => {
           color={item.color}
           order={item.order}
           key={item.title}
+          link={item.link}
         />
       );
     });
