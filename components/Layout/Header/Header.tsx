@@ -7,9 +7,11 @@ import Image from "next/image";
 import useClickOutside from "../../../utils/onClickOutside";
 import { useRouter } from "next/router";
 
-interface HeaderProps {}
+interface HeaderProps {
+  isVisible: boolean;
+}
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = ({isVisible}) => {
   const [showNavigation, setShowNAvigation] = useState<boolean>(false);
   const divRef = useRef(null);
 
@@ -24,14 +26,17 @@ const Header: React.FC<HeaderProps> = () => {
     [style.colapsed]: !showNavigation,
   });
 
-  const wrapperStyle = cn(style.wrapper, 
-    { [style.onAbout]: router.pathname === '/about' },
-    { [style.onAll]: router.pathname !== '/about' },
-    );
+  const wrapperStyle = cn(
+    style.wrapper,
+    { [style.onAbout]: router.pathname === "/about" },
+    { [style.onAll]: router.pathname !== "/about" }
+  );
 
   return (
     <header className={wrapperStyle} data-centered="no">
+     <div style={{display: isVisible ? 'block' : 'none'}}>
       <Logo />
+      </div> 
       <div ref={divRef} className={style.navigationAllWrapper}>
         <div className={navigationStyle}>
           <Navigation close={closeNavigation} />
