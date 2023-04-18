@@ -4,10 +4,11 @@ import Accordion from "../../Reusable/Accordion/Accordion";
 import { FAQ_LIST } from "./constant";
 
 const FAQ: React.FC = ({}) => {
-  const [idAccordion, setIdAccordion] = useState<number | null>(null);
+  const [idAccordion, setIdAccordion] = useState<number>(-1);
 
   const toggleAcc = (id: number) => {
     setIdAccordion(id);
+    console.log(id)
   };
   const faqList = () => {
     return FAQ_LIST.map((item, idx) => {
