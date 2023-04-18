@@ -26,11 +26,11 @@ const Header: React.FC<HeaderProps> = () => {
 
   const wrapperStyle = cn(style.wrapper, 
     { [style.onAbout]: router.pathname === '/about' },
-    { [style.onAll]: true },
+    { [style.onAll]: router.pathname !== '/about' },
     );
 
   return (
-    <header className={wrapperStyle} data-centered="yes">
+    <header className={wrapperStyle} data-centered="no">
       <Logo />
       <div ref={divRef} className={style.navigationAllWrapper}>
         <div className={navigationStyle}>
