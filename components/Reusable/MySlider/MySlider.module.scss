@@ -4,14 +4,20 @@
   margin-bottom: 3rem;
   height: 45rem;
 
-  .slideSingleImage {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    height: 45rem;
+  .singleSlideWrapper {
+    padding: 0 2.5rem;
+  z-index: 800;
 
-    img {
-      object-fit: cover;
+    .slideSingleImage {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      height: 43rem;
+
+      img {
+        object-fit: contain;
+        object-position: bottom;
+      }
     }
   }
 
@@ -20,5 +26,4 @@
       color: $white;
     }
   }
-
 }

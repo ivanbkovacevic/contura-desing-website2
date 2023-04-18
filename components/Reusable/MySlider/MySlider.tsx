@@ -20,17 +20,13 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
 
   const settings = {
     dots: false,
-    infinite: true,
-    arrows: true,
+     infinite: true,
+    arrows: sliderType === 'testemonial',
     speed: 500,
     slidesToShow: slidesPerView,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    centerMode: true,
-    focusOnSelect:true,
     swipeToSlide: true,
-    centerPadding: "0px", 
-
   };
 
   const wrapperStyle =cn(
@@ -45,7 +41,8 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
   const generateSlidesImages = () => {
     return slidesListImages.map((item) => {
       return (
-        <div key={item.alt}>
+        <div key={item.alt} className={style.singleSlideWrapper}>
+
           <div className={slideSingleStyle}>
             <Image src={item.img} alt={item.alt} fill />
           </div>
@@ -57,14 +54,12 @@ const MySlider: React.FC<SliderProps> = ({  slidesPerView=2, slidesListImages=[]
   const generateSlidesTestemonial = () => {
     return slidesListTestemonial.map((item) => {
       return (
-        <div key={item.author}>
-          <div className={slideSingleStyle}>
+          <div key={item.author}className={slideSingleStyle}>
             <p>{item.testemonial}</p>
             <p>{item.author}</p>
             <p>{item.jobDescription}</p>
             <p>{item.company}</p>
           </div>
-        </div>
       );
     });
   };

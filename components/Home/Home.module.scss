@@ -8,12 +8,14 @@
 
   .sliderWrapper {
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 45rem;
+
 
     .cubes {
       position: absolute;
       bottom: -10rem;
+      z-index: 750;
     }
   }
 }
