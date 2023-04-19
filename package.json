@@ -7,17 +7,18 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "classnames": "^2.3.2",
     "next": "latest",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",
-    "react-waypoint": "^10.3.0",
     "sass": "^1.62.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
