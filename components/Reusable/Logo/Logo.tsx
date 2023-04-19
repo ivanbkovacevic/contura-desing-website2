@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import cn from "classnames";
 import { Context } from "../../../context/context";
 import Image from "next/image";
 import Link from "next/link";
