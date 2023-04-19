@@ -1,6 +1,7 @@
 @import "../../../styles/variables";
 
 .wrapper {
+  padding-top: 10rem;
   height: 92rem;
   .centralPart {
     width: 100%;
@@ -12,10 +13,14 @@
     background-size: cover;
 
     .headingWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin: 0 auto;
       padding-top: 10rem;
 
       h1 {
+        max-width: 85rem;
         margin-bottom: 6rem;
         font-weight: 700;
         font-size: 8rem;
@@ -24,6 +29,7 @@
       }
 
       h4 {
+        max-width: 79rem;
         font-weight: 350;
         font-size: 3rem;
         line-height: 116.8%;
