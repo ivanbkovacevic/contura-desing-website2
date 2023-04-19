@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { Waypoint } from "react-waypoint";
 import Accordion from "../../Reusable/Accordion/Accordion";
 import Image from "next/image";
 import { DESIGN_STRATEGY_LIST } from "./constants";
