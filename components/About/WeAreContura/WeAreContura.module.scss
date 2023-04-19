@@ -3,13 +3,15 @@
 .wrapper {
   width: 100%;
 
+
   .centralPart {
     width: $sectionCenteredWidth;
     height: 100%;
     margin: 0 auto;
-    background-image: url("/assets/images/homePageHeroSection.png");
+    background-image: url("/assets/images/oblacicObject.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 230px 190px;
+    background-position: center top;
     text-align: left;
 
     h1 {
