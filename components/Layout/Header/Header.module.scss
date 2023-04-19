@@ -10,6 +10,8 @@
   min-height: $headerHeight;
   z-index: $header-z-index;
   width: 100%;
+  transition: all 1s;
+
 
   .content {
     width: 70%;
@@ -41,6 +43,10 @@
   .colapsed {
     max-height: 0px !important;
   }
+}
+
+.scrollFromTopEnough {
+  padding-top: 10rem !important;
 }
 
 .onAbout {

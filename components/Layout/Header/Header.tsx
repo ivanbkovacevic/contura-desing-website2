@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
+import { Context } from "../../../context/context";
 import Navigation from "./Navigation";
 import Logo from "../../Reusable/Logo/Logo";
 import cn from "classnames";
@@ -14,6 +15,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ isVisible }) => {
   const [showNavigation, setShowNAvigation] = useState<boolean>(false);
   const divRef = useRef(null);
+  const { state } = useContext(Context);
+  const { scrollFromTop } = state;
 
   const router = useRouter();
   const closeNavigation = () => {
@@ -29,7 +32,9 @@ const Header: React.FC<HeaderProps> = ({ isVisible }) => {
   const wrapperStyle = cn(
     style.wrapper,
     { [style.onAbout]: router.pathname === "/about" },
-    { [style.onAll]: router.pathname !== "/about" }
+    { [style.onAll]: router.pathname !== "/about" },
+    {[style.scrollFromTopEnough]: scrollFromTop > 300},
+
   );
 
   return (

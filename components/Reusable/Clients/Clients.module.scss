@@ -27,13 +27,13 @@
       .clientWrapper {
         min-width: 20rem;
         min-height: 5rem;
-   
+
         &:hover svg {
-            fill: $navigationGreen;
+          fill: $navigationGreen;
         }
-          svg {
-            fill: $clientsGray;
-          }
+        svg {
+          fill: $clientsGray;
+        }
       }
     }
   }

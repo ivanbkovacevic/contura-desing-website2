@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Waypoint } from "react-waypoint";
 import Accordion from "../../Reusable/Accordion/Accordion";
 import Image from "next/image";
 import { DESIGN_STRATEGY_LIST } from "./constants";
@@ -35,11 +36,12 @@ const DesignStrategySection: React.FC = ({}) => {
   };
 
   return (
-    <div className={style.wrapper} >
+    <div className={style.wrapper}>
       <div className={style.leftWrapper}>
         <h3 className={style.heading}>
           We create world-class digital products, web design, and branding.{" "}
         </h3>
+
         <div className={style.image}>
           <Image src="/assets/images/prolece.png" alt="prolece" fill />
         </div>
