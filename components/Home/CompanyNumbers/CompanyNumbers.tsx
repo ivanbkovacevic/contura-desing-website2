@@ -1,10 +1,9 @@
 import React from "react";
-import LinkButton from "../../Reusable/ButtonLink/ButtonLink";
 import style from "./CompanyNumbers.module.scss";
 
 const CompanyNumbers = () => {
   return (
-    <section className={style.wrapper} data-centered="yes">
+    <div className={style.wrapper}>
       <div className={style.description}>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro
@@ -21,7 +20,7 @@ const CompanyNumbers = () => {
         <p>10+</p>
         <p>Years in bussines</p>
       </div>
-    </section>
+    </div>
   );
 };
 

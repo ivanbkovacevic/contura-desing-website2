@@ -19,19 +19,39 @@ interface HomeProps {
 const Home = ({ some }: HomeProps) => {
   return (
     <div className={style.wrapper}>
-      <HeroSection />
-      <DesignStrategySection />
-      <Clients centered="yes" contentCentered="yes"/>
-      <ButtonLink title="see more work" link="/work" />
-      <WorkSection list={WORK_LIST_HOME} />
-      <ButtonLink title="see more work" link="/work" />
-      <CompanyNumbers />
-      <ButtonLink title="About ConturaDesign" link="/about" position="left" />
-      <OfferSection />
-      <div className={style.sliderWrapper}>
+      <section className={style.heroWrapper} data-centered="yes">
+        <HeroSection />
+      </section>
+      <section className={style.designStrategyWrapper} data-centered="yes">
+        <DesignStrategySection />
+      </section>
+      <section className={style.clientsWrapper} data-centered="yes">
+        <Clients />
+      </section>
+      <section className={style.buttonLinkWrapper} data-centered="yes">
+        <ButtonLink title="see more work" link="/work" />
+      </section>
+      <section className={style.workSectionWrapper} data-centered="yes">
+        <WorkSection list={WORK_LIST_HOME} />
+      </section>
+      <section className={style.buttonLinkWrapper} data-centered="yes">
+        <ButtonLink title="see more work" link="/work" />
+      </section>
+      <section className={style.companyNumbersWrapper} data-centered="yes">
+        <CompanyNumbers />
+      </section>
+      <section className={style.buttonLinkWrapper} data-centered="yes">
+        <ButtonLink title="About ConturaDesign" link="/about" position="left" />
+      </section>
+      <section className={style.offerWrapper} data-centered="yes">
+        <OfferSection />
+      </section>
+      <section className={style.sliderWrapper}>
         <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
-      </div>
-      <FAQ />
+      </section>
+      <section className={style.faqWrapper}>
+        <FAQ />
+      </section>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import style from "./FAQ.module.scss";
 import Accordion from "../../Reusable/Accordion/Accordion";
 import { FAQ_LIST } from "./constant";
+import style from "./FAQ.module.scss";
 
 const FAQ: React.FC = ({}) => {
   const [idAccordion, setIdAccordion] = useState<number | null>(null);
@@ -33,12 +33,12 @@ const FAQ: React.FC = ({}) => {
   };
 
   return (
-    <section className={style.wrapper}>
+    <div className={style.wrapper}>
       <div className={style.content}>
         <h2>FAQ</h2>
         {faqList()}
       </div>
-    </section>
+    </div>
   );
 };
 

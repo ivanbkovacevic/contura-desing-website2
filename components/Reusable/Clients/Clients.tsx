@@ -5,14 +5,12 @@ import cn from "classnames";
 
 interface ClientsProps {
   backgroundtype?: string;
-  centered?: string;
   contentCentered?: string;
   title?:boolean;
 }
 
 const Clients: React.FC<ClientsProps> = ({
   backgroundtype="white",
-  centered = "yes",
   contentCentered,
   title,
 }) => {
@@ -35,14 +33,14 @@ const Clients: React.FC<ClientsProps> = ({
   };
 
   return (
-    <section className={wrapperStyle} data-centered={centered}>
+    <div className={wrapperStyle}>
       <div className={contentStyle}>
         <div className={style.innerContentWrapper}>
          {title && <h5 className={style.title}>Clients</h5>}
           {generateClients()}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

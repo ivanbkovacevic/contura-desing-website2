@@ -18,9 +18,9 @@ const OfferSection = () => {
   };
 
   return (
-    <section className={style.wrapper} data-centered="yes">
+    <div className={style.wrapper}>
       {offerList()}
-    </section>
+    </div>
   );
 };
 
