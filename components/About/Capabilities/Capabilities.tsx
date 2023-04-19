@@ -18,14 +18,14 @@ const Capabilites: React.FC = () => {
     });
   };
   return (
-    <section className={style.wrapper} data-centered="yes">
+    <div className={style.wrapper}>
       <div className={style.innerWrapper}>
         <div className={style.heading}>
           <h3>Capabilites</h3>
         </div>
         <div className={style.capabilitiesList}>{generateCapabilities()}</div>
       </div>
-    </section>
+    </div>
   );
 };
 

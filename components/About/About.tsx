@@ -14,16 +14,19 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ some }) => {
   return (
     <div className={style.wrapper}>
-      <WeAreContura />
-      <WhatWeDo />
-      <Capabilites />
-      <Clients
-        title
-        backgroundtype="black"
-        centered="no"
-        contentCentered="yes"
-      />
-      <div className={style.slidersWrapper}>
+      <section className={style.weAreConturaWrapper}>
+        <WeAreContura />
+      </section>
+      <section className={style.watWeDoWrapper} data-centered="yes">
+        <WhatWeDo />
+      </section>
+      <section className={style.capabilitesWrapper}>
+        <Capabilites />
+      </section>
+      <section className={style.clientsWrapper}>
+        <Clients title backgroundtype="black" contentCentered="yes" />
+      </section>
+      <section className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>
           <MySlider
             sliderType="testemonial"
@@ -34,7 +37,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
         <div className={style.workSliderWrapper}>
           <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
         </div>
-      </div>
+      </section>
     </div>
   );
 };

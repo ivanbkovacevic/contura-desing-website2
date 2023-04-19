@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WhatWeDo: React.FC = ({}) => {
   return (
-    <section className={style.wrapper} data-centered="yes">
+    <div className={style.wrapper}>
       <h1>What We Do</h1>
       <div className={style.singleWhatWeDo}>
         <div className={style.description}>
@@ -77,7 +77,7 @@ const WhatWeDo: React.FC = ({}) => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ interface WeAreConturaProps {
 
 const WeAreContura: React.FC<WeAreConturaProps> = ({ some }) => {
   return (
-    <section className={style.wrapper} data-centered="yes">
+    <div className={style.wrapper}>
       <div className={style.centralPart}>
           <h1>Hey, we're ConturaDesign</h1>
           <h4>
@@ -15,7 +15,7 @@ const WeAreContura: React.FC<WeAreConturaProps> = ({ some }) => {
             professionals who will help your business reach the top.
           </h4>
       </div>
-    </section>
+    </div>
   );
 };
 

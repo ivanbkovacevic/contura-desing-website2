@@ -1,16 +1,37 @@
 @import "../../styles/variables";
 
 .wrapper {
-  background-color: $someLightBlue;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: $headerHeight;
 
+.weAreConturaWrapper {
+  background-color: $someLightBlue;
+
+  width: 100%;
+  padding: 35rem 0 26rem 0; 
+
+}
+.watWeDoWrapper {
+padding: 14rem 0 30rem 0;
+}
+.capabilitesWrapper {
+  width: 100%;
+
+}
+.clientsWrapper {
+  width: 100%;
+  padding: 14rem 0 30rem 0;
+  background-color: $black;
+
+}
+
 
   .slidersWrapper {
     width: 100%;
     background-color: $black;
+    padding-bottom: 10rem;
 
     .testemonialSlider {
       background-color: $black;
