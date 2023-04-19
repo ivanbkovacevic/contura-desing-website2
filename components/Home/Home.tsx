@@ -43,11 +43,11 @@ const Home = ({ some }: HomeProps) => {
       <section className={style.buttonLinkWrapper} data-centered="yes">
         <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       </section>
-      <section className={style.offerWrapper} data-centered="yes">
-        <OfferSection />
-      </section>
       <section className={style.sliderWrapper}>
         <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
+      </section>
+      <section className={style.offerWrapper} data-centered="yes">
+        <OfferSection />
       </section>
       <section className={style.faqWrapper}>
         <FAQ />
