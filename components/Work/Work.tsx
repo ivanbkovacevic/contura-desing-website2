@@ -13,14 +13,15 @@ const Work: React.FC<WorkProps> = ({ some }) => {
   return (
     <div className={style.wrapper}>
       <h1 data-centered="yes">Work</h1>
-      <WorkSection list={WORK_LIST_WORK} />
-      <WorkGif />
-      <Clients
-        backgroundtype="black"
-        centered="no"
-        contentCentered="yes"
-        title
-      />
+      <section className={style.workSectionWrapper} data-centered="yes">
+        <WorkSection list={WORK_LIST_WORK} />
+      </section>
+      <section className={style.workGifWrapper} data-centered="yes">
+        <WorkGif />
+      </section>
+      <section className={style.clientsWrapper}>
+        <Clients backgroundtype="black" contentCentered="yes" title />
+      </section>
     </div>
   );
 };

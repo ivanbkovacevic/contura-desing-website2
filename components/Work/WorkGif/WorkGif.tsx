@@ -4,11 +4,11 @@ import style from "./WorkGif.module.scss";
 
 const WorkGif = () => {
   return (
-    <section className={style.wrapper}>
+    <div className={style.wrapper}>
       <div className={style.image}>
         <Image src="/assets/images/workGifHigher.gif" fill alt="workgif" />
       </div>
-    </section>
+    </div>
   );
 };
 
