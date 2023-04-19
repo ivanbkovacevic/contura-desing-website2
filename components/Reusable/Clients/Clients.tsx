@@ -28,9 +28,7 @@ const Clients: React.FC<ClientsProps> = ({
     return CLIENTS.map((item) => {
       return (
         <a href={item.link} target="_blank" className={style.clientWrapper} key={item.title}>
-          {/* <div className={style.image}> */}
             {item.img}
-            {/* </div> */}
         </a>
       );
     });
