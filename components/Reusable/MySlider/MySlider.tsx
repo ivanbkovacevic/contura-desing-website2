@@ -35,9 +35,9 @@ const MySlider: React.FC<SliderProps> = ({
 
   };
 
-  const wrapperStyle = cn(style.wrapper, {
-    testemonialSlider: sliderType === "testemonial",
-  });
+  const wrapperStyle = cn(style.wrapper, 
+    {    testemonialSlider: sliderType === "testemonial", }
+    );
   const slideSingleStyle = cn(
     { [style.slideSingleImage]: sliderType === "images" },
     { [style.slideSingleTestemonial]: sliderType === "testemonial" }

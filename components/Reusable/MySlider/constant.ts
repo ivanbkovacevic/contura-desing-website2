@@ -43,9 +43,9 @@ export const SLIDES_HOME = [
 export const SLIDES_TESTEMONIAL = [
   {
     testemonial: "“I 1 have been working with ConturaDesign for a few months now. He has been very professional. His creativity and understanding of his clients’ needs is exceptional. He truly understood what our brand was about and gave it its identity. We continue to work with him on developing our website and look forward to future projects. ”",
-    author: "1 idfj5isjd ",
-    jobDescription: '1 dfdf',
-    company: '1 fdsfsdf',
+    author: "1 Igor Radakovic",
+    jobDescription: '1 Operations Management | Security Oversight | Regional Leadership,',
+    company: '1  Notorious Potato'
   },
   {
     testemonial: "“2 I have been working with ConturaDesign for a few months now. He has been very professional. His creativity and understanding of his clients’ needs is exceptional. He truly understood what our brand was about and gave it its identity. We continue to work with him on developing our website and look forward to future projects. ”",
