@@ -26,7 +26,7 @@ const WorkSingle: React.FC<Work> = ({
           <h3>{description}</h3>
         </div>
         <div className={style.image}>
-          <Image src={img} fill alt={title} />
+          <Image src={img} fill alt={title} quality={100} />
         </div>
       </div>
       <p>{title}</p>

@@ -16,11 +16,11 @@ const WhatWeDo: React.FC = ({}) => {
             </p>
           </div>
           <div className={style.descriptionImage}>
-            <Image src="/assets/images/about/aboutImagePrva.png" alt="image" fill />
+            <Image quality={100} src="/assets/images/about/aboutImagePrva.png" alt="image" fill />
           </div>
         </div>
         <div className={style.image}>
-          <Image
+          <Image quality={100}
             src="/assets/images/about/aboutMedtisimageDruga.png"
             alt=""
             fill
@@ -37,7 +37,7 @@ const WhatWeDo: React.FC = ({}) => {
             </p>
           </div>
           <div className={style.descriptionImage}>
-            <Image
+            <Image quality={100}
               src="/assets/images/about/aboutStatisikaImageCetvrta.png"
               alt=""
               fill
@@ -45,7 +45,7 @@ const WhatWeDo: React.FC = ({}) => {
           </div>
         </div>
         <div className={style.image}>
-          <Image
+          <Image quality={100}
             src="/assets/images/about/aboutForwardizeImageTreca.png"
             alt=""
             fill
@@ -62,7 +62,7 @@ const WhatWeDo: React.FC = ({}) => {
             </p>
           </div>
           <div className={style.descriptionImage}>
-            <Image
+            <Image quality={100}
               src="/assets/images/about/aboutMobileKontturaImageSesta.png"
               alt=""
               fill
@@ -70,7 +70,7 @@ const WhatWeDo: React.FC = ({}) => {
           </div>
         </div>
         <div className={style.image}>
-          <Image
+          <Image quality={100}
             src="/assets/images/about/aboutFacebookLaptopImagePeta.png"
             alt=""
             fill
