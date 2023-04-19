@@ -24,7 +24,7 @@ export const WORK_LIST_HOME: Work[] = [
     img: "/assets/images/work/forwardizeImageDruga.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://rouvia.com/",
   },
   {
     description: "QClub application",
@@ -124,7 +124,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/forwardizeImageDruga.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://rouvia.com/",
   },
   {
     description: "QClub application",

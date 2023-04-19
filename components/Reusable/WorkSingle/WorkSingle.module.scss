@@ -1,48 +1,47 @@
-@import '../../../styles/variables';
+@import "../../../styles/variables";
 
 .wrapper {
-    width: 42rem;
-    max-width: 45%;
-    transition: all 0.4s ease-in-out;
+  max-width: 47.5%;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 10rem;
+  &:hover {
+    scale: 1.1;
+  }
+  .wrapperImgAndDescription {
+    display: flex;
 
-    &:hover {
-        scale: 1.1;
+    .description {
+      padding: 6rem 2rem;
+      h3 {
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 120.3%;
+        max-width: 65%;
+      }
     }
-    .wrapperImgAndDescription {
-        display: flex;
-
-        .description {
-            padding: 6rem 2rem;
-            h3 {
-                font-weight: 500;
-                font-size: 3.2rem;
-                line-height: 120.3%;
-                max-width: 65%;
-            }
-        }
-        .image {
-            width: 100%;
-            height: 35rem;
-            position: relative;
-            overflow: hidden;
-            img {
-                object-fit: cover;
-            }
-          }
+    .image {
+      width: 100%;
+      height: 35rem;
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
     }
+  }
 
-    p {
-        margin-top: 2rem;
-        font-weight: 700;
-        font-size: 2rem;
-    }
+  p {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
 
-    .orderImageUp {
+  .orderImageUp {
     flex-direction: column;
     justify-content: flex-start;
-}
-.orderImageDown {
+  }
+  .orderImageDown {
     flex-direction: column-reverse;
     justify-content: flex-start;
-    }
+  }
 }
