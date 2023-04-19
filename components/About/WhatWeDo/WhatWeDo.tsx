@@ -15,8 +15,8 @@ const WhatWeDo: React.FC = ({}) => {
               engaging digital products used by millions of people.
             </p>
           </div>
-          <div className={style.descriptionImage}>
-            <Image quality={100} src="/assets/images/about/aboutImagePrva.png" alt="image" fill />
+          <div className={`${style.descriptionImage} ${style.negativeLeft}`}>
+            <Image src="/assets/images/about/aboutImagePrva.png" alt="image" fill />
           </div>
         </div>
         <div className={style.image}>
@@ -36,7 +36,7 @@ const WhatWeDo: React.FC = ({}) => {
               polished, snappy feel of the best consumer apps.
             </p>
           </div>
-          <div className={style.descriptionImage}>
+          <div className={`${style.descriptionImage} ${style.negativeRight}`}>
             <Image quality={100}
               src="/assets/images/about/aboutStatisikaImageCetvrta.png"
               alt=""
