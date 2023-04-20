@@ -6,6 +6,7 @@ import Capabilites from "./Capabilities/Capabilities";
 import { SLIDES_HOME, SLIDES_TESTEMONIAL } from "../Reusable/MySlider/constant";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import style from "./About.module.scss";
+import Form from "./Form/Form";
 
 interface AboutProps {
   some?: string;
@@ -37,6 +38,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
         <div className={style.workSliderWrapper}>
           <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
         </div>
+        <Form />
       </section>
     </div>
   );
