@@ -27,6 +27,7 @@
       .clientWrapper {
         min-width: 20rem;
         min-height: 5rem;
+        max-height: 6rem;
 
         &:hover svg {
           fill: $navigationGreen;
