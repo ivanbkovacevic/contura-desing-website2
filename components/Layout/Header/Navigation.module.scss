@@ -3,9 +3,7 @@
 .wrapper {
   flex-grow: 1;
   background-color: rgba($navigationGreen, 0.95);
-  min-width: 30rem;
-  min-height: 30rem;
-  padding: 4rem;
+  padding: 4rem 4rem 2rem 4rem;
   display: flex;
   flex-direction: column;
 
@@ -18,22 +16,31 @@
     font-size: 2rem;
   }
   ul {
-    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    padding-right: 7rem;
 
     li {
       color: $white;
       width: 100%;
       a {
         display: block;
+        padding: 2rem 0;
         width: 100%;
+        font-weight: 350;
+        font-size: 3rem;
+        line-height: 14px;
         &:hover {
           color: $jet;
         }
       }
+    }
+
+    .getInTouch {
+      margin-top: 5rem;
+      font-weight: 500;
     }
   }
 }

@@ -28,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
         <li>
           <Link href="/about">About</Link>
         </li>
-        <li>Lets get in touch</li>
+        <li className={style.getInTouch}>Lets get in touch</li>
         <li>
           <a href="mailto:igor@mijucic.com">igor@mijucic.com</a>
         </li>
