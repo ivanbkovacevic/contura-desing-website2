@@ -1,28 +1,31 @@
 @import "../../../styles/variables";
 
 .wrapper {
-  flex-grow: 1;
   background-color: rgba($navigationGreen, 0.95);
-  padding: 1rem 4rem 2rem 4rem;
-  display: flex;
-  flex-direction: column;
+  padding: 2rem 4rem 2rem 4rem;
 
-  button {
-    align-self: flex-end;
-    min-width: 3rem;
-    border: none;
-    background: none;
-    color: $white;
-    font-size: 2rem;
-  }
+
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding-right: 7rem;
+
+
 
     li {
+      display: flex;
+      align-items: center;
+min-width: 10rem;
+
+      button {
+        min-width: 3rem;
+        border: none;
+        background: none;
+        color: $white;
+        font-size: 2rem;
+        margin-left: auto;
+      }
       color: $white;
       width: 100%;
       a {

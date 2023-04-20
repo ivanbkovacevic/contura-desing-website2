@@ -10,7 +10,11 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ close }) => {
   return (
     <nav className={style.wrapper}>
-      <button onClick={close}>
+
+      <ul>
+        <li>
+          <Link href="/">Home</Link>
+          <button onClick={close}>
         <Image
           src={"./assets/icons/hamburgerClose.svg"}
           alt="closemenu"
@@ -18,9 +22,6 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
           height={20}
         />
       </button>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
         </li>
         <li>
           <Link href="/work">Work</Link>
