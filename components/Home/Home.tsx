@@ -11,6 +11,7 @@ import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST_HOME } from "../Reusable/WorkSingle/constant";
 import style from "./Home.module.scss";
+import Aside from "../Layout/Aside/Aside";
 
 interface HomeProps {
   some?: string;
@@ -52,6 +53,8 @@ const Home = ({ some }: HomeProps) => {
       <section className={style.faqWrapper}>
         <FAQ />
       </section>
+     <Aside />
+
     </div>
   );
 };
