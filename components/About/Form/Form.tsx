@@ -8,7 +8,7 @@ const Form = () => {
       <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            Your Name: <input type="text" name="name" />
+            Your Name1: <input type="text" name="name" />
           </label>
         </p>
         <p>
