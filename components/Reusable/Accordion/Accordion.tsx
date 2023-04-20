@@ -1,30 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import cn from "classnames";
-import style from "./Accordion.module.scss";
-import Image from "next/image";
 import ArrowIcon from "../Icons/ArrowIcon";
+import style from "./Accordion.module.scss";
 
 interface AccordionProps {
   title: string;
-  content: string;
+  content:string | JSX.Element;
   show: boolean;
-  arrowColor?: 'white' | 'black';
+  arrowColor?: "white" | "black";
   accClicked: () => void;
+  variant?: "designS" | "FAQ";
 }
 const Accordion: React.FC<AccordionProps> = ({
   title,
   content,
   show,
-  arrowColor='black',
+  arrowColor = "black",
   accClicked,
+  variant = "designS",
 }) => {
-  const contentStyle = cn(style.content, { [style.colapsed]: show === false });
-  const buttonStyle = cn({ [style.btnExpanded]: show });
-  const arrowStyle = cn(style.arrow, 
-    { [style.arrowExpanded]: show },
-    { [style.arrowWhite]: arrowColor === 'white' },
-    { [style.arrowBlack]: arrowColor === 'black' },
+  const contentStyle = cn(style.content, 
+    { [style.colapsed]: show === false },
+    { [style.contentDesignStrategy]: variant === "designS" },
+    { [style.contentFAQ]: variant === "FAQ" },
     );
+  const buttonStyle = cn(
+    { [style.btnExpandedGreen]: show && variant === "designS" },
+    { [style.btnExpandedLila]: show && variant === "FAQ" }
+  );
+  const arrowStyle = cn(
+    style.arrow,
+    { [style.arrowExpandedGreen]: show && variant === "designS" },
+    { [style.arrowExpandedLila]: show && variant === "FAQ" },
+    { [style.arrowWhite]: arrowColor === "white" },
+    { [style.arrowBlack]: arrowColor === "black" }
+  );
 
   return (
     <div className={style.wrapper}>
@@ -32,7 +42,7 @@ const Accordion: React.FC<AccordionProps> = ({
         <div className={style.insideBtnWrapper}>
           {title}
           <div className={arrowStyle}>
-           <ArrowIcon />
+            <ArrowIcon />
           </div>
         </div>
       </button>

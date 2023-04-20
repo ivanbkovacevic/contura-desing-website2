@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .wrapper {
-  display:block;
+  display: block;
 
   button {
     border: none;
@@ -10,6 +10,8 @@
     font-weight: 350;
     .insideBtnWrapper {
       display: flex;
+      justify-content: flex-start;
+      text-align: left;
       align-items: flex-start;
       margin-bottom: 2rem;
 
@@ -28,28 +30,58 @@
   }
 
   .content {
-    padding: 0 2rem;
-    font-weight: 350;
-    font-size: 2rem;
-    line-height: 117.3%;
     max-width: 100%;
-    max-height: 25rem;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .contentDesignStrategy {
+    padding: 0 2rem;
+    max-height: 35rem;
+    p {
+      font-weight: 350;
+      font-size: 2rem;
+      line-height: 117.3%;
+      color: $jet;
+
+    }
+  }
+  .contentFAQ {
+    max-height: 45rem;
+
+    p {
+      font-weight: 350;
+      font-size: 2rem;
+      line-height: 134.3%;
+      color: $white;
+
+    }
   }
 
   .colapsed {
     max-height: 0rem;
   }
 
-  .btnExpanded {
+  .btnExpandedGreen {
     color: $navigationGreen;
   }
+  .btnExpandedLila {
+    color: $lavender;
+  }
 
-  .arrowExpanded {
+  .arrowExpandedGreen {
     transform: rotateZ(-180deg);
     svg {
       stroke: $navigationGreen !important;
+    }
+  }
+  .arrowExpandedLila {
+    transform: rotateZ(-180deg);
+    svg {
+      stroke: $lavender !important;
     }
   }
 

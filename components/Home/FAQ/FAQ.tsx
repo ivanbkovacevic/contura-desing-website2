@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Accordion from "../../Reusable/Accordion/Accordion";
-import { FAQ_LIST } from "./constant";
 import style from "./FAQ.module.scss";
+import { FAQ_LIST } from "./constant";
 
 const FAQ: React.FC = ({}) => {
   const [idAccordion, setIdAccordion] = useState<number[]>([]);
@@ -24,6 +24,7 @@ const FAQ: React.FC = ({}) => {
           arrowColor="white"
           accClicked={() => toggleAcc(idx)}
           key={item.title}
+          variant="FAQ"
         />
       );
     });

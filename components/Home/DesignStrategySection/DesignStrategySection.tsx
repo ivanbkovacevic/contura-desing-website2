@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import Accordion from "../../Reusable/Accordion/Accordion";
 import Image from "next/image";
-import { DESIGN_STRATEGY_LIST } from "./constants";
 import style from "./DesignStrategySection.module.scss";
+import { DESIGN_STRATEGY_LIST } from "./constants";
 
 const DesignStrategySection: React.FC = ({}) => {
   const [idAccordion, setIdAccordion] = useState<number[]>([]);
@@ -25,6 +25,7 @@ const DesignStrategySection: React.FC = ({}) => {
           content={item.content}
           show={idAccordion.includes(idx)}
           accClicked={() => toggleAcc(idx)}
+          variant="designS"
         />
       );
     });
