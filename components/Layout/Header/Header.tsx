@@ -12,14 +12,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = () => {
-  const [showNavigation, setShowNAvigation] = useState<boolean>(false);
+  const [showNavigation, setShowNavigation] = useState<boolean>(false);
   const divRef = useRef(null);
   const { state } = useContext(Context);
   const { scrollFromTop } = state;
 
   const router = useRouter();
   const closeNavigation = () => {
-    setShowNAvigation(false);
+    setShowNavigation(false);
   };
 
   useClickOutside(divRef, closeNavigation, "hamburger");
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = () => {
           </div>
           <button
             id="hamburger"
-            onClick={() => setShowNAvigation(!showNavigation)}
+            onClick={() => setShowNavigation(!showNavigation)}
             className={style.hamburgerMenuWrapper}
           >
             <Image

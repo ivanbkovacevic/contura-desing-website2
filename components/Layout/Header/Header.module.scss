@@ -45,13 +45,12 @@
 }
 
 .scrollFromTopEnough {
-  background-color: transparent !important;
-  padding-top: 10rem !important;
+  margin-top: 10rem !important;
 }
 
 .onAbout {
-  background-color: $someLightBlue;
+  background-color: rgba($someLightBlue,0.5);
 }
 .onAll {
-  background-color: $white;
+  background-color: rgba($white,0.5);
 }

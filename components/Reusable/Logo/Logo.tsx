@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Context } from "../../../context/context";
 import Image from "next/image";
 import Link from "next/link";
-import style from "./Logo.module.scss";
 import LogoSymbol from "../Icons/LogoSymbol";
+import style from "./Logo.module.scss";
 
 const Logo = () => {
   const { state } = useContext(Context);
