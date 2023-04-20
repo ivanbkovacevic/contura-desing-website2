@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className={style.getInTouch}>
           <p>Let's Get in Touch.</p>
           <a href="mailto:igor@mijucic.com">my.web@site.com</a>
-          <p>Alekse Šantića 19,</p>
+          <p>Alekse Santica 19,</p>
           <p>Vojvodina, Novi Sad, 21000</p>
           <div className={style.image}>
             <Image
@@ -35,9 +35,9 @@ const Footer: React.FC<FooterProps> = () => {
             <ul>
               <li>
                 <Link href="/">
-                  Home
+                 <span>Services</span> 
                   <Image
-                    src="/assets/icons/instagramIcon.svg"
+                    src="/assets/icons/linkedinIcon.svg"
                     alt="My Icon"
                     width={20}
                     height={20}
@@ -46,7 +46,7 @@ const Footer: React.FC<FooterProps> = () => {
               </li>
               <li>
                 <Link href="/work">
-                  Work
+                  <span>Work</span>
                   <Image
                     src="/assets/icons/instagramIcon.svg"
                     alt="My Icon"
@@ -57,9 +57,9 @@ const Footer: React.FC<FooterProps> = () => {
               </li>
               <li>
                 <Link href="/about">
-                  About
+                  <span>About</span>
                   <Image
-                    src="/assets/icons/instagramIcon.svg"
+                    src="/assets/icons/behanceIcon.svg"
                     alt="My Icon"
                     width={20}
                     height={20}

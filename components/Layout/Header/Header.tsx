@@ -9,10 +9,9 @@ import useClickOutside from "../../../utils/onClickOutside";
 import { useRouter } from "next/router";
 
 interface HeaderProps {
-  isVisible: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ isVisible }) => {
+const Header: React.FC<HeaderProps> = () => {
   const [showNavigation, setShowNAvigation] = useState<boolean>(false);
   const divRef = useRef(null);
   const { state } = useContext(Context);
@@ -40,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ isVisible }) => {
   return (
     <header className={wrapperStyle}>
       <div className={style.content}>
-        <div style={{ display: isVisible ? "block" : "none" }}>
+        <div>
           <Logo />
         </div>
         <div ref={divRef} className={style.navigationAllWrapper}>
