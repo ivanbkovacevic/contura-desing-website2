@@ -38,7 +38,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
         <div className={style.workSliderWrapper}>
           <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
         </div>
-        <Form />
+        {/* <Form /> */}
       </section>
     </div>
   );
