@@ -5,10 +5,10 @@ const Form = () => {
     <div>
       <h1>Contact us</h1>
       <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="contact" value="contact" />
         <p>
           <label>
-            Your Name1: <input type="text" name="name" />
+            Your Name2: <input type="text" name="name" />
           </label>
         </p>
         <p>
