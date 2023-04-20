@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import style from "./Layout.module.scss";
+import Aside from "./Aside/Aside";
 
 type Props = {
   children?: ReactNode;
@@ -22,6 +23,7 @@ const Layout = ({ children, title = "Contura Design" }: Props) => {
 
       <main>{children}</main>
       <Footer />
+     <Aside />
     </div>
   );
 };
