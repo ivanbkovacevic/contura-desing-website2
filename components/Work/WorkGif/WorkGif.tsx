@@ -6,7 +6,7 @@ const WorkGif = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.image}>
-        <Image src="/assets/images/workGifHigher.gif" fill alt="workgif" />
+        <Image src="/assets/images/workGifHigherCroped.gif" fill alt="workgif" />
       </div>
     </div>
   );
