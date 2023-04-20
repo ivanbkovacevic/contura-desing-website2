@@ -22,12 +22,12 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   );
 
   return (
-    <section className={btnLinkStyle} data-centered="yes">
+    <div className={btnLinkStyle} data-centered="yes">
       <Link href={link}>
-        {title}
+        <span>{title}</span>
         <ArrowRight />
       </Link>
-    </section>
+    </div>
   );
 };
 
