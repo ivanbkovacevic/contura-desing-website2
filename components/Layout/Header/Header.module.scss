@@ -14,13 +14,12 @@
 
   .content {
     width: 70%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .navigationAllWrapper {
+      width: 57rem;
       position: relative;
-      height: 100%;
       display: flex;
       justify-content: flex-end;
       .hamburgerMenuWrapper {
@@ -29,10 +28,15 @@
       }
 
       .justNavigationWrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
         position: absolute;
-        right: 0%;
         z-index: $navigation-z-index;
+        right: 0%;
+        top: -270%;
         max-height: 60rem;
+        min-width: 100%;
         overflow: hidden;
         transition: all 0.4s ease-in-out;
       }
@@ -49,8 +53,8 @@
 }
 
 .onAbout {
-  background-color: rgba($someLightBlue,0.5);
+  background-color: rgba($someLightBlue, 0.5);
 }
 .onAll {
-  background-color: rgba($white,0.5);
+  background-color: rgba($white, 0.5);
 }

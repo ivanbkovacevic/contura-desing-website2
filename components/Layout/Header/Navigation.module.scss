@@ -3,6 +3,17 @@
 .wrapper {
   background-color: rgba($navigationGreen, 0.95);
   padding: 4rem 6rem 4rem 6rem;
+  position: relative;
+  margin-top: 25%;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    left: -56%;
+    top: -40%;
+    background-color: rgba($navigationGreen, 0.95);
+  }
 
   ul {
     display: flex;
