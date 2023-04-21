@@ -5,8 +5,8 @@
   padding: 4rem 6rem 4rem 6rem;
   position: relative;
   margin-top: 25%;
-  &::after {
-    content: "";
+
+  .extraCube {
     position: absolute;
     width: 60%;
     height: 50%;
@@ -14,7 +14,6 @@
     top: -40%;
     background-color: rgba($navigationGreen, 0.95);
   }
-
   ul {
     display: flex;
     flex-direction: column;

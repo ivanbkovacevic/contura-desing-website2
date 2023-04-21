@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = () => {
         </div>
         <div ref={divRef} className={style.navigationAllWrapper}>
           <div className={navigationStyle}>
-            <Navigation close={closeNavigation} />
+            <Navigation scrollFromTop={scrollFromTop} close={closeNavigation} />
           </div>
           <button
             id="hamburger"
