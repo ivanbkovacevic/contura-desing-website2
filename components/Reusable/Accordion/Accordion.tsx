@@ -5,7 +5,7 @@ import style from "./Accordion.module.scss";
 
 interface AccordionProps {
   title: string;
-  content:string | JSX.Element;
+  content: string | JSX.Element;
   show: boolean;
   arrowColor?: "white" | "black";
   accClicked: () => void;
@@ -19,15 +19,13 @@ const Accordion: React.FC<AccordionProps> = ({
   accClicked,
   variant = "designS",
 }) => {
-  const contentStyle = cn(style.content, 
+  const contentStyle = cn(
+    style.content,
     { [style.colapsed]: show === false },
     { [style.contentDesignStrategy]: variant === "designS" },
-    { [style.contentFAQ]: variant === "FAQ" },
-    );
-  const buttonStyle = cn(
-    { [style.btnExpandedGreen]: show && variant === "designS" },
-    { [style.btnExpandedLila]: show && variant === "FAQ" }
+    { [style.contentFAQ]: variant === "FAQ" }
   );
+
   const arrowStyle = cn(
     style.arrow,
     { [style.arrowExpandedGreen]: show && variant === "designS" },
@@ -39,11 +37,13 @@ const Accordion: React.FC<AccordionProps> = ({
     style.title,
     { [style.titleBlack]: variant === "designS" },
     { [style.titleWhite]: variant === "FAQ" },
+    { [style.btnExpandedGreen]: show && variant === "designS" },
+    { [style.btnExpandedLila]: show && variant === "FAQ" }
   );
 
   return (
     <div className={style.wrapper}>
-      <button className={buttonStyle} onClick={accClicked}>
+      <button onClick={accClicked}>
         <div className={style.insideBtnWrapper}>
           <p className={titleStile}>{title}</p>
           <div className={arrowStyle}>

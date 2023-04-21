@@ -28,7 +28,12 @@
       .titleWhite {
         color: $white;
       }
-
+      .btnExpandedGreen {
+        color: $navigationGreen;
+      }
+      .btnExpandedLila {
+        color: $lavender;
+      }
       .arrow {
         width: 2rem;
         height: 100%;
@@ -75,17 +80,6 @@
 
   .colapsed {
     max-height: 0rem;
-  }
-
-  .btnExpandedGreen {
-    .title {
-      color: $navigationGreen !important;
-    }
-  }
-  .btnExpandedLila {
-    .title {
-      color: $lavender !important;
-    }
   }
 
   .arrowExpandedGreen {
