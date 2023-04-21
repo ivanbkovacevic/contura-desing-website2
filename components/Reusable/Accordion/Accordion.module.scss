@@ -8,12 +8,26 @@
     background: none;
     font-size: 3rem;
     font-weight: 350;
+
     .insideBtnWrapper {
       display: flex;
       justify-content: flex-start;
       text-align: left;
       align-items: flex-start;
       margin-bottom: 2rem;
+
+      .title {
+        font-size: 3rem;
+        font-weight: 350;
+        line-height: 130%;
+      }
+
+      .titleBlack {
+        color: $jet;
+      }
+      .titleWhite {
+        color: $white;
+      }
 
       .arrow {
         width: 2rem;
@@ -46,7 +60,6 @@
       font-size: 2rem;
       line-height: 117.3%;
       color: $jet;
-
     }
   }
   .contentFAQ {
@@ -57,7 +70,6 @@
       font-size: 2rem;
       line-height: 134.3%;
       color: $white;
-
     }
   }
 
@@ -66,10 +78,14 @@
   }
 
   .btnExpandedGreen {
-    color: $navigationGreen;
+    .title {
+      color: $navigationGreen !important;
+    }
   }
   .btnExpandedLila {
-    color: $lavender;
+    .title {
+      color: $lavender !important;
+    }
   }
 
   .arrowExpandedGreen {

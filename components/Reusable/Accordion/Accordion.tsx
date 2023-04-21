@@ -35,12 +35,17 @@ const Accordion: React.FC<AccordionProps> = ({
     { [style.arrowWhite]: arrowColor === "white" },
     { [style.arrowBlack]: arrowColor === "black" }
   );
+  const titleStile = cn(
+    style.title,
+    { [style.titleBlack]: variant === "designS" },
+    { [style.titleWhite]: variant === "FAQ" },
+  );
 
   return (
     <div className={style.wrapper}>
       <button className={buttonStyle} onClick={accClicked}>
         <div className={style.insideBtnWrapper}>
-          {title}
+          <p className={titleStile}>{title}</p>
           <div className={arrowStyle}>
             <ArrowIcon />
           </div>
