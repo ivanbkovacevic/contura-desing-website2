@@ -1,7 +1,7 @@
 import React from "react";
 import WorkSingle from "../../Reusable/WorkSingle/WorkSingle";
-import style from "./WorkSection.module.scss";
 import { Work } from "../../Reusable/WorkSingle/constant";
+import style from "./WorkSection.module.scss";
 
 interface WorkSectionProps {
   list: Work[];
