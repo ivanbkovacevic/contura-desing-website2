@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./CompanyNumbers.module.scss";
 
 const CompanyNumbers = () => {
+  const [countClients, setCountClients] = useState(0);
+  const [countYears, setCountYears] = useState(0);
+
+  useEffect(() => {
+    const countdownIntervalClients = setInterval(() => {
+      setCountClients(countClients => countClients + 1);
+    }, 100);
+
+    const countdownIntervalYears = setInterval(() => {
+      setCountYears(countYears => countYears + 1);
+    }, 1000);
+
+    if (countClients === 110) {
+      clearInterval(countdownIntervalClients);
+    }
+    if (countYears === 10) {
+      clearInterval(countdownIntervalYears);
+    }
+
+    return () => {
+      clearInterval(countdownIntervalClients);
+      clearInterval(countdownIntervalYears);
+    };
+  }, [countClients]);
+
   return (
     <div className={style.wrapper}>
       <div className={style.description}>
@@ -15,7 +40,7 @@ const CompanyNumbers = () => {
         </p>
       </div>
       <div className={style.numbersWrapper}>
-        <p>1000+</p>
+        <p>{countClients}+</p>
         <p>the clients</p>
         <p>10+</p>
         <p>Years in bussines</p>
