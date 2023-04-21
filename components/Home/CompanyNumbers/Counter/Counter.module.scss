@@ -1,0 +1,21 @@
+@import "../../../../styles/variables";
+
+.numbersWrapper {
+    p:nth-of-type(odd) {
+      font-weight: 700;
+      font-size: 7.2rem;
+      min-width: 10rem;
+      font-variant-numeric: tabular-nums;
+      transition: all 0.2s ease-in-out;
+    }
+    p:nth-of-type(even) {
+      max-width: 10rem;
+    }
+  }
+
+  .colorGreen {
+    color: $navigationGreen;
+  }
+  .colorBlack {
+    color: $jet;
+  }
