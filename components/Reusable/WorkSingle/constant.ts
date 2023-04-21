@@ -211,7 +211,7 @@ export const WORK_LIST_WORK: Work[] = [
     description: "IT Security Website",
     title: "Avanet",
     img: "/assets/images/work/avanetWorkSection.jpeg",
-    color: COLORS.LAVENDER_BLUSH,
+    color: COLORS.LAVENDER,
     order: ORDER.PICTURE_UP,
     link: "",
   },
