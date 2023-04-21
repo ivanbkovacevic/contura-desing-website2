@@ -21,19 +21,17 @@
         bottom: 0;
         width: 100%;
         height: 1px;
-        background-color: rgba($blue, 0.5);
+        background-color: rgba($navigationGreen, 0.5);
         transition: all 0.2s ease-in-out;
         z-index: 50;
       }
 
       &:hover::after {
-        height: 100%;
+        height: 70%;
       }
     }
 
-    &:hover {
-      color: $navigationGreen;
-    }
+
     &:hover svg {
       stroke: $navigationGreen;
     }
