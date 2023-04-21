@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = () => {
           <nav>
             <ul>
               <li>
-                <Link href="/">
+                <Link href="https://www.linkedin.com/in/igormijucic/">
                  <span>Services</span> 
                   <Image
                     src="/assets/icons/linkedinIcon.svg"
@@ -56,22 +56,22 @@ const Footer: React.FC<FooterProps> = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about">
+                <Link href="https://dribbble.com/IgorMijucic">
                   <span>About</span>
                   <Image
-                    src="/assets/icons/behanceIcon.svg"
-                    alt="My Icon"
+                    src="/assets/icons/dribbbleIcon.svg"
+                    alt="instagram"
                     width={20}
                     height={20}
                   />
                 </Link>
               </li>
               <li>
-                <Link href="">
+                <Link href="https://www.behance.net/IgorMijucic">
                   <span></span>
                   <Image
-                    src="/assets/icons/instagramIcon.svg"
-                    alt="My Icon"
+                    src="/assets/icons/behanceIcon.svg"
+                    alt="behance"
                     width={20}
                     height={20}
                   />
