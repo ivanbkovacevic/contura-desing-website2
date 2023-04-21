@@ -8,14 +8,11 @@ interface ContextProps {
   state: ContextState;
 }
 
-// Create the context
 const Context = React.createContext<ContextProps>({
   state: { scrollFromTop: 0 },
 });
 
-// Define the context provider component
 function ContextProvider(props: React.PropsWithChildren<{}>) {
-  // Set the initial state for the context
   const [state, setState] = React.useState<ContextState>({
     scrollFromTop: 0,
   });
@@ -26,16 +23,13 @@ function ContextProvider(props: React.PropsWithChildren<{}>) {
   };
 
   useEffect(() => {
-    // Add the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Remove the scroll event listener on cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // Return the provider with the context value set
   return (
     <Context.Provider
       value={{

@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = () => {
     style.wrapper,
     { [style.onAbout]: router.pathname === "/about" },
     { [style.onAll]: router.pathname !== "/about" },
-    {[style.scrollFromTopEnough]: scrollFromTop > 300},
+    { [style.scrollFromTopEnough]: scrollFromTop > 300},
 
   );
 

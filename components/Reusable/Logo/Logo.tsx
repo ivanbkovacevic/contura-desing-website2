@@ -9,8 +9,12 @@ const Logo = () => {
   const { state } = useContext(Context);
   const { scrollFromTop } = state;
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const logo =
-    scrollFromTop < 700 ? (
+    scrollFromTop < 400 ? (
       <Link href="/">
         <Image
           src="./assets/images/logo.svg"
@@ -20,7 +24,7 @@ const Logo = () => {
         />
       </Link>
     ) : (
-      <div className={style.cubesWrapper}>
+      <div onClick={handleClick} className={style.cubesWrapper}>
         <LogoSymbol />
       </div>
     );
