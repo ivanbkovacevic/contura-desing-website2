@@ -70,6 +70,14 @@
       nav {
         li {
           padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+
+          .linkNoWare {
+            min-width: 15rem;
+            display: block;
+            color: transparent !important;
+          }
         }
         a {
           display: flex;

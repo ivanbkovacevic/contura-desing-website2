@@ -34,8 +34,10 @@ const Footer: React.FC<FooterProps> = () => {
           <nav>
             <ul>
               <li>
+                <Link href="/">
+                  <span>HOME</span>
+                </Link>
                 <Link href="https://www.linkedin.com/in/igormijucic/">
-                 <span>Services</span> 
                   <Image
                     src="/assets/icons/linkedinIcon.svg"
                     alt="My Icon"
@@ -46,7 +48,9 @@ const Footer: React.FC<FooterProps> = () => {
               </li>
               <li>
                 <Link href="/work">
-                  <span>Work</span>
+                  <span>WORK</span>
+                </Link>
+                <Link href="https://www.instagram.com/contura_design/">
                   <Image
                     src="/assets/icons/instagramIcon.svg"
                     alt="My Icon"
@@ -56,8 +60,10 @@ const Footer: React.FC<FooterProps> = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/about">
+                  <span>ABOUT</span>
+                </Link>
                 <Link href="https://dribbble.com/IgorMijucic">
-                  <span>About</span>
                   <Image
                     src="/assets/icons/dribbbleIcon.svg"
                     alt="instagram"
@@ -67,8 +73,8 @@ const Footer: React.FC<FooterProps> = () => {
                 </Link>
               </li>
               <li>
+                  <span className={style.linkNoWare}>d</span>
                 <Link href="https://www.behance.net/IgorMijucic">
-                  <span></span>
                   <Image
                     src="/assets/icons/behanceIcon.svg"
                     alt="behance"
