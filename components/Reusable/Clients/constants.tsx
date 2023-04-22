@@ -5,7 +5,9 @@ import Framer from "../Icons/BigCompany/Framer";
 import GitHub from "../Icons/BigCompany/GitHub";
 import Google from "../Icons/BigCompany/Google";
 import IBM from "../Icons/BigCompany/IBM";
+import InVision from "../Icons/BigCompany/InVision";
 import Microsoft from "../Icons/BigCompany/Microsoft";
+import Shopify from "../Icons/BigCompany/Shopify";
 import SketchBlack from "../Icons/BigCompany/SketchBlack";
 import Stripe from "../Icons/BigCompany/Stripe";
 import Twitch from "../Icons/BigCompany/Twitch";
@@ -96,8 +98,18 @@ export const BIG_COMPANYES: Client[] = [
   },
   {
     title: "clien-t 1",
+    img: <InVision />,
+    link: '',
+  },
+  {
+    title: "clien-t 1",
     img: <FaceBook />,
     link: 'https://facebook.com/',
+  },
+  {
+    title: "clien-t 1",
+    img: <Shopify />,
+    link: '',
   },
   {
     title: "client 21",

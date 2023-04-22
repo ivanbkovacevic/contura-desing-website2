@@ -14,14 +14,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      row-gap: 5rem;
-      column-gap: 5rem;
+      row-gap: 7rem;
+      column-gap: 10rem;
       max-width: clamp(100rem, 60%, 110rem);
 
       .clientWrapper {
         display: block;
-        border: 1px solid red;
-        width: 20rem;
+        width: 12rem;
         height: 5.5rem;
 
         &:hover svg {
