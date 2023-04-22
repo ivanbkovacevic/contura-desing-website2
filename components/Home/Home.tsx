@@ -10,15 +10,13 @@ import FAQ from "./FAQ/FAQ";
 import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST_HOME } from "../Reusable/WorkSingle/constant";
-import style from "./Home.module.scss";
 import Aside from "../Layout/Aside/Aside";
-import { BIG_COMPANYES, CLIENTS } from "../Reusable/Clients/constants";
+import style from "./Home.module.scss";
+import { BIG_COMPANYES } from "../Reusable/Clients/constants";
 
-interface HomeProps {
-  some?: string;
-}
+interface HomeProps {}
 
-const Home = ({ some }: HomeProps) => {
+const Home = () => {
   return (
     <div className={style.wrapper}>
       <section className={style.heroSection} data-centered="yes">
@@ -28,6 +26,7 @@ const Home = ({ some }: HomeProps) => {
         <DesignStrategySection />
       </section>
       <section className={style.clientsSection} data-centered="yes">
+        <h3 className={style.title}>People & brands love it</h3>
         <Clients list={BIG_COMPANYES} />
       </section>
       <section className={style.buttonLinkSection} data-centered="yes">
@@ -54,8 +53,7 @@ const Home = ({ some }: HomeProps) => {
       <section className={style.faqSection}>
         <FAQ />
       </section>
-     <Aside />
-
+      <Aside />
     </div>
   );
 };

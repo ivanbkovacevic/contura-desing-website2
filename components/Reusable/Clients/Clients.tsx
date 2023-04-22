@@ -7,7 +7,7 @@ import style from "./Clients.module.scss";
 interface ClientsProps {
   backgroundtype?: string;
   contentCentered?: string;
-  title?: boolean;
+  title?: string;
   list: Client[];
   page?: string;
 }
@@ -15,7 +15,6 @@ interface ClientsProps {
 const Clients: React.FC<ClientsProps> = ({
   backgroundtype = "white",
   contentCentered,
-  title,
   list,
   page,
 }) => {
@@ -53,7 +52,6 @@ const Clients: React.FC<ClientsProps> = ({
     <div className={wrapperStyle}>
       <div className={contentStyle}>
         <div className={style.innerContentWrapper}>
-          {title && <h5 className={style.title}>Clients</h5>}
           {generateClients()}
         </div>
       </div>

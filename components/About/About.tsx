@@ -25,7 +25,8 @@ const About: React.FC<AboutProps> = () => {
         <Capabilites />
       </section>
       <section className={style.clientsSection}>
-        <Clients backgroundtype="black" contentCentered="yes" page="about" title list={CLIENTS}/>
+      <h3 className={style.title}  data-centered="yes">Clients</h3>
+        <Clients backgroundtype="black" contentCentered="yes" page="about" list={CLIENTS}/>
       </section>
       <section className={style.slidersSection}>
         <div className={style.testemonialSlider}>
