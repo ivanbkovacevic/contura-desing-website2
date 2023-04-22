@@ -5,13 +5,11 @@ import style from "./Navigation.module.scss";
 
 interface NavigationProps {
   close: () => void;
-  scrollFromTop: number;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ close, scrollFromTop }) => {
+const Navigation: React.FC<NavigationProps> = ({ close }) => {
   return (
     <nav className={style.wrapper}>
-      {scrollFromTop > 300 && <div className={style.extraCube}></div>}
       <ul>
         <li>
           <Link href="/">Home</Link>

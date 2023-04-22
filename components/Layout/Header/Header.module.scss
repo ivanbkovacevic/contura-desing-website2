@@ -28,15 +28,11 @@
       }
 
       .justNavigationWrapper {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
         position: absolute;
         z-index: $navigation-z-index;
         right: 0%;
-        top: -270%;
-        max-height: 60rem;
-        min-width: 100%;
+        top: 0%;
+        max-height: 50rem;
         overflow: hidden;
         transition: all 0.4s ease-in-out;
       }
