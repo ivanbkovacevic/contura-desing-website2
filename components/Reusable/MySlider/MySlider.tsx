@@ -32,7 +32,9 @@ const MySlider: React.FC<SliderProps> = ({
     slidesToScroll: 1,
     adaptiveHeight: true,
     swipeToSlide: true,
-
+    autoplay: sliderType === "images",
+    autoplaySpeed: 2000,
+    cssEase: "linear",
   };
 
   const wrapperStyle = cn(style.wrapper, 
