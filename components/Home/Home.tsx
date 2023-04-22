@@ -21,37 +21,37 @@ interface HomeProps {
 const Home = ({ some }: HomeProps) => {
   return (
     <div className={style.wrapper}>
-      <section className={style.heroWrapper} data-centered="yes">
+      <section className={style.heroSection} data-centered="yes">
         <HeroSection />
       </section>
-      <section className={style.designStrategyWrapper} data-centered="yes">
+      <section className={style.designStrategySection} data-centered="yes">
         <DesignStrategySection />
       </section>
-      <section className={style.clientsWrapper} data-centered="yes">
+      <section className={style.clientsSection} data-centered="yes">
         <Clients list={BIG_COMPANYES} />
       </section>
-      <section className={style.buttonLinkWrapper} data-centered="yes">
+      <section className={style.buttonLinkSection} data-centered="yes">
         <ButtonLink title="see more work" link="/work" />
       </section>
-      <section className={style.workSectionWrapper} data-centered="yes">
+      <section className={style.workSectionSection} data-centered="yes">
         <WorkSection list={WORK_LIST_HOME} />
       </section>
-      <section className={style.buttonLinkWrapper} data-centered="yes">
+      <section className={style.buttonLinkSection} data-centered="yes">
         <ButtonLink title="see more work" link="/work" />
       </section>
-      <section className={style.companyNumbersWrapper} data-centered="yes">
+      <section className={style.companyNumbersSection} data-centered="yes">
         <CompanyNumbers />
       </section>
-      <section className={style.buttonLinkWrapper} data-centered="yes">
+      <section className={style.buttonLinkSection} data-centered="yes">
         <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       </section>
-      <section className={style.sliderWrapper}>
+      <section className={style.sliderSection}>
         <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
       </section>
-      <section className={style.offerWrapper} data-centered="yes">
+      <section className={style.offerSection} data-centered="yes">
         <OfferSection />
       </section>
-      <section className={style.faqWrapper}>
+      <section className={style.faqSection}>
         <FAQ />
       </section>
      <Aside />

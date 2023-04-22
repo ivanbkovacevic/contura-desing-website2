@@ -10,25 +10,24 @@ import { CLIENTS } from "../Reusable/Clients/constants";
 import style from "./About.module.scss";
 
 interface AboutProps {
-  some?: string;
 }
 
-const About: React.FC<AboutProps> = ({ some }) => {
+const About: React.FC<AboutProps> = () => {
   return (
     <div className={style.wrapper}>
-      <section className={style.weAreConturaWrapper}>
+      <section className={style.weAreConturaSection}>
         <WeAreContura />
       </section>
-      <section className={style.watWeDoWrapper} data-centered="yes">
+      <section className={style.watWeDoSection} data-centered="yes">
         <WhatWeDo />
       </section>
-      <section className={style.capabilitesWrapper}>
+      <section className={style.capabilitesSection}>
         <Capabilites />
       </section>
-      <section className={style.clientsWrapper}>
-        <Clients title backgroundtype="black" contentCentered="yes" list={CLIENTS} />
+      <section className={style.clientsSection}>
+        <Clients backgroundtype="black" contentCentered="yes" page="about" title list={CLIENTS}/>
       </section>
-      <section className={style.slidersWrapper}>
+      <section className={style.slidersSection}>
         <div className={style.testemonialSlider}>
           <MySlider
             sliderType="testemonial"
@@ -36,7 +35,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
             slidesListTestemonial={SLIDES_TESTEMONIAL}
           />
         </div>
-        <div className={style.workSliderWrapper}>
+        <div className={style.workSliderSection}>
           <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
         </div>
         {/* <Form /> */}

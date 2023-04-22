@@ -6,29 +6,25 @@
   align-items: center;
   padding-top: $headerHeight;
 
-.weAreConturaWrapper {
-  background-color: $someLightBlue;
+  .weAreConturaSection {
+    background-color: $someLightBlue;
 
-  width: 100%;
-  padding: 35rem 0 26rem 0; 
+    width: 100%;
+    padding: 35rem 0 26rem 0;
+  }
+  .watWeDoSection {
+    padding: 14rem 0 5rem 0;
+  }
+  .capabilitesSection {
+    width: 100%;
+  }
+  .clientsSection {
+    padding: 14rem 0 30rem 0;
+    background-color: $black;
 
-}
-.watWeDoWrapper {
-padding: 14rem 0 5rem 0;
-}
-.capabilitesWrapper {
-  width: 100%;
+  }
 
-}
-.clientsWrapper {
-  width: 100%;
-  padding: 14rem 0 30rem 0;
-  background-color: $black;
-
-}
-
-
-  .slidersWrapper {
+  .slidersSection {
     width: 100%;
     background-color: $black;
     padding-bottom: 10rem;
@@ -39,7 +35,7 @@ padding: 14rem 0 5rem 0;
       margin: 0 auto;
     }
 
-    .workSliderWrapper {
+    .workSliderSection {
       min-height: 30rem;
       max-width: 90%;
       margin: 0 auto;
