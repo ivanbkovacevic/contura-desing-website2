@@ -14,16 +14,15 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      row-gap: 10rem;
+      row-gap: 5rem;
       column-gap: 5rem;
       max-width: clamp(100rem, 60%, 110rem);
 
       .clientWrapper {
         display: block;
-        min-width: 20rem;
-        min-height: 5rem;
-        max-height: 6rem;
-        max-width: 21rem;
+        border: 1px solid red;
+        width: 20rem;
+        height: 5.5rem;
 
         &:hover svg {
           fill: darken($lavender,10%);

@@ -4,6 +4,7 @@ import FaceBook from "../Icons/BigCompany/FaceBook";
 import Framer from "../Icons/BigCompany/Framer";
 import GitHub from "../Icons/BigCompany/GitHub";
 import Google from "../Icons/BigCompany/Google";
+import IBM from "../Icons/BigCompany/IBM";
 import Microsoft from "../Icons/BigCompany/Microsoft";
 import SketchBlack from "../Icons/BigCompany/SketchBlack";
 import Stripe from "../Icons/BigCompany/Stripe";
@@ -88,6 +89,11 @@ export const CLIENTS: Client[] = [
 ];
 
 export const BIG_COMPANYES: Client[] = [
+  {
+    title: "clien-t 1",
+    img: <IBM />,
+    link: '',
+  },
   {
     title: "clien-t 1",
     img: <FaceBook />,
