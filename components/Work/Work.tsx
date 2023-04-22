@@ -4,6 +4,7 @@ import WorkSection from "../Home/WorkSection/WorkSection";
 import Clients from "../Reusable/Clients/Clients";
 import { WORK_LIST_WORK } from "../Reusable/WorkSingle/constant";
 import WorkGif from "./WorkGif/WorkGif";
+import { CLIENTS } from "../Reusable/Clients/constants";
 
 interface WorkProps {
   some?: string;
@@ -20,7 +21,7 @@ const Work: React.FC<WorkProps> = ({ some }) => {
         <WorkGif />
       </section>
       <section className={style.clientsWrapper}>
-        <Clients backgroundtype="black" contentCentered="yes" title />
+        <Clients backgroundtype="black" contentCentered="yes" title list={CLIENTS}/>
       </section>
     </div>
   );
