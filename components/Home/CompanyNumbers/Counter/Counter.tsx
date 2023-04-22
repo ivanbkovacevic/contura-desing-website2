@@ -21,16 +21,20 @@ const Counter = () => {
     };
   }, [countClients]);
 
-  const numbersStyle = cn(
+  const clientsStyle = cn(
+    {[style.colorGreen]: countClients >= 1000},
+    {[style.colorBlack]: countClients < 1000},
+  );
+  const yearsStyle = cn(
     {[style.colorBronze]: countClients >= 1000},
     {[style.colorBlack]: countClients < 1000},
   );
 
   return (
     <div className={style.numbersWrapper}>
-      <p className={numbersStyle}>{countClients}+</p>
+      <p className={clientsStyle}>{countClients}+</p>
       <p>the clients</p>
-      <p className={numbersStyle}>{Math.round(countYears)}+</p>
+      <p className={yearsStyle}>{Math.round(countYears)}+</p>
       <p>Years in bussines</p>
     </div>
   );
