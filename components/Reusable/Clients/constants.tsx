@@ -11,6 +11,7 @@ import Twitch from "../Icons/BigCompany/Twitch";
 import Uber from "../Icons/BigCompany/Uber";
 import Webflow from "../Icons/BigCompany/Webflow";
 import AcroBits from "../Icons/Clients/AcroBits";
+import Codat from "../Icons/Clients/Codat";
 import Codefacto from "../Icons/Clients/Codefacto";
 import FromScratch from "../Icons/Clients/FromScratch";
 import Getoip from "../Icons/Clients/Getoip";
@@ -77,6 +78,11 @@ export const CLIENTS: Client[] = [
     title: "clien-t 1",
     img: <SekoPak />,
     link: 'https://sekopak.com/',
+  },
+  {
+    title: "clien-t 1",
+    img: <Codat />,
+    link: 'https://codat.com/',
   },
 
 ];
