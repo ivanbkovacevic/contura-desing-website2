@@ -27,7 +27,7 @@ const MySlider: React.FC<SliderProps> = ({
     dots: false,
     infinite: true,
     arrows: sliderType === "testemonial",
-    speed: 500,
+    speed: 2000,
     slidesToShow: slidesPerView,
     slidesToScroll: 1,
     adaptiveHeight: true,
