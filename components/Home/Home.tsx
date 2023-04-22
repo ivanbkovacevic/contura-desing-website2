@@ -12,6 +12,7 @@ import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST_HOME } from "../Reusable/WorkSingle/constant";
 import style from "./Home.module.scss";
 import Aside from "../Layout/Aside/Aside";
+import { BIG_COMPANYES, CLIENTS } from "../Reusable/Clients/constants";
 
 interface HomeProps {
   some?: string;
@@ -27,7 +28,7 @@ const Home = ({ some }: HomeProps) => {
         <DesignStrategySection />
       </section>
       <section className={style.clientsWrapper} data-centered="yes">
-        <Clients />
+        <Clients list={BIG_COMPANYES} />
       </section>
       <section className={style.buttonLinkWrapper} data-centered="yes">
         <ButtonLink title="see more work" link="/work" />

@@ -32,9 +32,10 @@
         max-width: 21rem;
 
         &:hover svg {
-          fill: $navigationGreen;
+          fill: $lavender;
         }
         svg {
+          display: block;
           fill: $clientsGray;
           width: 100%;
           height: 100%;

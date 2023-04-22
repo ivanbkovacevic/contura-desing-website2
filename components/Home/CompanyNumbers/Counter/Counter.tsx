@@ -10,7 +10,7 @@ const Counter = () => {
     const countdownInterval = setInterval(() => {
       setCountClients((countClients) => countClients + 10);
       setCountYears((countYears) => countYears + 0.1);
-    }, 20);
+    }, 40);
 
     if (countClients >= 1000 || countYears >= 10) {
       clearInterval(countdownInterval);
@@ -22,7 +22,7 @@ const Counter = () => {
   }, [countClients]);
 
   const numbersStyle = cn(
-    {[style.colorGreen]: countClients >= 1000},
+    {[style.colorBronze]: countClients >= 1000},
     {[style.colorBlack]: countClients < 1000},
   );
 

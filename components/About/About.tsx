@@ -5,8 +5,9 @@ import WeAreContura from "./WeAreContura/WeAreContura";
 import Capabilites from "./Capabilities/Capabilities";
 import { SLIDES_HOME, SLIDES_TESTEMONIAL } from "../Reusable/MySlider/constant";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
-import style from "./About.module.scss";
 import Form from "./Form/Form";
+import { CLIENTS } from "../Reusable/Clients/constants";
+import style from "./About.module.scss";
 
 interface AboutProps {
   some?: string;
@@ -25,7 +26,7 @@ const About: React.FC<AboutProps> = ({ some }) => {
         <Capabilites />
       </section>
       <section className={style.clientsWrapper}>
-        <Clients title backgroundtype="black" contentCentered="yes" />
+        <Clients title backgroundtype="black" contentCentered="yes" list={CLIENTS} />
       </section>
       <section className={style.slidersWrapper}>
         <div className={style.testemonialSlider}>

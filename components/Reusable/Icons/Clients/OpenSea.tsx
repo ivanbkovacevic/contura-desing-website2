@@ -2,7 +2,7 @@ import React from 'react'
 
 const OpenSea = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"  width="21.59" height="27.94" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+    <svg xmlns="http://www.w3.org/2000/svg"  width="21.59" height="27.94" version="1.1" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd"
 viewBox="0 0 21 27"
 >
  <g id="Layer_x0020_1">

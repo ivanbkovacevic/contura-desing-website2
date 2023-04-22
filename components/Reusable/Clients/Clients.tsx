@@ -1,18 +1,22 @@
 import React from "react";
-import style from "./Clients.module.scss";
-import { CLIENTS } from "./constants";
+import { v4 as uuidv4 } from "uuid";
+import AOS from "aos";
+import { Client } from "./constants";
 import cn from "classnames";
+import style from "./Clients.module.scss";
 
 interface ClientsProps {
   backgroundtype?: string;
   contentCentered?: string;
-  title?:boolean;
+  title?: boolean;
+  list: Client[];
 }
 
 const Clients: React.FC<ClientsProps> = ({
-  backgroundtype="white",
+  backgroundtype = "white",
   contentCentered,
   title,
+  list,
 }) => {
   const wrapperStyle = cn(
     style.wrapper,
@@ -23,10 +27,21 @@ const Clients: React.FC<ClientsProps> = ({
     [style.contentCenteredInSection]: contentCentered === "yes",
   });
   const generateClients = () => {
-    return CLIENTS.map((item) => {
+    return list.map((item, idx) => {
+      const clientId = uuidv4();
+      const idxOne = idx + 1;
       return (
-        <a href={item.link} target="_blank" className={style.clientWrapper} key={item.title}>
-            {item.img}
+        <a
+          data-aos="zoom-in"
+          data-aos-delay={idxOne * 100}
+          data-aos-duration="100"
+          data-aos-easing="ease-in-out"
+          href={item.link}
+          target="_blank"
+          className={style.clientWrapper}
+          key={clientId}
+        >
+          {item.img}
         </a>
       );
     });
@@ -36,7 +51,7 @@ const Clients: React.FC<ClientsProps> = ({
     <div className={wrapperStyle}>
       <div className={contentStyle}>
         <div className={style.innerContentWrapper}>
-         {title && <h5 className={style.title}>Clients</h5>}
+          {title && <h5 className={style.title}>Clients</h5>}
           {generateClients()}
         </div>
       </div>
