@@ -1,3 +1,4 @@
+import FaceBook from "../Icons/BigCompany/FaceBook";
 import AcroBits from "../Icons/Clients/AcroBits";
 import Codefacto from "../Icons/Clients/Codefacto";
 import FromScratch from "../Icons/Clients/FromScratch";
@@ -64,6 +65,11 @@ export const CLIENTS: Client[] = [
   {
     title: "clien-t 1",
     img: <SekoPak />,
+    link: 'https://sekopak.com/',
+  },
+  {
+    title: "clien-t 1",
+    img: <FaceBook />,
     link: 'https://sekopak.com/',
   },
 ];
