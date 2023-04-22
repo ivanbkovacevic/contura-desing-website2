@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = () => {
             <ul>
               <li>
                 <Link href="/">
-                  <span>HOME</span>
+                  <span>Home</span>
                 </Link>
                 <Link href="https://www.linkedin.com/in/igormijucic/">
                   <Image
@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = () => {
               </li>
               <li>
                 <Link href="/work">
-                  <span>WORK</span>
+                  <span>Work</span>
                 </Link>
                 <Link href="https://www.instagram.com/contura_design/">
                   <Image
@@ -61,7 +61,7 @@ const Footer: React.FC<FooterProps> = () => {
               </li>
               <li>
                 <Link href="/about">
-                  <span>ABOUT</span>
+                  <span>About</span>
                 </Link>
                 <Link href="https://dribbble.com/IgorMijucic">
                   <Image
