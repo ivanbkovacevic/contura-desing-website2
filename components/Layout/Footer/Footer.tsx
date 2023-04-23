@@ -1,11 +1,15 @@
-import React from "react";
-import style from "./Footer.module.scss";
+import React, { useContext } from "react";
+import { Waypoint } from "react-waypoint";
+import { Context } from "../../../context/context";
 import Image from "next/image";
 import Link from "next/link";
+import style from "./Footer.module.scss";
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
+  const { handleFooterReached } = useContext(Context);
+
   return (
     <footer className={style.wrapper}>
       <div className={style.content}>
@@ -72,17 +76,19 @@ const Footer: React.FC<FooterProps> = () => {
                   />
                 </Link>
               </li>
+                <Waypoint onEnter={handleFooterReached} onLeave={handleFooterReached}>
               <li>
                   <span className={style.linkNoWare}>d</span>
-                <Link href="https://www.behance.net/IgorMijucic">
-                  <Image
-                    src="/assets/icons/behanceIcon.svg"
-                    alt="behance"
-                    width={20}
-                    height={20}
-                  />
-                </Link>
+                  <Link href="https://www.behance.net/IgorMijucic">
+                    <Image
+                      src="/assets/icons/behanceIcon.svg"
+                      alt="behance"
+                      width={20}
+                      height={20}
+                    />
+                  </Link>
               </li>
+                </Waypoint>
             </ul>
           </nav>
         </div>

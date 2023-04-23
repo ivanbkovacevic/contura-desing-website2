@@ -7,15 +7,15 @@ import style from "./Header.module.scss";
 import Image from "next/image";
 import useClickOutside from "../../../utils/onClickOutside";
 import { useRouter } from "next/router";
+import Hamburger from "../../Reusable/Icons/Hamburger";
 
-interface HeaderProps {
-}
+interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   const divRef = useRef(null);
   const { state } = useContext(Context);
-  const { scrollFromTop } = state;
+  const { scrollFromTop, footerReached } = state;
 
   const router = useRouter();
   const closeNavigation = () => {
@@ -32,8 +32,12 @@ const Header: React.FC<HeaderProps> = () => {
     style.wrapper,
     { [style.onAbout]: router.pathname === "/about" },
     { [style.onAll]: router.pathname !== "/about" },
-    { [style.scrollFromTopEnough]: scrollFromTop > 300},
-
+    { [style.scrollFromTopEnough]: scrollFromTop > 300 },
+    { [style.noBackground]: footerReached }
+  );
+  const hamburgerBtnStyle = cn(
+    style.hamburgerBtn,
+    { [style.whiteHamburgerLines]: footerReached }
   );
 
   return (
@@ -49,14 +53,9 @@ const Header: React.FC<HeaderProps> = () => {
           <button
             id="hamburger"
             onClick={() => setShowNavigation(!showNavigation)}
-            className={style.hamburgerMenuWrapper}
+            className={hamburgerBtnStyle}
           >
-            <Image
-              src={"./assets/icons/hamburger.svg"}
-              alt="openMenu"
-              width={50}
-              height={50}
-            />
+         <Hamburger />
           </button>
         </div>
       </div>
