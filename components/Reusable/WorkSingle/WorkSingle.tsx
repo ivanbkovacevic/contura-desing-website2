@@ -14,13 +14,6 @@ const WorkSingle: React.FC<Work> = ({
   order,
   link,
 }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out",
-      delay: 100,
-    });
-  }, []);
 
   const wrapperImgAndDescription = cn(
     style.wrapperImgAndDescription,
@@ -30,12 +23,13 @@ const WorkSingle: React.FC<Work> = ({
 
   return (
     <a href={link} className={style.wrapper} target="_blank">
-      <div data-aos="fade-up" key={title} className={wrapperImgAndDescription}>
+      <div data-aos="fade-up" data-aos-duration="1000"  key={title} className={wrapperImgAndDescription}>
+          <span>Learn more</span>
         <div className={style.description} style={{ backgroundColor: color }}>
           <h3>{description}</h3>
         </div>
         <div className={style.image}>
-          <Image src={img} fill alt={title} quality={100} unoptimized />
+          <Image src={img} fill alt={title} quality={100}  />
         </div>
       </div>
       <p data-aos="fade-up" data-aos-delay="300">

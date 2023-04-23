@@ -13,6 +13,7 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = () => {
+
   return (
     <div className={style.wrapper}>
       <section className={style.weAreConturaSection}>

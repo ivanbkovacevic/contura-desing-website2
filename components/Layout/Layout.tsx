@@ -1,4 +1,6 @@
-import React, { ReactNode, useRef, useState } from "react";
+import React, { ReactNode, useEffect } from "react";
+import AOS from "aos";
+
 import Head from "next/head";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
@@ -10,7 +12,10 @@ type Props = {
 };
 
 const Layout = ({ children, title = "Contura Design" }: Props) => {
-
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   return (
     <div className={style.wrapper}>
       <Head>

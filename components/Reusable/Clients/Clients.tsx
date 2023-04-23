@@ -35,7 +35,7 @@ const Clients: React.FC<ClientsProps> = ({
         <a
           data-aos={animations}
           data-aos-delay={idxOne * 50}
-          data-aos-duration="200"
+          data-aos-duration="300"
           data-aos-easing="ease-in-out"
           href={item.link}
           target="_blank"
