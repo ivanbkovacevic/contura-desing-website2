@@ -226,7 +226,7 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Halloween Page 404",
     title: "Hero page",
-    img: "/assets/images/work/halloweenWorkSection.jpeg",
+    img: "/assets/images/work/halloweenWorkSection.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://www.instagram.com/p/CHBPJpLHOsH/?img_index=1",
@@ -234,7 +234,7 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Logo Collection",
     title: "Contura Design",
-    img: "/assets/images/work/logosWorkSection.jpeg",
+    img: "/assets/images/work/logosWorkSection.png",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
     link: "https://dribbble.com/shots/14157514-Logo-universe-1",
