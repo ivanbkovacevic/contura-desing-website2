@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   min-height: $headerHeight;
   z-index: $header-z-index;
   width: 100%;
@@ -50,6 +50,7 @@
 
 .onAbout {
   background-color: rgba($someLightBlue, 0.5);
+
 }
 .onAll {
   background-color: rgba($white, 0.5);

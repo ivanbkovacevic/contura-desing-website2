@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: $headerHeight;
+ // padding-top: $headerHeight;
 
   .weAreConturaSection {
     background-color: $someLightBlue;
@@ -27,7 +27,7 @@
     .title {
       color: $white;
       margin-bottom: 7rem;
-      font-size: 4rem;
+      font-size: 3.2rem;
 
     }
   }

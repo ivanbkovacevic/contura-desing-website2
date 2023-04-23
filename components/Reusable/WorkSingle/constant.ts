@@ -97,7 +97,7 @@ export const WORK_LIST_HOME: Work[] = [
     img: "/assets/images/work/profesorImageDeseta.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
   },
   {
     description: "Notorious Potato ■ Social Media",
@@ -181,7 +181,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/casinoImageDeveta.png",
     color: COLORS.COSMIC_LATTE,
     order: ORDER.PICTURE_DOWN,
-    link: "",
+    link: "https://apps.apple.com/ca/app/golden-casino-vegas-slots/id1216780424",
   },
   {
     description: "Euclid School ■ Landing Page",
@@ -197,7 +197,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/musicappImageJedanajsta.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
   },
   {
     description: "Notorious Potato ■ Social Media",
@@ -213,7 +213,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/avanetWorkSection.jpeg",
     color: COLORS.LAVENDER,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://www.behance.net/gallery/95255645/Avanet-Landing-Page",
   },
   {
     description: "Park City Granola",
@@ -221,7 +221,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/parkCityWorkSection.jpeg",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://www.instagram.com/parkcitygranolaco/",
   },
   {
     description: "Halloween Page 404",
@@ -229,7 +229,7 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/halloweenWorkSection.jpeg",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
-    link: "",
+    link: "https://www.instagram.com/p/CHBPJpLHOsH/?img_index=1",
   },
   {
     description: "Logo Collection",
@@ -237,6 +237,6 @@ export const WORK_LIST_WORK: Work[] = [
     img: "/assets/images/work/logosWorkSection.jpeg",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
-    link: "",
+    link: "https://dribbble.com/shots/14157514-Logo-universe-1",
   },
 ];
