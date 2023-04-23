@@ -35,7 +35,7 @@ const WorkSingle: React.FC<Work> = ({
           <h3>{description}</h3>
         </div>
         <div className={style.image}>
-          <Image src={img} fill alt={title} quality={75} unoptimized />
+          <Image src={img} fill alt={title} quality={100} unoptimized />
         </div>
       </div>
       <p data-aos="fade-up" data-aos-delay="300">

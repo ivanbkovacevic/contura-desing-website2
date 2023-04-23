@@ -54,7 +54,7 @@ export const WORK_LIST_HOME: Work[] = [
     description:
       "From Scratch, a Washington DC-based food truck and catering business",
     title: "From Scratch",
-    img: "/assets/images/work/fromScratchImageSesta.png",
+    img: "/assets/images/work/fromScratchImageSestaResize.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.facebook.com/ffscratch",
@@ -154,7 +154,7 @@ export const WORK_LIST_WORK: Work[] = [
     description:
       "From Scratch, a Washington DC-based food truck and catering business",
     title: "From Scratch",
-    img: "/assets/images/work/fromScratchImageSesta.png",
+    img: "/assets/images/work/fromScratchImageResize.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.facebook.com/ffscratch",
