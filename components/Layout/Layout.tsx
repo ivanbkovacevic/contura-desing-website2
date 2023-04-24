@@ -1,10 +1,9 @@
 import React, { ReactNode, useEffect } from "react";
 import AOS from "aos";
-
 import Head from "next/head";
 import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
 import style from "./Layout.module.scss";
+import Footer from "./Footer/Footer";
 
 type Props = {
   children?: ReactNode;
