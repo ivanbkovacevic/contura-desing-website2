@@ -45,7 +45,7 @@ const Home = () => {
         <ButtonLink title="About ConturaDesign" link="/about" position="left" />
       </section>
       <section className={style.sliderSection}>
-        <MySlider slidesPerView={5} slidesListImages={SLIDES_HOME} />
+        <MySlider slidesPerView={3} slidesListImages={SLIDES_HOME} />
       </section>
       <section className={style.offerSection} data-centered="yes">
         <OfferSection />
