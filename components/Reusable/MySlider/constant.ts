@@ -1,38 +1,50 @@
 export const SLIDES_HOME = [
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    width: 350,
     img: "/assets/images/sliderHome/slideImage02.png",
   },
 

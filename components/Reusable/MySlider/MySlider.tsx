@@ -7,7 +7,7 @@ import style from "./MySlider.module.scss";
 
 interface SliderProps {
   slidesPerView: number;
-  slidesListImages?: { img: string }[];
+  slidesListImages?: { img: string, width: number }[];
   slidesListTestemonial?: {
     testemonial: string;
     author: string;
@@ -31,11 +31,12 @@ const MySlider: React.FC<SliderProps> = ({
     speed: 2000,
     slidesToShow: slidesPerView,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+  //  adaptiveHeight: true,
     swipeToSlide: true,
     autoplay: sliderType === "images",
     autoplaySpeed: 2000,
     cssEase: "linear",
+    variableWidth: sliderType === "images",
   };
 
   const wrapperStyle = cn(style.wrapper, 
@@ -51,8 +52,8 @@ const MySlider: React.FC<SliderProps> = ({
 
     return slidesListImages.map((item) => {
       return (
-        <div key={slideId} className={style.singleSlideWrapper}>
-          <div className={slideSingleStyle}>
+        <div style={{width: item.width}} key={slideId} className={style.singleSlideWrapper}>
+          <div  className={slideSingleStyle}>
             <Image quality={100} src={item.img} alt={slideId} fill />
           </div>
         </div>
