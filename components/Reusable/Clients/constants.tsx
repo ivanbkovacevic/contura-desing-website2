@@ -40,7 +40,7 @@ export const CLIENTS: Client[] = [
   {
     title: "client 21",
     img: <Codefacto />,
-    link: '',
+    link: 'https://www.codefacto.co.uk',
   },
   {
     title: "clien4t 1",
@@ -55,7 +55,7 @@ export const CLIENTS: Client[] = [
   {
     title: "client6 1",
     img: <KernPunkt />,
-    link: 'fwef',
+    link: '',
   },
   {
     title: "client71",
@@ -104,7 +104,7 @@ export const BIG_COMPANYES: Client[] = [
   {
     title: "clien-t 1",
     img: <FaceBook />,
-    link: 'https://facebook.com/',
+    link: '',
   },
   {
     title: "clien-t 1",
@@ -119,7 +119,7 @@ export const BIG_COMPANYES: Client[] = [
   {
     title: "clien4t 1",
     img: <Amazon />,
-    link: 'https://www.amazon.com',
+    link: '',
   },
   {
     title: "client5 1",
@@ -129,12 +129,12 @@ export const BIG_COMPANYES: Client[] = [
   {
     title: "client6 1",
     img: <GitHub />,
-    link: 'fwef',
+    link: '',
   },
   {
     title: "client71",
     img: <Google />,
-    link: 'https://google.com',
+    link: '',
   },
   {
     title: "client8 1",
@@ -149,7 +149,7 @@ export const BIG_COMPANYES: Client[] = [
   {
     title: "clien0t 1",
     img: <Stripe />,
-    link: '/',
+    link: '',
   },
   {
     title: "clien-t 1",

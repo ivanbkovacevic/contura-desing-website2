@@ -37,7 +37,7 @@ const Clients: React.FC<ClientsProps> = ({
           data-aos-delay={idxOne * 50}
           data-aos-duration="300"
           data-aos-easing="ease-in-out"
-          href={item.link}
+          href={item.link !== '' ? item.link : null}
           target="_blank"
           className={style.clientWrapper}
           key={clientId}
