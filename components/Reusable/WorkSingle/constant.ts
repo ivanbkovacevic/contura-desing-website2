@@ -3,6 +3,7 @@ import { COLORS, ORDER } from "../../../utils/globalConstans";
 export interface Work {
   description: string;
   title: string;
+  subtitle: string;
   img: string;
   color: string;
   order: string;
@@ -13,7 +14,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Billboard Animal Welfare PSA",
     title: "Animal Welfare PSA",
-    img: "/assets/images/work/imageBilbordPrva.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/billboardAnimal.png",
     color: COLORS.PALE_LEMON,
     order: ORDER.PICTURE_DOWN,
     link: "https://dribbble.com/shots/14976707-Billboard-Animal-Welfare-PSA",
@@ -21,7 +23,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Transport planning and management platform",
     title: "rouvia (previously, Forwardize)",
-    img: "/assets/images/work/forwardizeImageDruga.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/rouviaPlatform.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://rouvia.com/",
@@ -29,7 +32,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "QClub application",
     title: "QCLUB",
-    img: "/assets/images/work/qclubImageTreca.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/qclubApp.png",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
     link: "https://lnkd.in/d2qrjvGG",
@@ -37,7 +41,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "cryptoCrazy Beavers - NFT Collection",
     title: "OpenSea",
-    img: "/assets/images/work/nftGifCetvrti.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/cryptoCreazyBeavers.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/17424751-cryptoCrazy-Beavers-NFT",
@@ -45,7 +50,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "GetVoIP ■ website redesign",
     title: "GetVoIP",
-    img: "/assets/images/work/getVoipImagePeta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/getvoipLandingPage.png",
     color: COLORS.MAGNOLIA_DARK,
     order: ORDER.PICTURE_UP,
     link: "https://getvoip.com/",
@@ -53,8 +59,9 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description:
       "From Scratch, a Washington DC-based food truck and catering business",
-    title: "From Scratch",
-    img: "/assets/images/work/fromScratchImageSestaResize.png",
+      title: "From Scratch",
+      subtitle: 'subtitle',
+    img: "/assets/images/workSections/fromScratch.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.facebook.com/ffscratch",
@@ -62,7 +69,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Sekopak Instagram posts",
     title: "SekoPak",
-    img: "/assets/images/work/sekopakImageSedma.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/sekopak.png",
     color: COLORS.ALICE_BLUE,
     order: ORDER.PICTURE_UP,
     link: "https://sekopak.com/",
@@ -70,7 +78,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Dashboard project ■ aragon/blockchain app",
     title: "aragon/blockchain app",
-    img: "/assets/images/work/jogiImageOsmi.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/dashboardCryptoYogy.png",
     color: COLORS.MINT_CREAM,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14907864-UI-UX-Dashboard-project",
@@ -78,7 +87,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "CasinoGold app ■ main screens",
     title: "CasinoGold app",
-    img: "/assets/images/work/profesorImageDeseta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/casinoApp.png",
     color: COLORS.COSMIC_LATTE,
     order: ORDER.PICTURE_DOWN,
     link: "",
@@ -86,7 +96,8 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Euclid School ■ Landing Page",
     title: "quanthub",
-    img: "/assets/images/work/profesorImageDeseta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/schoolHeroPage.png",
     color: COLORS.ALICE_BLUELIGHT,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14305872-Euclid-School-Landing-Page",
@@ -94,18 +105,20 @@ export const WORK_LIST_HOME: Work[] = [
   {
     description: "Music Player ■ Mobile app",
     title: "Random app",
-    img: "/assets/images/work/profesorImageDeseta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/musicApp.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
   },
   {
-    description: "Notorious Potato ■ Social Media",
-    title: "Notorious Potato",
-    img: "/assets/images/work/profesorImageDeseta.png",
-    color: COLORS.MISTY_ROSE,
+    description: "Logo Collection",
+    title: "Contura Design",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/logoCollection.png",
+    color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
-    link: "https://www.instagram.com/notoriouspotato_gr/",
+    link: "https://dribbble.com/shots/14157514-Logo-universe-1",
   },
 ];
 
@@ -113,7 +126,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Billboard Animal Welfare PSA",
     title: "Animal Welfare PSA",
-    img: "/assets/images/work/imageBilbordPrva.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/billboardAnimal.png",
     color: COLORS.PALE_LEMON,
     order: ORDER.PICTURE_DOWN,
     link: "https://dribbble.com/shots/14976707-Billboard-Animal-Welfare-PSA",
@@ -121,7 +135,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Transport planning and management platform",
     title: "rouvia (previously, Forwardize)",
-    img: "/assets/images/work/forwardizeImageDruga.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/rouviaPlatform.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://rouvia.com/",
@@ -129,7 +144,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "QClub application",
     title: "QCLUB",
-    img: "/assets/images/work/qclubImageTreca.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/qclubApp.png",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_DOWN,
     link: "https://lnkd.in/d2qrjvGG",
@@ -137,7 +153,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "cryptoCrazy Beavers - NFT Collection",
     title: "OpenSea",
-    img: "/assets/images/work/nftGifCetvrti.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/cryptoCreazyBeavers.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/17424751-cryptoCrazy-Beavers-NFT",
@@ -145,7 +162,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "GetVoIP ■ website redesign",
     title: "GetVoIP",
-    img: "/assets/images/work/getVoipImagePeta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/getvoipLandingPage.png",
     color: COLORS.MAGNOLIA_DARK,
     order: ORDER.PICTURE_UP,
     link: "https://getvoip.com/",
@@ -153,8 +171,9 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description:
       "From Scratch, a Washington DC-based food truck and catering business",
-    title: "From Scratch",
-    img: "/assets/images/work/fromScratchImageResize.png",
+      title: "From Scratch",
+      subtitle: 'subtitle',
+    img: "/assets/images/workSections/fromScratch.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.facebook.com/ffscratch",
@@ -162,7 +181,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Sekopak Instagram posts",
     title: "SekoPak",
-    img: "/assets/images/work/sekopakImageSedma.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/sekopak.png",
     color: COLORS.ALICE_BLUE,
     order: ORDER.PICTURE_UP,
     link: "https://sekopak.com/",
@@ -170,7 +190,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Dashboard project ■ aragon/blockchain app",
     title: "aragon/blockchain app",
-    img: "/assets/images/work/jogiImageOsmi.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/dashboardCryptoYogy.png",
     color: COLORS.MINT_CREAM,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14907864-UI-UX-Dashboard-project",
@@ -178,15 +199,17 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "CasinoGold app ■ main screens",
     title: "CasinoGold app",
-    img: "/assets/images/work/casinoImageDeveta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/casinoApp.png",
     color: COLORS.COSMIC_LATTE,
     order: ORDER.PICTURE_DOWN,
-    link: "https://apps.apple.com/ca/app/golden-casino-vegas-slots/id1216780424",
+    link: "",
   },
   {
     description: "Euclid School ■ Landing Page",
     title: "quanthub",
-    img: "/assets/images/work/profesorImageDeseta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/schoolHeroPage.png",
     color: COLORS.ALICE_BLUELIGHT,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14305872-Euclid-School-Landing-Page",
@@ -194,15 +217,27 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Music Player ■ Mobile app",
     title: "Random app",
-    img: "/assets/images/work/musicappImageJedanajsta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/musicApp.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
   },
   {
+    description: "Logo Collection",
+    title: "Contura Design",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/logoCollection.png",
+    color: COLORS.CHAMPAGNE_PINK,
+    order: ORDER.PICTURE_DOWN,
+    link: "https://dribbble.com/shots/14157514-Logo-universe-1",
+  },
+ 
+  {
     description: "Notorious Potato ■ Social Media",
     title: "Notorious Potato",
-    img: "/assets/images/work/knedlaImageDvanajsta.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/notoriousPotatoSocial.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.instagram.com/notoriouspotato_gr/",
@@ -210,7 +245,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "IT Security Website",
     title: "Avanet",
-    img: "/assets/images/work/avanetWorkSection.jpeg",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/avanetWebsite.png",
     color: COLORS.LAVENDER,
     order: ORDER.PICTURE_UP,
     link: "https://www.behance.net/gallery/95255645/Avanet-Landing-Page",
@@ -218,7 +254,8 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Park City Granola",
     title: "Park City Granola",
-    img: "/assets/images/work/parkCityWorkSection.jpeg",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/parkCityGranola.png",
     color: COLORS.CHAMPAGNE_PINK,
     order: ORDER.PICTURE_UP,
     link: "https://www.instagram.com/parkcitygranolaco/",
@@ -226,17 +263,11 @@ export const WORK_LIST_WORK: Work[] = [
   {
     description: "Halloween Page 404",
     title: "Hero page",
-    img: "/assets/images/work/halloweenWorkSection.png",
+    subtitle: 'subtitle',
+    img: "/assets/images/workSections/halloween404page.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_UP,
     link: "https://www.instagram.com/p/CHBPJpLHOsH/?img_index=1",
   },
-  {
-    description: "Logo Collection",
-    title: "Contura Design",
-    img: "/assets/images/work/logosWorkSection.png",
-    color: COLORS.CHAMPAGNE_PINK,
-    order: ORDER.PICTURE_DOWN,
-    link: "https://dribbble.com/shots/14157514-Logo-universe-1",
-  },
+
 ];

@@ -26,7 +26,7 @@
       transform: translateX(-50%);
       padding: 2rem 3rem;
       color: $white;
-      background-color: $purple;
+      background-color: $black;
       transition: all 0.4s ease-in-out;
     }
     .description {
@@ -55,6 +55,11 @@
     margin-top: 2rem;
     font-weight: 700;
     font-size: 2rem;
+  }
+
+  p:last-child {
+    font-weight: 700;
+    color: lighten($jet,30%);
   }
 
   .orderImageUp {

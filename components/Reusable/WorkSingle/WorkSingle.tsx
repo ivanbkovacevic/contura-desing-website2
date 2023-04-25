@@ -9,6 +9,7 @@ import style from "./WorkSingle.module.scss";
 const WorkSingle: React.FC<Work> = ({
   description,
   title,
+  subtitle,
   img,
   color,
   order,
@@ -34,6 +35,9 @@ const WorkSingle: React.FC<Work> = ({
       </div>
       <p data-aos="fade-up" data-aos-delay="300">
         {title}
+      </p>
+      <p data-aos="fade-up" data-aos-delay="400">
+        {subtitle}
       </p>
     </a>
   );
