@@ -24,6 +24,7 @@ import QClub from "../Icons/Clients/QClub";
 import QuantHub from "../Icons/Clients/QuantHub";
 import Rouvia from "../Icons/Clients/Rouvia";
 import SekoPak from "../Icons/Clients/SekoPak";
+import Vectary from "../Icons/Clients/Vectary";
 
 export interface Client {
   title: string;
@@ -86,6 +87,11 @@ export const CLIENTS: Client[] = [
     title: "clien-t 1",
     img: <Codat />,
     link: 'https://codat.com/',
+  },
+  {
+    title: "clienwd-t 1",
+    img: <Vectary />,
+    link: '',
   },
 
 ];
