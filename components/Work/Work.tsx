@@ -20,14 +20,11 @@ const Work: React.FC<WorkProps> = ({ some }) => {
       <section className={style.workGifSection} data-centered="yes">
         <WorkGif />
       </section>
-      <section className={style.clientsSection} >
-      <h3 className={style.title} data-centered="yes">Clients</h3>
-
-        <Clients 
-        backgroundtype="black" 
-        contentCentered="yes" 
-   
-        list={CLIENTS}/>
+      <section className={style.clientsSection}>
+        <h3 className={style.title} data-centered="yes">
+          Clients
+        </h3>
+        <Clients backgroundtype="black" contentCentered="yes" list={CLIENTS} />
       </section>
     </div>
   );

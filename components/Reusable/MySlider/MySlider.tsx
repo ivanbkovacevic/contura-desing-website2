@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import cn from "classnames";
 import { v4 as uuidv4 } from "uuid";
@@ -39,6 +39,29 @@ const MySlider: React.FC<SliderProps> = ({
     variableWidth: sliderType === "images",
   };
 
+  const sliderRef = useRef(null);
+
+  const handlePrevOnMouseOver = () => {
+    const intervalId = setInterval(() => {
+      sliderRef.current.slickPrev();
+    }, 200); 
+
+    document.querySelector('#mouseOverPrevius').addEventListener('mouseleave', () => {
+      clearInterval(intervalId);
+    });
+    console.log('mouseover')
+  };
+  const handleNextOnMouseOver = () => {
+    const intervalId = setInterval(() => {
+      sliderRef.current.slickNext();
+    }, 200); 
+
+    document.querySelector('#mouseOverNext').addEventListener('mouseleave', () => {
+      clearInterval(intervalId);
+    });
+    console.log('mouseovernext')
+  };
+
   const wrapperStyle = cn(style.wrapper, 
     {    testemonialSlider: sliderType === "testemonial", }
     );
@@ -77,7 +100,9 @@ const MySlider: React.FC<SliderProps> = ({
 
   return (
     <section className={wrapperStyle}>
-      <Slider  {...settings}>
+       <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}></button>
+       <button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}></button>
+      <Slider  ref={sliderRef} {...settings}>
         {slidesListImages.length > 0
           ? generateSlidesImages()
           : generateSlidesTestemonial()}

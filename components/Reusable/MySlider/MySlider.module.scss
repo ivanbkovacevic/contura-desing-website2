@@ -4,6 +4,58 @@
   margin-bottom: 3rem;
   height: 45rem;
 
+  button {
+    border: none;
+    background: none;
+  }
+
+  .mouseOverPrevius {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border: 1px solid red;
+    opacity: 0.5;
+    z-index: 900;
+
+    &:hover::after {
+      content: url("/assets/icons/arrowLeftGreen.svg");
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 25%;
+      top: 10%;
+      width: 20rem;
+      height: 10rem;
+      transition: all 0.2s ease-in-out;
+      z-index: 950;
+    }
+  }
+  .mouseOverNext {
+    z-index: 900;
+    position: absolute;
+    right: 0;
+    border: 1px solid blue;
+    opacity: 0.5;
+    height: 100%;
+    width: 50%;
+
+    &:hover::after {
+      content: url("/assets/icons/arrowRightGreen.svg");
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: 10%;
+      width: 20rem;
+      height: 10rem;
+      transition: all 0.2s ease-in-out;
+      z-index: 950;
+    }
+  }
+
   .singleSlideWrapper {
     padding: 0 2.5rem;
     z-index: 800;
@@ -13,7 +65,6 @@
       position: relative;
       overflow: hidden;
       height: 43rem;
-      
 
       img {
         object-fit: contain;
@@ -37,7 +88,6 @@
       color: $clientsGray;
       line-height: 136.3%;
       margin-bottom: 0.5rem;
-
     }
     p:nth-of-type(4) {
       color: $lavender;
