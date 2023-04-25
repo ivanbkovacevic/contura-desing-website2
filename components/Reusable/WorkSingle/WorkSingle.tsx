@@ -14,6 +14,7 @@ const WorkSingle: React.FC<Work> = ({
   color,
   order,
   link,
+  descFontColor,
 }) => {
 
   const wrapperImgAndDescription = cn(
@@ -27,7 +28,7 @@ const WorkSingle: React.FC<Work> = ({
       <div data-aos="fade-up" data-aos-duration="1000"  key={title} className={wrapperImgAndDescription}>
           <span>Learn more</span>
         <div className={style.description} style={{ backgroundColor: color }}>
-          <h3>{description}</h3>
+          <h3 style={{ color: descFontColor }}>{description}</h3>
         </div>
         <div className={style.image}>
           <Image src={img} fill alt={title} quality={100}  />

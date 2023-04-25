@@ -13,6 +13,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({list}) => {
       return (
         <WorkSingle
           description={item.description}
+          descFontColor={item.descFontColor}
           title={item.title}
           subtitle={item.subtitle}
           img={item.img}

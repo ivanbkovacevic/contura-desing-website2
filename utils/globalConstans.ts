@@ -2,6 +2,7 @@ export const COLORS = {
   GREEN: "green",
   RED: "red",
   BLUE: "blue",
+  WHITE: "white",
 
   PALE_LEMON: "#FFFCEB",
   LAVENDER_BLUSH: "#FFF2F2",
@@ -19,6 +20,9 @@ export const COLORS = {
   ALICE_BLUELIGHT: "#EEF9FF",
   MISTY_ROSE: "#FFE5E3",
   SEASHELL: "#FFEFE5",
+  VAN_DYKE: "#483C37",
+  RED_WOOD_E19: "#DF0D00",
+  OXFORD_BLUE: "#0A2540",
 };
 
 export enum ORDER {

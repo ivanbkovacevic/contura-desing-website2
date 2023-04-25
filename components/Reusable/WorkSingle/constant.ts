@@ -2,6 +2,7 @@ import { COLORS, ORDER } from "../../../utils/globalConstans";
 
 export interface Work {
   description: string;
+  descFontColor: string;
   title: string;
   subtitle: string;
   img: string;
@@ -13,6 +14,7 @@ export interface Work {
 export const WORK_LIST_HOME: Work[] = [
   {
     description: "Billboard Animal Welfare PSA",
+    descFontColor: COLORS.JET,
     title: "Animal Welfare PSA",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/billboardAnimal.png",
@@ -22,52 +24,58 @@ export const WORK_LIST_HOME: Work[] = [
   },
   {
     description: "Transport planning and management platform",
+    descFontColor: COLORS.JET,
     title: "rouvia (previously, Forwardize)",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/rouviaPlatform.png",
-    color: COLORS.MISTY_ROSE,
+    color: COLORS.LAVENDER_BLUSH,
     order: ORDER.PICTURE_UP,
     link: "https://rouvia.com/",
   },
   {
     description: "QClub application",
+    descFontColor: COLORS.WHITE,
     title: "QCLUB",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/qclubApp.png",
-    color: COLORS.CHAMPAGNE_PINK,
+    color: COLORS.VAN_DYKE,
     order: ORDER.PICTURE_DOWN,
     link: "https://lnkd.in/d2qrjvGG",
   },
   {
     description: "cryptoCrazy Beavers - NFT Collection",
+    descFontColor: COLORS.JET,
     title: "OpenSea",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/cryptoCreazyBeavers.png",
-    color: COLORS.MISTY_ROSE,
+    color: COLORS.MAGNOLIA_DARK,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/17424751-cryptoCrazy-Beavers-NFT",
   },
   {
     description: "GetVoIP ■ website redesign",
+    descFontColor: COLORS.WHITE,
     title: "GetVoIP",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/getvoipLandingPage.png",
-    color: COLORS.MAGNOLIA_DARK,
+    color: COLORS.OXFORD_BLUE,
     order: ORDER.PICTURE_UP,
     link: "https://getvoip.com/",
   },
   {
-    description:
-      "From Scratch, a Washington DC-based food truck and catering business",
-      title: "From Scratch",
-      subtitle: 'subtitle',
+
+    description: "From Scratch, a Washington DC-based food truck and catering business",
+    descFontColor: COLORS.WHITE,
+    title: "From Scratch",
+    subtitle: 'subtitle',
     img: "/assets/images/workSections/fromScratch.png",
-    color: COLORS.MISTY_ROSE,
+    color: COLORS.RED_WOOD_E19,
     order: ORDER.PICTURE_DOWN,
     link: "https://www.facebook.com/ffscratch",
   },
   {
     description: "Sekopak Instagram posts",
+    descFontColor: COLORS.JET,
     title: "SekoPak",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/sekopak.png",
@@ -77,6 +85,7 @@ export const WORK_LIST_HOME: Work[] = [
   },
   {
     description: "Dashboard project ■ aragon/blockchain app",
+    descFontColor: COLORS.JET,
     title: "aragon/blockchain app",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/dashboardCryptoYogy.png",
@@ -84,47 +93,52 @@ export const WORK_LIST_HOME: Work[] = [
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/14907864-UI-UX-Dashboard-project",
   },
-  {
-    description: "CasinoGold app ■ main screens",
-    title: "CasinoGold app",
-    subtitle: 'subtitle',
-    img: "/assets/images/workSections/casinoApp.png",
-    color: COLORS.COSMIC_LATTE,
-    order: ORDER.PICTURE_DOWN,
-    link: "",
-  },
-  {
-    description: "Euclid School ■ Landing Page",
-    title: "quanthub",
-    subtitle: 'subtitle',
-    img: "/assets/images/workSections/schoolHeroPage.png",
-    color: COLORS.ALICE_BLUELIGHT,
-    order: ORDER.PICTURE_UP,
-    link: "https://dribbble.com/shots/14305872-Euclid-School-Landing-Page",
-  },
-  {
-    description: "Music Player ■ Mobile app",
-    title: "Random app",
-    subtitle: 'subtitle',
-    img: "/assets/images/workSections/musicApp.png",
-    color: COLORS.MISTY_ROSE,
-    order: ORDER.PICTURE_UP,
-    link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
-  },
-  {
-    description: "Logo Collection",
-    title: "Contura Design",
-    subtitle: 'subtitle',
-    img: "/assets/images/workSections/logoCollection.png",
-    color: COLORS.CHAMPAGNE_PINK,
-    order: ORDER.PICTURE_DOWN,
-    link: "https://dribbble.com/shots/14157514-Logo-universe-1",
-  },
+  // {
+    // description: "CasinoGold app ■ main screens",
+    // descFontColor: COLORS.JET,//   
+  //   title: "CasinoGold app",
+  //   subtitle: 'subtitle',
+  //   img: "/assets/images/workSections/casinoApp.png",
+  //   color: COLORS.COSMIC_LATTE,
+  //   order: ORDER.PICTURE_DOWN,
+  //   link: "",
+  // },
+  // {
+    // description: "Euclid School ■ Landing Page",
+    // descFontColor: COLORS.JET,//   
+  //   title: "quanthub",
+  //   subtitle: 'subtitle',
+  //   img: "/assets/images/workSections/schoolHeroPage.png",
+  //   color: COLORS.ALICE_BLUELIGHT,
+  //   order: ORDER.PICTURE_UP,
+  //   link: "https://dribbble.com/shots/14305872-Euclid-School-Landing-Page",
+  // },
+  // {
+    // description: "Music Player ■ Mobile app",
+    // descFontColor: COLORS.JET,//   
+  //   title: "Random app",
+  //   subtitle: 'subtitle',
+  //   img: "/assets/images/workSections/musicApp.png",
+  //   color: COLORS.MISTY_ROSE,
+  //   order: ORDER.PICTURE_UP,
+  //   link: "https://dribbble.com/shots/14717391-Music-Player-Mobile-App",
+  // },
+  // {
+    // description: "Logo Collection",
+    // descFontColor: COLORS.JET,//   
+  //   title: "Contura Design",
+  //   subtitle: 'subtitle',
+  //   img: "/assets/images/workSections/logoCollection.png",
+  //   color: COLORS.CHAMPAGNE_PINK,
+  //   order: ORDER.PICTURE_DOWN,
+  //   link: "https://dribbble.com/shots/14157514-Logo-universe-1",
+  // },
 ];
 
 export const WORK_LIST_WORK: Work[] = [
   {
     description: "Billboard Animal Welfare PSA",
+    descFontColor: COLORS.JET,
     title: "Animal Welfare PSA",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/billboardAnimal.png",
@@ -134,6 +148,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Transport planning and management platform",
+    descFontColor: COLORS.JET,
     title: "rouvia (previously, Forwardize)",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/rouviaPlatform.png",
@@ -143,6 +158,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "QClub application",
+    descFontColor: COLORS.JET,
     title: "QCLUB",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/qclubApp.png",
@@ -152,6 +168,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "cryptoCrazy Beavers - NFT Collection",
+    descFontColor: COLORS.JET,
     title: "OpenSea",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/cryptoCreazyBeavers.png",
@@ -161,6 +178,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "GetVoIP ■ website redesign",
+    descFontColor: COLORS.JET,
     title: "GetVoIP",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/getvoipLandingPage.png",
@@ -169,10 +187,11 @@ export const WORK_LIST_WORK: Work[] = [
     link: "https://getvoip.com/",
   },
   {
-    description:
-      "From Scratch, a Washington DC-based food truck and catering business",
-      title: "From Scratch",
-      subtitle: 'subtitle',
+
+    descFontColor: COLORS.JET,
+    description: "From Scratch, a Washington DC-based food truck and catering business",
+    title: "From Scratch",
+    subtitle: 'subtitle',
     img: "/assets/images/workSections/fromScratch.png",
     color: COLORS.MISTY_ROSE,
     order: ORDER.PICTURE_DOWN,
@@ -180,6 +199,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Sekopak Instagram posts",
+    descFontColor: COLORS.JET,
     title: "SekoPak",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/sekopak.png",
@@ -189,6 +209,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Dashboard project ■ aragon/blockchain app",
+    descFontColor: COLORS.JET,
     title: "aragon/blockchain app",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/dashboardCryptoYogy.png",
@@ -198,6 +219,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "CasinoGold app ■ main screens",
+    descFontColor: COLORS.JET,
     title: "CasinoGold app",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/casinoApp.png",
@@ -207,6 +229,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Euclid School ■ Landing Page",
+    descFontColor: COLORS.JET,
     title: "quanthub",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/schoolHeroPage.png",
@@ -216,6 +239,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Music Player ■ Mobile app",
+    descFontColor: COLORS.JET,
     title: "Random app",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/musicApp.png",
@@ -225,6 +249,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Logo Collection",
+    descFontColor: COLORS.JET,
     title: "Contura Design",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/logoCollection.png",
@@ -235,6 +260,7 @@ export const WORK_LIST_WORK: Work[] = [
  
   {
     description: "Notorious Potato ■ Social Media",
+    descFontColor: COLORS.JET,
     title: "Notorious Potato",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/notoriousPotatoSocial.png",
@@ -244,6 +270,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "IT Security Website",
+    descFontColor: COLORS.JET,
     title: "Avanet",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/avanetWebsite.png",
@@ -253,6 +280,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Park City Granola",
+    descFontColor: COLORS.JET,
     title: "Park City Granola",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/parkCityGranola.png",
@@ -262,6 +290,7 @@ export const WORK_LIST_WORK: Work[] = [
   },
   {
     description: "Halloween Page 404",
+    descFontColor: COLORS.JET,
     title: "Hero page",
     subtitle: 'subtitle',
     img: "/assets/images/workSections/halloween404page.png",
