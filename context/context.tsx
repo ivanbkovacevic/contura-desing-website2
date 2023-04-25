@@ -29,7 +29,6 @@ function ContextProvider(props: React.PropsWithChildren<{}>) {
   };
   const handleFooterReached = () => {
     setState((prevState) => ({ ...prevState, footerReached: !state.footerReached }));
-    console.log('udfhfuwehfuwufuheuhuhuuhuhuuhu')
   };
 
   useEffect(() => {

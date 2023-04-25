@@ -54,7 +54,7 @@ const MySlider: React.FC<SliderProps> = ({
       return (
         <div style={{width: item.width}} key={slideId} className={style.singleSlideWrapper}>
           <div  className={slideSingleStyle}>
-            <Image quality={100} src={item.img} alt={slideId} fill />
+            <Image quality={100} src={item.img} alt="sliderImage" fill />
           </div>
         </div>
       );
