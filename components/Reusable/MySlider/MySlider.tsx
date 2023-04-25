@@ -1,12 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 import cn from "classnames";
+import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 import style from "./MySlider.module.scss";
 
 interface SliderProps {
   slidesPerView: number;
-  slidesListImages?: { alt: string; img: string }[];
+  slidesListImages?: { img: string }[];
   slidesListTestemonial?: {
     testemonial: string;
     author: string;
@@ -46,11 +47,13 @@ const MySlider: React.FC<SliderProps> = ({
   );
 
   const generateSlidesImages = () => {
+    const slideId = uuidv4();
+
     return slidesListImages.map((item) => {
       return (
-        <div key={item.alt} className={style.singleSlideWrapper}>
+        <div key={slideId} className={style.singleSlideWrapper}>
           <div className={slideSingleStyle}>
-            <Image quality={100} src={item.img} alt={item.alt} fill />
+            <Image quality={100} src={item.img} alt={slideId} fill />
           </div>
         </div>
       );
@@ -58,9 +61,10 @@ const MySlider: React.FC<SliderProps> = ({
   };
 
   const generateSlidesTestemonial = () => {
+    const slideId = uuidv4();
     return slidesListTestemonial.map((item) => {
       return (
-        <div key={item.author} className={slideSingleStyle}>
+        <div key={slideId} className={slideSingleStyle}>
           <p>{item.testemonial}</p>
           <p>{item.author}</p>
           <p>{item.jobDescription}</p>
