@@ -12,14 +12,6 @@ export const SLIDES_HOME = [
     width: 375,
   },
   {
-    img: "/assets/images/sliderHome/miPetaImmageDemo.png",
-    width: 207,
-  },
-  {
-    img: "/assets/images/sliderHome/miPvaImageDemo.png",
-    width: 218,
-  },
-  {
     img: "/assets/images/sliderHome/miSport1imageDemo.png",
     width: 350,
   },
