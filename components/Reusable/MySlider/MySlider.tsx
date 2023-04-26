@@ -100,14 +100,20 @@ const MySlider: React.FC<SliderProps> = ({
     });
   };
 
+  const arrows = () => {
+return (
+<>
+        <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}>
+          <span className={style.arrowPrev}><ArrowLeft /></span>
+        </button><button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}>
+            <span className={style.arrowNext}><ArrowRight /></span>
+          </button>
+  </>
+  )
+  }
   return (
     <section className={wrapperStyle}>
-       <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}>
-        <span className={style.arrowPrev}><ArrowLeft /></span>
-       </button>
-       <button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}>
-       <span className={style.arrowNext}><ArrowRight /></span>
-       </button>
+       {sliderType === 'images' && arrows()}
       <Slider  ref={sliderRef} {...settings}>
         {slidesListImages.length > 0
           ? generateSlidesImages()
