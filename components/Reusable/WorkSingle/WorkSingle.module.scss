@@ -10,6 +10,9 @@
   &:hover {
     scale: 1.05;
   }
+  &:hover .subtitle {
+    opacity: 1;
+  }
   .wrapperImgAndDescription {
     display: flex;
     flex-grow: 1;
@@ -58,13 +61,15 @@
     font-size: 2rem;
   }
 
-  p:last-child {
+  .subtitle {
+    opacity: 0;
     font-weight: 100;
     font-family: $font-light;
     color: lighten($jet, 30%);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: all 0.4s ease-in-out;
   }
 
   .orderImageUp {

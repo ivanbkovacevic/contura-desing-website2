@@ -16,7 +16,6 @@ const WorkSingle: React.FC<Work> = ({
   link,
   descFontColor,
 }) => {
-
   const wrapperImgAndDescription = cn(
     style.wrapperImgAndDescription,
     { [style.orderImageUp]: order === ORDER.PICTURE_UP },
@@ -25,21 +24,24 @@ const WorkSingle: React.FC<Work> = ({
 
   return (
     <a href={link} className={style.wrapper} target="_blank">
-      <div data-aos="fade-up" data-aos-duration="1000"  key={title} className={wrapperImgAndDescription}>
-          <span>Learn more</span>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        key={title}
+        className={wrapperImgAndDescription}
+      >
+        <span>Learn more</span>
         <div className={style.description} style={{ backgroundColor: color }}>
           <h3 style={{ color: descFontColor }}>{description}</h3>
         </div>
         <div className={style.image}>
-          <Image src={img} fill alt={title} quality={100}  />
+          <Image src={img} fill alt={title} quality={100} />
         </div>
       </div>
       <p data-aos="fade-up" data-aos-delay="300">
         {title}
       </p>
-      <p data-aos="fade-up" data-aos-delay="400">
-        {subtitle}
-      </p>
+      <p className={style.subtitle}>{subtitle}</p>
     </a>
   );
 };
