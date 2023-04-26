@@ -33,6 +33,7 @@ const Header: React.FC<HeaderProps> = () => {
     { [style.onAbout]: router.pathname === "/about" },
     { [style.onAll]: router.pathname !== "/about" },
     { [style.scrollFromTopEnough]: scrollFromTop > 300 },
+    { [style.footerReached]: footerReached },
     { [style.noBackground]: footerReached }
   );
   const hamburgerBtnStyle = cn(
