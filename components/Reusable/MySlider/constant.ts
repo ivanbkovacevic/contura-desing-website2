@@ -1,51 +1,43 @@
 export const SLIDES_HOME = [
   {
+    img: "/assets/images/sliderHome/miCetvrtaImageDemo.png",
     width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    img: "/assets/images/sliderHome/miDrugaImageDemo.png",
     width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
+    img: "/assets/images/sliderHome/miSport2imageDemo.png",
+    width: 375,
   },
   {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
+    img: "/assets/images/sliderHome/miPetaImmageDemo.png",
+    width: 207,
   },
   {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
+    img: "/assets/images/sliderHome/miPvaImageDemo.png",
+    width: 218,
   },
   {
+    img: "/assets/images/sliderHome/miSport1imageDemo.png",
     width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
   },
   {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
+    img: "/assets/images/sliderHome/miSestaImageDemo.png",
+    width: 375,
   },
   {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
+    img: "/assets/images/sliderHome/miTrecaImageDemo.png",
+    width: 375,
   },
   {
+    img: "/assets/images/sliderHome/miXXimageDemo.png",
     width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
   },
   {
+    img: "/assets/images/sliderHome/miSport3imageDemo.png",
     width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
-  },
-  {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage01.png",
-  },
-  {
-    width: 350,
-    img: "/assets/images/sliderHome/slideImage02.png",
   },
 
 ];
