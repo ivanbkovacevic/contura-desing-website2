@@ -1,9 +1,9 @@
 import React from "react";
 import WorkSection from "../Home/WorkSection/WorkSection";
-import Clients from "../Reusable/Clients/Clients";
+import Clients from "../Reusable/Companies/Companies";
 import { WORK_LIST_WORK } from "../Reusable/WorkSingle/constant";
 import WorkGif from "./WorkGif/WorkGif";
-import { CLIENTS } from "../Reusable/Clients/constants";
+import { CLIENTS } from "../Reusable/Companies/constants";
 import style from "./Work.module.scss";
 
 interface WorkProps {
@@ -24,7 +24,7 @@ const Work: React.FC<WorkProps> = ({ some }) => {
         <h3 className={style.title} data-centered="yes">
           Clients
         </h3>
-        <Clients backgroundtype="black" contentCentered="yes" list={CLIENTS} />
+        <Clients backgroundtype="black" contentCentered="yes" list={CLIENTS} companieType="clients" />
       </section>
     </div>
   );

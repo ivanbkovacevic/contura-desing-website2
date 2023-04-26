@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "./HeroSection/HeroSection";
 import DesignStrategySection from "./DesignStrategySection/DesignStrategySection";
-import Clients from "../Reusable/Clients/Clients";
+import Clients from "../Reusable/Companies/Companies";
 import ButtonLink from "../Reusable/ButtonLink/ButtonLink";
 import WorkSection from "./WorkSection/WorkSection";
 import CompanyNumbers from "./CompanyNumbers/CompanyNumbers";
@@ -12,7 +12,7 @@ import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST_HOME } from "../Reusable/WorkSingle/constant";
 import Aside from "../Layout/Aside/Aside";
 import style from "./Home.module.scss";
-import { BIG_COMPANYES } from "../Reusable/Clients/constants";
+import { BIG_COMPANIES } from "../Reusable/Companies/constants";
 
 interface HomeProps {}
 
@@ -27,7 +27,7 @@ const Home = () => {
       </section>
       <section className={style.clientsSection} data-centered="yes">
         <h3 className={style.title}>People & brands love it</h3>
-        <Clients list={BIG_COMPANYES} />
+        <Clients list={BIG_COMPANIES} companieType="bigCompanies" />
       </section>
       <section className={style.buttonLinkSection} data-centered="yes">
         <ButtonLink title="see more work" link="/work" />

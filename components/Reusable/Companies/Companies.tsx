@@ -2,21 +2,23 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Client } from "./constants";
 import cn from "classnames";
-import style from "./Clients.module.scss";
+import style from "./Companies.module.scss";
 
-interface ClientsProps {
+interface CompaniesProps {
   backgroundtype?: string;
   contentCentered?: string;
   title?: string;
   list: Client[];
   page?: string;
+  companieType: 'bigCompanies' | 'clients';
 }
 
-const Clients: React.FC<ClientsProps> = ({
+const Companies: React.FC<CompaniesProps> = ({
   backgroundtype = "white",
   contentCentered,
   list,
   page,
+  companieType,
 }) => {
   const wrapperStyle = cn(
     style.wrapper,
@@ -26,6 +28,11 @@ const Clients: React.FC<ClientsProps> = ({
   const contentStyle = cn(style.contentWrapper, {
     [style.contentCenteredInSection]: contentCentered === "yes",
   });
+  const companieStyle = cn(style.companiesWrapper,
+    {[style.clients]: companieType === 'clients'},
+    {[style.bigCompanies]: companieType === 'bigCompanies',}
+    );
+
   const animations = page !== 'about' ? 'zoom-in' : '';
   const generateClients = () => {
     return list.map((item, idx) => {
@@ -39,7 +46,7 @@ const Clients: React.FC<ClientsProps> = ({
           data-aos-easing="ease-in-out"
           href={item.link !== '' ? item.link : null}
           target="_blank"
-          className={style.clientWrapper}
+          className={companieStyle}
           key={clientId}
         >
           {item.img}
@@ -59,4 +66,4 @@ const Clients: React.FC<ClientsProps> = ({
   );
 };
 
-export default Clients;
+export default Companies;
