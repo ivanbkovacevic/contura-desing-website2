@@ -18,18 +18,24 @@
     opacity: 0.5;
     z-index: 900;
 
-    &:hover::after {
-      content: url("/assets/icons/arrowLeftGreen.svg");
+    &:hover .arrowPrev {
+      display: block;
     }
-    &::after {
-      content: "";
+    .arrowPrev {
+      display: none;
       position: absolute;
       right: 25%;
-      top: 10%;
-      width: 20rem;
-      height: 10rem;
+      top: 0;
+      width: 10rem;
+      height: 5rem;
       transition: all 0.2s ease-in-out;
       z-index: 950;
+      svg {
+        width: 100%;
+        height: 100%;
+        fill:$navigationGreen;
+        stroke: green;
+      }
     }
   }
   .mouseOverNext {
@@ -41,18 +47,24 @@
     height: 100%;
     width: 50%;
 
-    &:hover::after {
-      content: url("/assets/icons/arrowRightGreen.svg");
+    &:hover .arrowNext {
+      display: block;
     }
-    &::after {
-      content: "";
+    .arrowNext {
+      display: none;
       position: absolute;
       left: 25%;
-      top: 10%;
-      width: 20rem;
-      height: 10rem;
+      top: 0;
+      width: 10rem;
+      height: 5rem;
       transition: all 0.2s ease-in-out;
       z-index: 950;
+      svg {
+        width: 100%;
+        height: 100%;
+        fill:$navigationGreen;
+        stroke: green;
+      }
     }
   }
 

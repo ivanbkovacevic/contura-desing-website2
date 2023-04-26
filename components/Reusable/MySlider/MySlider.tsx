@@ -4,6 +4,8 @@ import cn from "classnames";
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 import style from "./MySlider.module.scss";
+import ArrowLeft from "../Icons/ArrowLeft";
+import ArrowRight from "../Icons/ArrowRight";
 
 interface SliderProps {
   slidesPerView: number;
@@ -100,8 +102,12 @@ const MySlider: React.FC<SliderProps> = ({
 
   return (
     <section className={wrapperStyle}>
-       <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}></button>
-       <button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}></button>
+       <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}>
+        <span className={style.arrowPrev}><ArrowLeft /></span>
+       </button>
+       <button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}>
+       <span className={style.arrowNext}><ArrowRight /></span>
+       </button>
       <Slider  ref={sliderRef} {...settings}>
         {slidesListImages.length > 0
           ? generateSlidesImages()

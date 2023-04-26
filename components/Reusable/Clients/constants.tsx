@@ -56,7 +56,7 @@ export const CLIENTS: Client[] = [
   {
     title: "client6 1",
     img: <KernPunkt />,
-    link: '',
+    link: 'https://www.kernpunkt.de/',
   },
   {
     title: "client71",
@@ -71,7 +71,7 @@ export const CLIENTS: Client[] = [
   {
     title: "client9 1",
     img: <QuantHub />,
-    link: '',
+    link: 'https://www.quanthub.com/',
   },
   {
     title: "clien0t 1",
@@ -91,7 +91,7 @@ export const CLIENTS: Client[] = [
   {
     title: "clienwd-t 1",
     img: <Vectary />,
-    link: '',
+    link: 'https://www.vectary.com/',
   },
 
 ];
