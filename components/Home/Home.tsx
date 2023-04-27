@@ -11,8 +11,8 @@ import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";
 import { WORK_LIST_HOME } from "../Reusable/WorkSingle/constant";
 import Aside from "../Layout/Aside/Aside";
-import style from "./Home.module.scss";
 import { BIG_COMPANIES } from "../Reusable/Companies/constants";
+import style from "./Home.module.scss";
 
 interface HomeProps {}
 

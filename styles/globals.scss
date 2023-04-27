@@ -79,11 +79,10 @@ button {
   width: 100%;
   @include laptop-greater {
     width: $sectionCenteredWidth;
-    max-width: 150rem;
+  //  max-width: 1200px;
   }
 }
 
 section {
-  max-width: $layoutMaxWidth;
+  max-width: 100%;
 }
-

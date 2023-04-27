@@ -10,7 +10,6 @@
   min-height: $headerHeight;
   z-index: $header-z-index;
   width: 100%;
-  max-width: 2000px;
   transition: all 1s;
 
   .content {
@@ -33,7 +32,6 @@
           width: 100%;
           height: 100%;
           fill: $jet;
-
         }
       }
 
@@ -69,7 +67,6 @@
 
 .onAbout {
   background-color: rgba($someLightBlue, 0.5);
-
 }
 .onAll {
   background-color: rgba($white, 0.5);

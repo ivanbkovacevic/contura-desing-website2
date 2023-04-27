@@ -6,6 +6,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: $headerHeight;
+  margin: 0 auto;
+  max-width: $pagesMaxWidth;
 
   .heroSection {
   }
