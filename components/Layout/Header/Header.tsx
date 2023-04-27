@@ -3,11 +3,10 @@ import { Context } from "../../../context/context";
 import Navigation from "./Navigation";
 import Logo from "../../Reusable/Logo/Logo";
 import cn from "classnames";
-import style from "./Header.module.scss";
-import Image from "next/image";
 import useClickOutside from "../../../utils/onClickOutside";
 import { useRouter } from "next/router";
 import Hamburger from "../../Reusable/Icons/Hamburger";
+import style from "./Header.module.scss";
 
 interface HeaderProps {}
 

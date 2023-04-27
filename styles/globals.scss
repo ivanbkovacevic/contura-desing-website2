@@ -84,13 +84,6 @@ button {
 }
 
 section {
-   max-width: 190rem;
+  max-width: $layoutMaxWidth;
 }
 
-footer {
-  // max-width: 200rem;
-}
-
-header {
-  // max-width: 200rem;
-}

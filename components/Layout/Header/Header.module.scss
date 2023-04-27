@@ -10,6 +10,7 @@
   min-height: $headerHeight;
   z-index: $header-z-index;
   width: 100%;
+  max-width: 2000px;
   transition: all 1s;
 
   .content {
