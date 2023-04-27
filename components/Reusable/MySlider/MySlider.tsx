@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import cn from "classnames";
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
+import LeftArrowSlider from "../Icons/LeftArrowSlider";
+import RightArrowSlider from "../Icons/RightArrowSlider";
 import style from "./MySlider.module.scss";
-import ArrowLeft from "../Icons/ArrowLeft";
-import ArrowRight from "../Icons/ArrowRight";
 
 interface SliderProps {
   slidesPerView: number;
@@ -104,9 +104,9 @@ const MySlider: React.FC<SliderProps> = ({
 return (
 <>
         <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}>
-          <span className={style.arrowPrev}><ArrowLeft /></span>
+          <span className={style.arrowPrev}><LeftArrowSlider /></span>
         </button><button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}>
-            <span className={style.arrowNext}><ArrowRight /></span>
+            <span className={style.arrowNext}><RightArrowSlider /></span>
           </button>
   </>
   )

@@ -1,0 +1,12 @@
+import React from 'react'
+
+const LeftArrowSlider = () => {
+  return (
+    <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M23 6.002H1.914L7.208 0.707L6.501 0L0 6.502L6.5 13.002L7.207 12.295L1.914 7.002H23V6.002Z"/>
+    </svg>
+    
+  )
+}
+
+export default LeftArrowSlider

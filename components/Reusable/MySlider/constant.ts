@@ -4,6 +4,10 @@ export const SLIDES_HOME = [
     width: 350,
   },
   {
+    img: "/assets/images/sliderHome/miTrecaImageDemo.png",
+    width: 375,
+  },
+  {
     img: "/assets/images/sliderHome/miDrugaImageDemo.png",
     width: 350,
   },
@@ -17,10 +21,6 @@ export const SLIDES_HOME = [
   },
   {
     img: "/assets/images/sliderHome/miSestaImageDemo.png",
-    width: 375,
-  },
-  {
-    img: "/assets/images/sliderHome/miTrecaImageDemo.png",
     width: 375,
   },
   {
