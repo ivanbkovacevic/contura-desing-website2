@@ -2,7 +2,6 @@
 
 .wrapper {
   display: block;
-
   button {
     border: none;
     background: none;
@@ -13,14 +12,17 @@
       display: flex;
       justify-content: flex-start;
       text-align: left;
-      align-items: flex-start;
+      align-items: center;
       margin-bottom: 2rem;
+      height: 3rem;
 
       .title {
         font-size: 3rem;
         font-weight: 350;
-        line-height: 130%;
+       line-height: 130%;
+        max-height: 3rem;
         transition: all 0.2s ease-in-out;
+
       }
 
       .titleBlack {
@@ -37,9 +39,7 @@
       }
       .arrow {
         width: 2rem;
-        height: 100%;
         margin-left: 1rem;
-        margin-top: 1rem;
         transition: all 0.4s ease-in-out;
         svg {
           width: 100%;
