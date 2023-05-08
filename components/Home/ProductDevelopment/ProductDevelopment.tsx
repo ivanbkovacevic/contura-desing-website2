@@ -8,6 +8,7 @@ import {
   DESIGN_HEADING,
   DESIGN_PARAGRAPH,
   DESIGN_SPECIFICATION,
+  DESIGN_SYSTEM,
   INFORMATION_ARCHITECTURE,
   INFORMATION_ARCHITECTURE_HEADING,
   INFORMATION_ARCHITECTURE_PARAGRAPH,
@@ -175,7 +176,7 @@ const ProductDevelopment = () => {
       <div className={style.designSystem}>
         <h2>Design system</h2>
         <ul>
-          <li>{VISUAL_DESIGN_MOCKUPS[0]}</li>
+          <li>{DESIGN_SYSTEM[0]}</li>
         </ul>
         <div className={style.imageWrapper}>
           <div className={style.image}>
@@ -184,8 +185,8 @@ const ProductDevelopment = () => {
           <p>Design system example</p>
         </div>
         <ul>
-          <li>{VISUAL_DESIGN_MOCKUPS[1]}</li>
-          <li>{VISUAL_DESIGN_MOCKUPS[2]}</li>
+          <li>{DESIGN_SYSTEM[1]}</li>
+          <li>{DESIGN_SYSTEM[2]}</li>
         </ul>
         <div className={style.imageWrapper}>
           <div className={style.image}>

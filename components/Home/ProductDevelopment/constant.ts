@@ -128,10 +128,24 @@ export const INFORMATION_ARCHITECTURE = [
   },
 ];
 export const VISUAL_DESIGN_MOCKUPS = [
-  "Visual design mockups in UI/UX design are high-fidelity representations of the product that incorporate visual design elements, such as typography, color, and images. They are created to provide a clear and polished representation of the product before it is developed. Visual design mockups help ensure that the product meets the design specifications and reflects the brand's visual identity.",
-  "Design systems include a range of elements, such as typography, color, layout, and user interface components like buttons, forms, and icons. These elements are documented in a style guide or design system website that outlines the guidelines and standards for the product.",
-  "The goal of a design system is to create a scalable and efficient way to design and develop digital products while maintaining consistency and brand identity. It streamlines the design process, reduces the time and cost of development, and improves the user experience by providing a cohesive and user-friendly interface.",
+  {
+    li: "Visual design mockups in UI/UX design are high-fidelity representations of the product that incorporate visual design elements, such as typography, color, and images. They are created to provide a clear and polished representation of the product before it is developed. Visual design mockups help ensure that the product meets the design specifications and reflects the brand's visual identity.",
+  },
+  {
+    li: "Design systems include a range of elements, such as typography, color, layout, and user interface components like buttons, forms, and icons. These elements are documented in a style guide or design system website that outlines the guidelines and standards for the product.",
+  },
+  {
+    li: "The goal of a design system is to create a scalable and efficient way to design and develop digital products while maintaining consistency and brand identity. It streamlines the design process, reduces the time and cost of development, and improves the user experience by providing a cohesive and user-friendly interface.",
+  },
 ];
+
+export const DESIGN_SYSTEM = [
+  "A design system in UI/UX design is a collection of reusable components, guidelines, and standards that         ensure consistency and efficiency across digital products. It provides a framework for creating and  maintaining a cohesive user interface across multiple platforms and products.",
+
+  "Designers use software like Sketch, Figma, or Adobe XD to create visual design mockups, which can be presented to stakeholders for feedback and approval. These mockups may also be used to create a style guide, which outlines the visual design standards for the product.",
+  "Visual design mockups are an essential step in the UI/UX design process, as they help ensure that the product reflects the design intent and meets the user's needs. They provide a visual representation of the product that can be refined and iterated upon before development begins.",
+];
+
 export const DESIGN_SPECIFICATION = [
   "Design specification in UI/UX design refers to a document that outlines the technical and visual requirements of a digital product. It provides details on the design, functionality, and user experience of the product.",
   "Design specifications include information on the layout, typography, color, images, and other visual elements of the product. They may also include technical specifications, such as coding standards and file formats.",
@@ -148,30 +162,6 @@ export const TESTING = [
 export const CONCLUSION = [
   "The process of creating these assets is not always linear and depends on the project priorities and schedule. Some parts of the documentation can be done in parallel, some could start earlier than others. At the end of the project, we provide all final deliverables via shared Google Drive or Dropbox folder. We also transfer to clients ownership of all created projects in Jira, Zeplin, and InVision.",
   "After everything is delivered, we may continue our partnership by providing design support. It may be something like monitoring the development to make sure everything is implemented properly, acting as an in-house design team and providing constant design updates, or organizing workshops with clients’ teams to educate them on the new design system. But that’s a topic for another article.",
-];
-
-
-
-
-
-
-
-
-
-
-
-
-
-export const DESIGN_SYSTEM = [
-  {
-    li: "A design system in UI/UX design is a collection of reusable components, guidelines, and standards that         ensure consistency and efficiency across digital products. It provides a framework for creating and  maintaining a cohesive user interface across multiple platforms and products.",
-  },
-  {
-    li: "Designers use software like Sketch, Figma, or Adobe XD to create visual design mockups, which can be presented to stakeholders for feedback and approval. These mockups may also be used to create a style guide, which outlines the visual design standards for the product.",
-  },
-  {
-    li: "Visual design mockups are an essential step in the UI/UX design process, as they help ensure that the product reflects the design intent and meets the user's needs. They provide a visual representation of the product that can be refined and iterated upon before development begins.",
-  },
 ];
 
 export const PROCESS_STEPS_HEADING =
