@@ -8,6 +8,39 @@
     color: $jet;
     margin-bottom: 11rem;
   }
+
+  li {
+    margin-bottom: 5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      position: absolute;
+      background-color: $navigationGreen;
+      left: -20px;
+      top: 5px;
+    }
+  }
+
+  .imageWrapper {
+    .image {
+      width: 100%;
+      height: 70rem;
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
+    }
+    p {
+      margin: 2rem;
+      color: gray;
+    }
+  }
+
   .processSteps {
     padding: 10rem 0;
     h4 {
@@ -51,21 +84,6 @@
   .uiDesignProcess {
     padding: 10rem 0;
     border-bottom: 1px solid $navigationGreen;
-    li {
-      margin-bottom: 5rem;
-      position: relative;
-
-      &::before {
-        content: "";
-        display: block;
-        width: 0.5rem;
-        height: 0.5rem;
-        position: absolute;
-        background-color: $navigationGreen;
-        left: -20px;
-        top: 5px;
-      }
-    }
   }
   .researchAndDiscovery {
     padding: 10rem 0;
@@ -106,5 +124,41 @@
         border: 1px solid $jet;
       }
     }
+  }
+
+  .informationArchitecture {
+    .imageWrapper {
+      .image {
+        width: 100%;
+        height: 70rem;
+        position: relative;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+        }
+      }
+      p {
+        margin: 2rem;
+      }
+    }
+  }
+
+  .visualDesignMockups {
+  }
+
+  .testing {
+    position: relative;
+  }
+
+  .conclusion {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  .author {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4rem;
   }
 }
