@@ -26,9 +26,10 @@
   }
 
   .imageWrapper {
+    padding: 5rem 0;
     .image {
       width: 100%;
-      height: 70rem;
+    //   height: 70rem;
       position: relative;
       overflow: hidden;
       img {
@@ -127,20 +128,20 @@
   }
 
   .informationArchitecture {
-    .imageWrapper {
-      .image {
-        width: 100%;
-        height: 70rem;
-        position: relative;
-        overflow: hidden;
-        img {
-          object-fit: cover;
-        }
-      }
-      p {
-        margin: 2rem;
-      }
-    }
+    // .imageWrapper {
+    //   .image {
+    //     width: 100%;
+    //     height: 70rem;
+    //     position: relative;
+    //     overflow: hidden;
+    //     img {
+    //       object-fit: cover;
+    //     }
+    //   }
+    //   p {
+    //     margin: 2rem;
+    //   }
+    // }
   }
 
   .visualDesignMockups {
