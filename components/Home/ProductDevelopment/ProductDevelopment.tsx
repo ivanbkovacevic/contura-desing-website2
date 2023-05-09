@@ -89,7 +89,7 @@ const ProductDevelopment = () => {
         {researchStage()}
         <p>{RESEARCH_STAGE_LAST_PARAGRAPH}</p>
         <div className={style.imageWrapper}>
-          <div style={{height:'76.2rem'}}className={style.image}>
+          <div style={{height:'57.2rem'}}className={style.image}>
             <Image src="/assets/images/productDevelopment/designImage.png" alt="" fill />
           </div>
         </div>
