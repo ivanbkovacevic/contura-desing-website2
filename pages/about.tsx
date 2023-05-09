@@ -1,12 +1,7 @@
 import AboutPage from "../components/About/About";
-import Layout from "../components/Layout/Layout";
 
 const About = () => {
-  return (
-    <Layout>
-      <AboutPage />
-    </Layout>
-  );
+  return <AboutPage />;
 };
 
 export default About;

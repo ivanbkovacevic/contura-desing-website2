@@ -77,9 +77,8 @@ button {
 
 [data-centered="yes"] {
   width: 100%;
-  @include laptop-greater {
+  @include desktop {
     width: $sectionCenteredWidth;
-  //  max-width: 1200px;
   }
 }
 
