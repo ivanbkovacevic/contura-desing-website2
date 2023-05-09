@@ -1,7 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
-import useId from "react";
 import style from "./ProductDevelopment.module.scss";
 import {
   CONCLUSION,
@@ -91,7 +90,7 @@ const ProductDevelopment = () => {
         <p>{RESEARCH_STAGE_LAST_PARAGRAPH}</p>
         <div className={style.imageWrapper}>
           <div style={{height:'76.2rem'}}className={style.image}>
-            <Image src="/assets/images/productDevelopment/blogImage01.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/designImage.png" alt="" fill />
           </div>
         </div>
       </div>
@@ -129,8 +128,8 @@ const ProductDevelopment = () => {
         <h2>{INFORMATION_ARCHITECTURE_HEADING}</h2>
         <p>{INFORMATION_ARCHITECTURE_PARAGRAPH}</p>
         <div className={style.imageWrapper}>
-          <div style={{height:'70rem'}} className={style.image}>
-            <Image src="/assets/images/footerImageMomci.png" alt="" fill />
+          <div style={{height:'96.7rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/informationArhitectureImage.png" alt="" fill />
           </div>
           <p>
             Help your team understand the strategy behind your Information
@@ -143,8 +142,8 @@ const ProductDevelopment = () => {
         <h2>{DESIGN_HEADING}</h2>
         <p>{DESIGN_PARAGRAPH}</p>
         <div className={style.imageWrapper}>
-          <div style={{height:'56.8rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/slajdPrvaImage.png" alt="" fill />
+          <div style={{height:'57.7rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/designImage.png" alt="" fill />
           </div>
           <p>Read more by website Figma</p>
         </div>
@@ -154,26 +153,26 @@ const ProductDevelopment = () => {
         <ul>{visualDesignMockups()}</ul>
         <div className={style.imageWrapper}>
           <div style={{height:'56.8rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/HOC.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/hocImage.png" alt="hoc image" fill />
           </div>
           <p>Visual directions example</p>
         </div>
         <div className={style.imageWrapper}>
           <div style={{height:'90.9rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/designMockup01.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/forwardizeImage.png" alt="forwardizeImage" fill />
           </div>
           <p>Visual directions example</p>
         </div>
         <p>{VISUAL_DESIGN_PARAGRAPH}</p>
         <div className={style.imageWrapper}>
-          <div style={{height:'93.2rem', width: '42.8rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/group2628.png" alt="" fill />
+          <div style={{height:'93.2rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/roundtripImage.png" alt="roundtripImage" fill />
           </div>
           <p>Applied visual style example</p>
         </div>
         <div  className={style.imageWrapper}>
           <div style={{height:'64rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/medicaScreens3.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/medicaImage.png" alt="medica" fill />
           </div>
           <p>Applied visual style example</p>
         </div>
@@ -185,7 +184,7 @@ const ProductDevelopment = () => {
         </ul>
         <div className={style.imageWrapper}>
           <div style={{height:'69.1rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/Cover.jpg" alt="" fill />
+            <Image src="/assets/images/productDevelopment/designSystemImage.png" alt="designsistem" fill />
           </div>
           <p>Design system example</p>
         </div>
@@ -194,8 +193,8 @@ const ProductDevelopment = () => {
           <li>{DESIGN_SYSTEM[2]}</li>
         </ul>
         <div className={style.imageWrapper}>
-          <div className={style.image}>
-            <Image src="/assets/images/footerImageMomci.png" alt="" fill />
+          <div style={{height:'104rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/designSystem02Image.png" alt="designSystem02Image" fill />
           </div>
           <p>Components Library example</p>
         </div>
@@ -207,8 +206,8 @@ const ProductDevelopment = () => {
           <li>{DESIGN_SPECIFICATION[1]}</li>
         </ul>
         <div className={style.imageWrapper}>
-          <div className={style.image}>
-            <Image src="/assets/images/footerImageMomci.png" alt="" fill />
+          <div style={{height:'92.5rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/designSpecification.png" alt="designSpecification" fill />
           </div>
           <p>Example of a static specification</p>
         </div>
@@ -224,7 +223,7 @@ const ProductDevelopment = () => {
         </ul>
         <div className={style.imageWrapper}>
           <div style={{height:'57.7rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/amelieMourichon.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/prototypingImage.png" alt="prototypingImage" fill />
           </div>
           <p>
             Help your team understand the strategy behind your prototype process
@@ -232,7 +231,7 @@ const ProductDevelopment = () => {
         </div>
         <div className={style.imageWrapper}>
           <div style={{height:'110rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/figmaPrototypeImage.png" alt="" fill />
+            <Image src="/assets/images/productDevelopment/figmaPrototypeImage.png" alt="figmaPrototypeImage" fill />
           </div>
           <p>Read more by website Figma</p>
         </div>
@@ -242,20 +241,20 @@ const ProductDevelopment = () => {
         <p>{TESTING[0]}</p>
         <p>{TESTING[1]}</p>
         <div className={style.imageWrapper}>
-          <div style={{height:'62.3rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/invisionBoards.png" alt="" fill />
+          <div style={{height:'68.5rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/invisionBoardsImge.png" alt="invisionBoardsImge" fill />
           </div>
           <p>invision Board screenshoot</p>
         </div>
         <div className={style.imageWrapper}>
-          <div style={{height:'53.9rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/jiraPresentationScreen.png" alt="" fill />
+          <div style={{height:'59.2rem'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/jiraImage.png" alt="jiraimage" fill />
           </div>
           <p>jira screenshoot</p>
         </div>
         <div className={style.imageWrapper}>
-          <div style={{height:'53.9rem', width: '110rem'}} className={style.image}>
-            <Image src="/assets/images/productDevelopment/zeplinImage.png" alt="" fill />
+          <div style={{height:'79.3rem', width: '141rem', marginLeft: '-22%'}} className={style.image}>
+            <Image src="/assets/images/productDevelopment/zeplinImage.png" alt="zeplin" fill />
           </div>
           <p>zepllin.in illustration screen</p>
         </div>
