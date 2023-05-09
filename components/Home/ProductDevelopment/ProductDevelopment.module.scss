@@ -29,16 +29,22 @@
     padding: 5rem 0;
     .image {
       width: 100%;
-    //   height: 70rem;
+      height: 100%;
       position: relative;
       overflow: hidden;
       img {
-        object-fit: cover;
+        object-fit: contain;
+        // object-position: left;
       }
     }
     p {
       margin: 2rem;
+      margin-left: 0;
       color: gray;
+      font-weight: 350;
+      font-size: 20px;
+      line-height: 161.8%;
+      letter-spacing: 0.01em;
     }
   }
 
@@ -128,20 +134,6 @@
   }
 
   .informationArchitecture {
-    // .imageWrapper {
-    //   .image {
-    //     width: 100%;
-    //     height: 70rem;
-    //     position: relative;
-    //     overflow: hidden;
-    //     img {
-    //       object-fit: cover;
-    //     }
-    //   }
-    //   p {
-    //     margin: 2rem;
-    //   }
-    // }
   }
 
   .visualDesignMockups {
