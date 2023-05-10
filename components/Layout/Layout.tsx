@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "./Header/Header";
 import style from "./Layout.module.scss";
 import Footer from "./Footer/Footer";
+import FooterGrid from "./FooterGrid/FooterGrid";
 
 type Props = {
   children?: ReactNode;
@@ -25,7 +26,8 @@ const Layout = ({ children, title = "Contura Design" }: Props) => {
       </Head>
       <Header />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
+      <FooterGrid />
     </div>
   );
 };
