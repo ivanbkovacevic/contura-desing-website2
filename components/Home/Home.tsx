@@ -5,7 +5,7 @@ import Clients from "../Reusable/Companies/Companies";
 import ButtonLink from "../Reusable/ButtonLink/ButtonLink";
 import WorkSection from "./WorkSection/WorkSection";
 import CompanyNumbers from "./CompanyNumbers/CompanyNumbers";
-import ProductDevelopment from "../ProductDevelopment/ProductDevelopment";
+import ProductDevelopment from "../ProductDevelopment/UIUXDesign/UIUXDesign";
 import FAQ from "./FAQ/FAQ";
 import MySlider from "../Reusable/MySlider/MySlider";
 import { SLIDES_HOME } from "../Reusable/MySlider/constant";

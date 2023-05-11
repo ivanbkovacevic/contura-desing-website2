@@ -12,9 +12,9 @@ import Prototyping from "./Prototyping/Prototyping";
 import Testing from "./Testing/Testing";
 import Conclusion from "./Conclusion/Conclusion";
 import Author from "./Author/Author";
-import style from "./ProductDevelopment.module.scss";
+import style from "./UIUXDesign.module.scss";
 
-const ProductDevelopment = () => {
+const UIUXDesign = () => {
   return (
     <div className={style.wrapper}>
       <section data-centered="yes">
@@ -60,4 +60,4 @@ const ProductDevelopment = () => {
   );
 };
 
-export default ProductDevelopment;
+export default UIUXDesign;

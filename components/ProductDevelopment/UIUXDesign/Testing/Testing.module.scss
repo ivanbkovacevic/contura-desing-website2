@@ -1,0 +1,8 @@
+@import "../../../../styles/mixins";
+
+.wrapper {
+    position: relative;
+
+    @include imageWrapperProductDevlopment;
+  }
+  

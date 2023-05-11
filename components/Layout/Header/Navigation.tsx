@@ -28,9 +28,18 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
         <li>
           <Link href="/about">About</Link>
         </li>
-        <li>
-          <Link href="/product-development">Product Development</Link>
+        <li className={style.productDevelopmentLi}>
+          <span>Product Development</span>
+          <ul className={style.productDevelopmentUl}>
+            <li className={style.productDevelopment}>
+              <Link href="/ui-ux-design">UI/UX Design</Link>
+            </li>
+            <li className={style.productDevelopment}>
+              <Link href="/ui-ux-design">FrontEnd Development</Link>
+            </li>
+          </ul>
         </li>
+
         <li className={style.getInTouch}>Lets get in touch</li>
         <li>
           <a href="mailto:igor@mijucic.com">igor@mijucic.com</a>
