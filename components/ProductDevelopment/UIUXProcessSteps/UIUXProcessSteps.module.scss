@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.wrapper {
+    padding: 10rem 0;
+    h4 {
+      width: max-content;
+      position: relative;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 155.8%;
+      margin-bottom: 5rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        height: 0.3rem;
+        width: 100%;
+        background-color: $navigationGreen;
+      }
+    }
+
+    p {
+      margin-bottom: 5rem;
+    }
+
+    .paragraphGreen {
+      color: $navigationGreen;
+    }
+  }

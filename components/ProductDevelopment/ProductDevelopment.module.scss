@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: $headerHeight;
+  margin: 0 auto;
+  max-width: $pagesMaxWidth;
+  h2 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 130.3%;
+    color: $jet;
+    margin-bottom: 11rem;
+  }
+
+  li {
+    margin-bottom: 5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      position: absolute;
+      background-color: $navigationGreen;
+      left: -20px;
+      top: 5px;
+    }
+  }
+}

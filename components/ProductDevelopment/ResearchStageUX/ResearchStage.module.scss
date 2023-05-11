@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.wrapper {
+  @include imageWrapperProductDevlopment;
+  p {
+    margin-bottom: 5rem;
+    span {
+      color: $navigationGreen;
+      margin-right: 0.5rem;
+    }
+  }
+}
