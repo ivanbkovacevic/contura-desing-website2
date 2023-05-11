@@ -6,6 +6,7 @@ import {
   RESEARCH_AND_DISCOVERY_HEADING,
   RESEARCH_AND_DISCOVERY_PARAGRAPH,
 } from "../constant";
+import Image from "next/image";
 
 const ResearchAndDiscovery = () => {
   const researchAndDesignProcessParagraphs = () => {
@@ -18,26 +19,18 @@ const ResearchAndDiscovery = () => {
     <div className={style.wrapper}>
       <h2>{RESEARCH_AND_DISCOVERY_HEADING}</h2>
       <p>{RESEARCH_AND_DISCOVERY_PARAGRAPH}</p>
-      <div className={style.tableWrapper}>
-        <div className={style.upperTable}>
-          <div className={style.headingWrapper}>
-            <h4>Research and Discovery Process</h4>
-            <h6>Here's how we approached this step</h6>
-          </div>
-          <div className={style.steps}>
-            <span>User Research</span>
-            <span>Competitive Analysis</span>
-            <span>Market Research</span>
-            <span>Business Goals</span>
-            <span>Defining the Problem</span>
-          </div>
+      <div className={style.imageWrapper}>
+        <div style={{ height: "62.3rem", width: '118rem', marginLeft:'-15rem' }} className={style.image}>
+          <Image
+            src="/assets/images/productDevelopment/researchImage.png"
+            alt=""
+            fill
+          />
         </div>
-        <div className={style.lowerTable}>
-          {researchAndDesignProcessParagraphs()}
-        </div>
+        <p>Help your team understand the strategy behind your research process</p>
       </div>
-      <p>Help your team understand the strategy behind your research process</p>
     </div>
+      
   );
 };
 

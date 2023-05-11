@@ -2,22 +2,29 @@
 
 .wrapper {
     padding: 10rem 0;
-    h4 {
+    a {
       width: max-content;
       position: relative;
       font-weight: 500;
       font-size: 3rem;
       line-height: 155.8%;
       margin-bottom: 5rem;
+      transition: all 0.4s ease-in-out;
+
+      &:hover::after {
+        height: 60%;
+      }
 
       &::after {
         content: "";
         position: absolute;
-        bottom: 1rem;
+        bottom: -0.5rem;
         left: 0;
         height: 0.3rem;
         width: 100%;
         background-color: $navigationGreen;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
       }
     }
 

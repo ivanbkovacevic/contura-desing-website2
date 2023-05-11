@@ -6,6 +6,7 @@ import {
   PROCESS_STEPS_HEADING,
   PROCESS_STEPS_LAST_PARAGRAPH,
 } from "../constant";
+import Link from "next/link";
 
 const UIUXProcessSteps = () => {
   const processSteps = () => {
@@ -13,7 +14,7 @@ const UIUXProcessSteps = () => {
       const keyId = uuidv4();
       return (
         <div key={keyId}>
-          <h4>{item.step}</h4>
+          <Link href={`#${item.step}`}>{item.step}</Link>
           <p>{item.description}</p>
         </div>
       );

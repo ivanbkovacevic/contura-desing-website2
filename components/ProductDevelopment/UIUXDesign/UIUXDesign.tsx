@@ -26,13 +26,13 @@ const UIUXDesign = () => {
       <section data-centered="yes">
         <UIDesignProcess />
       </section>
-      <section data-centered="yes">
+      <section id="Reach and Discovery" data-centered="yes">
         <ResearchAndDiscovery />
       </section>
-      <section data-centered="yes">
+      <section id="Information Architecture" data-centered="yes">
         <InformationArchitecture />
       </section>
-      <section data-centered="yes">
+      <section id="Design" data-centered="yes">
         <Design />
       </section>
       <section data-centered="yes">
@@ -44,10 +44,10 @@ const UIUXDesign = () => {
       <section data-centered="yes">
         <DesignSpecification />
       </section>
-      <section data-centered="yes">
+      <section id="Prototyping" data-centered="yes">
         <Prototyping />
       </section>
-      <section data-centered="yes">
+      <section id="Testing and Iteration" data-centered="yes">
         <Testing />
       </section>
       <section data-centered="yes">

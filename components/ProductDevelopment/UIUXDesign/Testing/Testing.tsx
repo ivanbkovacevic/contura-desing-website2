@@ -31,7 +31,7 @@ const Testing = () => {
       </div>
       <div className={style.imageWrapper}>
         <div
-          style={{ height: "79.3rem", width: "141rem", marginLeft: "-22%" }}
+          style={{ height: "79.3rem", width: "141rem", marginLeft: "-30rem" }}
           className={style.image}
         >
           <Image
