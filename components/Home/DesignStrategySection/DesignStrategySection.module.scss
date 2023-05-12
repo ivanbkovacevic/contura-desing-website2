@@ -1,40 +1,63 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
-  display: flex;
-  gap: 7.6rem;
-  padding-top: 16rem;
-
-  .leftWrapper {
-    width: 50%;
-
-    .heading {
-      padding: 5rem;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 116.8%;
-      color: $jet;
-      text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 7.6rem;
+  padding-top: 4rem;
+  grid-template-areas:
+  "heading"
+  "accordions"
+  "imageT";
+  
+  @include desktop {
+    padding: 0 4.2rem;
+    padding-top: 16rem;
+    grid-template-columns: minmax(40rem, 1fr) 1fr;
+    grid-template-areas:
+      "heading accordions"
+      "imageT accordions";
+  }
+  .heading {
+    grid-area: heading;
+    justify-self: flex-start;
+    padding: 5rem 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 116.8%;
+    color: $jet;
+    text-align: left;
+    @include desktop {
+      padding: 5rem 0;
     }
-    .image {
+  }
+  .image {
+    grid-area: imageT;
+    max-width: 100%;
+    height: 52rem;
+    position: relative;
+    overflow: hidden;
+    @include desktop {
       max-width: 49rem;
-      height: 52rem;
-      position: relative;
-      overflow: hidden;
-      img {
-        object-fit: cover;
+    }
+    img {
+      object-fit: cover;
+      @include desktop {
+        object-fit: contain;
       }
     }
   }
 
-  .rightWrapper {
-    width: 50%;
-
-    .accordionsWrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+  .accordionsWrapper {
+    grid-area: accordions;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 4.2rem;
+    @include desktop {
       padding-top: 5rem;
     }
   }

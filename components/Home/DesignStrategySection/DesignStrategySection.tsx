@@ -33,17 +33,12 @@ const DesignStrategySection: React.FC = ({}) => {
 
   return (
     <div className={style.wrapper}>
-      <div className={style.leftWrapper}>
-        <h3 className={style.heading}>
-          We create world-class digital products, web design, and branding.{" "}
-        </h3>
-
-        <div className={style.image}>
-          <Image src="/assets/images/prolece.png" alt="prolece" fill />
-        </div>
-      </div>
-      <div className={style.rightWrapper}>
-        <div className={style.accordionsWrapper}>{accordions()}</div>
+      <h3 className={style.heading}>
+        We create world-class digital products, web design, and branding.{" "}
+      </h3>
+      <div className={style.accordionsWrapper}>{accordions()}</div>
+      <div className={style.image}>
+        <Image src="/assets/images/prolece.png" alt="prolece" fill />
       </div>
     </div>
   );
