@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import style from "./Navigation.module.scss";
 import Accordion from "../../Reusable/Accordion/Accordion";
+import style from "./Navigation.module.scss";
 
 interface NavigationProps {
   close: () => void;
@@ -51,8 +51,7 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
         <li className={style.productDevelopmentLi}>
           <Accordion
             title="Product development"
-            arrowColor="white"
-            variant="FAQ"
+            variant="Navigation"
             titleThickens="Light"
             accClicked={toggleAcc}
             show={toggleAccordion}

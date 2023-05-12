@@ -9,7 +9,7 @@ interface AccordionProps {
   show: boolean;
   arrowColor?: "white" | "black";
   accClicked: () => void;
-  variant?: "designS" | "FAQ";
+  variant?: "designS" | "FAQ" | "Navigation";
   titleThickens?: "Light";
 }
 const Accordion: React.FC<AccordionProps> = ({
@@ -25,7 +25,8 @@ const Accordion: React.FC<AccordionProps> = ({
     style.content,
     { [style.colapsed]: show === false },
     { [style.contentDesignStrategy]: variant === "designS" },
-    { [style.contentFAQ]: variant === "FAQ" }
+    { [style.contentFAQ]: variant === "FAQ" },
+    { [style.contentNavigation]: variant === "Navigation" }
   );
 
   const arrowStyle = cn(
@@ -33,12 +34,14 @@ const Accordion: React.FC<AccordionProps> = ({
     { [style.arrowExpandedGreen]: show && variant === "designS" },
     { [style.arrowExpandedLila]: show && variant === "FAQ" },
     { [style.arrowWhite]: arrowColor === "white" },
-    { [style.arrowBlack]: arrowColor === "black" }
+    { [style.arrowBlack]: arrowColor === "black" },
+    { [style.arrowNo]:  variant === "Navigation" }
   );
   const titleStile = cn(
     style.title,
     { [style.titleBlack]: variant === "designS" },
     { [style.titleWhite]: variant === "FAQ" },
+    { [style.titleNavigation]: variant === "Navigation" },
     { [style.titleLightThicknes]: titleThickens === "Light" },
     { [style.titleRegularThicknes]: titleThickens === "Regular" },
     { [style.btnExpandedGreen]: show && variant === "designS" },

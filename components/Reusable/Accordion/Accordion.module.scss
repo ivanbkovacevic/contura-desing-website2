@@ -41,6 +41,13 @@
       .titleWhite {
         color: $white;
       }
+
+      .titleNavigation {
+        color: $white;
+        &:hover {
+          color: $jet;
+        }
+      }
       .btnExpandedGreen {
         color: $navigationGreen;
       }
@@ -89,6 +96,9 @@
       color: $white;
     }
   }
+  .contentNavigation {
+    max-height: 40rem;
+  }
 
   .colapsed {
     max-height: 0rem;
@@ -116,5 +126,8 @@
     svg {
       stroke: $jet;
     }
+  }
+  .arrowNo {
+    display: none;
   }
 }
