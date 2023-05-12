@@ -28,7 +28,10 @@ const Home = () => {
         <h3 className={style.title}>People & brands love it</h3>
         <Companies list={BIG_COMPANIES} companieType="bigCompanies" />
       </section>
-      <section className={style.buttonLinkSection} data-centered="yes">
+      <section
+        className={`${style.buttonLinkSection} ${style.hideOnMobile}`}
+        data-centered="yes"
+      >
         <ButtonLink title="see more work" link="/work" />
       </section>
       <section className={style.workSectionSection} data-centered="yes">

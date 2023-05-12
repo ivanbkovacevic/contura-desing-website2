@@ -27,7 +27,14 @@
     }
   }
   .buttonLinkSection {
-    padding: 3rem 0 13rem 0;
+    padding: 3rem 0 13rem 4.5rem;
+    @include desktop {
+      padding: 3rem 0 13rem 0;
+    }
+   
+  }
+
+  .hideOnMobile {
     display: none;
     @include desktop {
       display: block;

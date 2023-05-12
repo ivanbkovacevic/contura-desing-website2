@@ -1,12 +1,30 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  gap: 25rem;
-  padding-top: 20rem;
+  align-items: center;
+  gap: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  
+  @include desktop {
+    padding-bottom: 0;
+    padding-top: 20rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25rem;
+  }
 
   .description {
+    order: 2;
+    padding: 0 4.5rem;
+    @include desktop {
+      padding: 0;
+      
+    }
     p {
       max-width: 50rem;
       font-weight: 350;
@@ -14,5 +32,4 @@
       line-height: 128.8%;
     }
   }
-
 }
