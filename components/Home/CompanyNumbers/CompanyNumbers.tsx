@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Waypoint } from "react-waypoint";
-import style from "./CompanyNumbers.module.scss";
 import Counter from "./Counter/Counter";
+import style from "./CompanyNumbers.module.scss";
 
 const CompanyNumbers = () => {
   const [showCounter, setShowCounter] = useState(false);

@@ -6,27 +6,26 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10rem;
   padding-top: 1rem;
   padding-bottom: 5rem;
+  gap: 5rem;
   
   @include desktop {
     padding-bottom: 0;
     padding-top: 20rem;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 25rem;
+    justify-content: space-between;
   }
 
   .description {
     order: 2;
     padding: 0 4.5rem;
+    width: 100%;
     @include desktop {
       padding: 0;
-      
+      width: 50%;
     }
     p {
-      max-width: 50rem;
       font-weight: 350;
       font-size: 3rem;
       line-height: 128.8%;
