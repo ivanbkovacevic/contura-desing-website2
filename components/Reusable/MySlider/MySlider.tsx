@@ -9,7 +9,7 @@ import style from "./MySlider.module.scss";
 
 interface SliderProps {
   slidesPerView: number;
-  slidesListImages?: { img: string, width: number }[];
+  slidesListImages?: { img: string; width: number }[];
   slidesListTestemonial?: {
     testemonial: string;
     author: string;
@@ -25,7 +25,6 @@ const MySlider: React.FC<SliderProps> = ({
   slidesListTestemonial = [],
   sliderType = "images",
 }) => {
-
   const settings = {
     dots: false,
     infinite: true,
@@ -33,12 +32,22 @@ const MySlider: React.FC<SliderProps> = ({
     speed: 2000,
     slidesToShow: slidesPerView,
     slidesToScroll: 1,
-  //  adaptiveHeight: true,
+    //  adaptiveHeight: true,
     swipeToSlide: true,
     autoplay: sliderType === "images",
     autoplaySpeed: 2000,
     cssEase: "linear",
     variableWidth: sliderType === "images",
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
 
   const sliderRef = useRef(null);
@@ -46,27 +55,31 @@ const MySlider: React.FC<SliderProps> = ({
   const handlePrevOnMouseOver = () => {
     const intervalId = setInterval(() => {
       sliderRef.current.slickPrev();
-    }, 200); 
+    }, 200);
 
-    document.querySelector('#mouseOverPrevius').addEventListener('mouseleave', () => {
-      clearInterval(intervalId);
-    });
-    console.log('mouseover')
+    document
+      .querySelector("#mouseOverPrevius")
+      .addEventListener("mouseleave", () => {
+        clearInterval(intervalId);
+      });
+    console.log("mouseover");
   };
   const handleNextOnMouseOver = () => {
     const intervalId = setInterval(() => {
       sliderRef.current.slickNext();
-    }, 200); 
+    }, 200);
 
-    document.querySelector('#mouseOverNext').addEventListener('mouseleave', () => {
-      clearInterval(intervalId);
-    });
-    console.log('mouseovernext')
+    document
+      .querySelector("#mouseOverNext")
+      .addEventListener("mouseleave", () => {
+        clearInterval(intervalId);
+      });
+    console.log("mouseovernext");
   };
 
-  const wrapperStyle = cn(style.wrapper, 
-    {    testemonialSlider: sliderType === "testemonial", }
-    );
+  const wrapperStyle = cn(style.wrapper, {
+    testemonialSlider: sliderType === "testemonial",
+  });
   const slideSingleStyle = cn(
     { [style.slideSingleImage]: sliderType === "images" },
     { [style.slideSingleTestemonial]: sliderType === "testemonial" }
@@ -77,8 +90,12 @@ const MySlider: React.FC<SliderProps> = ({
 
     return slidesListImages.map((item) => {
       return (
-        <div style={{width: item.width}} key={slideId} className={style.singleSlideWrapper}>
-          <div  className={slideSingleStyle}>
+        <div
+          style={{ width: item.width }}
+          key={slideId}
+          className={style.singleSlideWrapper}
+        >
+          <div className={slideSingleStyle}>
             <Image quality={100} src={item.img} alt="sliderImage" fill />
           </div>
         </div>
@@ -101,20 +118,33 @@ const MySlider: React.FC<SliderProps> = ({
   };
 
   const arrows = () => {
-return (
-<>
-        <button id="mouseOverPrevius" className={style.mouseOverPrevius} onMouseOver={handlePrevOnMouseOver}>
-          <span className={style.arrowPrev}><LeftArrowSlider /></span>
-        </button><button id="mouseOverNext" className={style.mouseOverNext} onMouseOver={handleNextOnMouseOver}>
-            <span className={style.arrowNext}><RightArrowSlider /></span>
-          </button>
-  </>
-  )
-  }
+    return (
+      <>
+        <button
+          id="mouseOverPrevius"
+          className={style.mouseOverPrevius}
+          onMouseOver={handlePrevOnMouseOver}
+        >
+          <span className={style.arrowPrev}>
+            <LeftArrowSlider />
+          </span>
+        </button>
+        <button
+          id="mouseOverNext"
+          className={style.mouseOverNext}
+          onMouseOver={handleNextOnMouseOver}
+        >
+          <span className={style.arrowNext}>
+            <RightArrowSlider />
+          </span>
+        </button>
+      </>
+    );
+  };
   return (
     <section className={wrapperStyle}>
-       {sliderType === 'images' && arrows()}
-      <Slider  ref={sliderRef} {...settings}>
+      {sliderType === "images" && arrows()}
+      <Slider ref={sliderRef} {...settings}>
         {slidesListImages.length > 0
           ? generateSlidesImages()
           : generateSlidesTestemonial()}
