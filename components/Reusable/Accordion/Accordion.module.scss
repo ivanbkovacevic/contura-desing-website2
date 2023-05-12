@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
   display: block;
@@ -7,6 +8,10 @@
     background: none;
     font-size: 3rem;
     font-weight: 350;
+    margin-bottom: 10rem; 
+    @include desktop {
+      margin-bottom: 5rem; 
+    }
 
     .insideBtnWrapper {
       display: flex;
@@ -18,7 +23,6 @@
 
       .title {
         font-size: 3rem;
-        // font-weight: 350;
         line-height: 130%;
         max-height: 3rem;
         transition: all 0.2s ease-in-out;

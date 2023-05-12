@@ -31,7 +31,6 @@
     @include desktop {
       padding: 3rem 0 13rem 0;
     }
-   
   }
 
   .hideOnMobile {
@@ -49,6 +48,12 @@
   }
   .faqSection {
     width: 100%;
+    padding: 15rem 4.5rem;
+    background-color: $black;
+    @include desktop {
+      padding-top: 25rem;
+      padding-bottom: 25rem;
+    }
   }
 
   .sliderSection {
