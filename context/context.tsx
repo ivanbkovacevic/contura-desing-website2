@@ -4,6 +4,7 @@ interface ContextState {
   scrollFromTop: number;
   footerReached: boolean;
   scrolledUp: boolean;
+  windowWidth: number;
 }
 
 interface ContextProps {
@@ -12,7 +13,12 @@ interface ContextProps {
 }
 
 const Context = React.createContext<ContextProps>({
-  state: { scrollFromTop: 0, footerReached: false, scrolledUp: false },
+  state: {
+    scrollFromTop: 0,
+    footerReached: false,
+    scrolledUp: true,
+    windowWidth: 1,
+  },
   handleFooterReached: () => {},
 });
 
@@ -20,24 +26,24 @@ function ContextProvider(props: React.PropsWithChildren<{}>) {
   const [state, setState] = React.useState<ContextState>({
     scrollFromTop: 0,
     footerReached: false,
-    scrolledUp: false,
+    scrolledUp: true,
+    windowWidth: 1,
   });
 
   let prevScrollPos = 0;
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     prevScrollPos = window.pageYOffset;
   }
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setState((prevState) => ({ ...prevState, scrollFromTop: scrollTop }));
-      let currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos) {
-        setState((prevState) => ({ ...prevState, scrolledUp: true }));
-      } else {
-        setState((prevState) => ({ ...prevState, scrolledUp: false }));
-
-      }
-      prevScrollPos = currentScrollPos;
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      setState((prevState) => ({ ...prevState, scrolledUp: true }));
+    } else {
+      setState((prevState) => ({ ...prevState, scrolledUp: false }));
+    }
+    prevScrollPos = currentScrollPos;
   };
   const handleFooterReached = () => {
     setState((prevState) => ({
@@ -47,6 +53,7 @@ function ContextProvider(props: React.PropsWithChildren<{}>) {
   };
 
   useEffect(() => {
+    setState((prevState) => ({ ...prevState, windowWidth: window.innerWidth }));
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

@@ -14,8 +14,7 @@ const Header: React.FC<HeaderProps> = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   const divRef = useRef(null);
   const { state } = useContext(Context);
-  const { scrollFromTop, footerReached, scrolledUp } = state;
-  const [windowWidth, setWindowWidth] = useState<number>(1);
+  const { scrollFromTop, footerReached, scrolledUp, windowWidth } = state;
   const router = useRouter();
   const closeNavigation = () => {
     setShowNavigation(false);
@@ -27,10 +26,6 @@ const Header: React.FC<HeaderProps> = () => {
     [style.colapsed]: !showNavigation,
   });
 
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-  console.log(windowWidth)
   const wrapperStyle = cn(
     style.wrapper,
     { [style.onAbout]: router.pathname === "/about" },
