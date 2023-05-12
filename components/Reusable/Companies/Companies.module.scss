@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
   display: flex;
@@ -15,18 +16,24 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       row-gap: 7rem;
-      column-gap: 10rem;
+      column-gap: 4rem;
       max-width: clamp(100rem, 60%, 110rem);
 
+      @include desktop {
+        column-gap: 10rem;
+      }
       .companiesWrapper {
         display: block;
-     
       }
       .clients {
-        width: 16rem;
+        width: 8rem;
         height: 5.5rem;
+
+        @include desktop {
+          width: 16rem;
+        }
         &:hover svg {
-          fill: darken($lavender,10%);
+          fill: darken($lavender, 10%);
         }
         svg {
           display: block;
