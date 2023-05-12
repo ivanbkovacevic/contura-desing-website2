@@ -11,17 +11,17 @@
   min-height: $headerHeight;
   z-index: $header-z-index;
   width: 100%;
-  transition: all 1s;
+  transition: all 0.5s;
 
   .content {
-    width: 70%;
+    width: 100%;
     max-width: 160rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @include mobile {
-         width: 100%;
+    @include desktop {
+      width: 70%;
     }
     .navigationAllWrapper {
       position: relative;
@@ -71,9 +71,19 @@
   }
 }
 
-.scrollFromTopEnough {
-  margin-top: 2rem !important;
+.onMobileHide {
+  top: -100%;
 }
+.onMobileShow {
+  top: 0;
+}
+
+.scrollFromTopEnough {
+  @include desktop {
+    margin-top: 2rem !important;
+  }
+}
+
 .footerReached {
   margin-top: 4rem !important;
 }

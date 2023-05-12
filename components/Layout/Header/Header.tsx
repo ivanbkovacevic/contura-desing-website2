@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "../../../context/context";
 import Navigation from "./Navigation";
 import Logo from "../../Reusable/Logo/Logo";
@@ -14,8 +14,8 @@ const Header: React.FC<HeaderProps> = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   const divRef = useRef(null);
   const { state } = useContext(Context);
-  const { scrollFromTop, footerReached } = state;
-
+  const { scrollFromTop, footerReached, scrolledUp } = state;
+  const [windowWidth, setWindowWidth] = useState<number>(1);
   const router = useRouter();
   const closeNavigation = () => {
     setShowNavigation(false);
@@ -27,18 +27,23 @@ const Header: React.FC<HeaderProps> = () => {
     [style.colapsed]: !showNavigation,
   });
 
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
+  console.log(windowWidth)
   const wrapperStyle = cn(
     style.wrapper,
     { [style.onAbout]: router.pathname === "/about" },
     { [style.onAll]: router.pathname !== "/about" },
     { [style.scrollFromTopEnough]: scrollFromTop > 300 },
     { [style.footerReached]: footerReached },
-    { [style.noBackground]: footerReached }
+    { [style.noBackground]: footerReached },
+    { [style.onMobileShow]: scrolledUp && windowWidth < 640 },
+    { [style.onMobileHide]: !scrolledUp && windowWidth < 640 }
   );
-  const hamburgerBtnStyle = cn(
-    style.hamburgerBtn,
-    { [style.whiteHamburgerLines]: footerReached }
-  );
+  const hamburgerBtnStyle = cn(style.hamburgerBtn, {
+    [style.whiteHamburgerLines]: footerReached,
+  });
 
   return (
     <header className={wrapperStyle}>
@@ -55,7 +60,7 @@ const Header: React.FC<HeaderProps> = () => {
             onClick={() => setShowNavigation(!showNavigation)}
             className={hamburgerBtnStyle}
           >
-         <Hamburger />
+            <Hamburger />
           </button>
         </div>
       </div>
