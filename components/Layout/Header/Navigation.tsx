@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import style from "./Navigation.module.scss";
+import Accordion from "../../Reusable/Accordion/Accordion";
 
 interface NavigationProps {
   close: () => void;
 }
 
 const Navigation: React.FC<NavigationProps> = ({ close }) => {
+  const [toggleAccordion, setToggleAccordion] = useState<boolean>(false);
+
+  const toggleAcc = () => {
+    setToggleAccordion(!toggleAccordion);
+  };
+
+  const accordionLinks = () => {
+    return (
+      <ul className={style.productDevelopmentUl}>
+        <li className={style.productDevelopment}>
+          <Link href="/ui-ux-design">UI/UX Design</Link>
+        </li>
+        <li className={style.productDevelopment}>
+          <Link href="/ui-ux-design">FrontEnd Development</Link>
+        </li>
+      </ul>
+    );
+  };
+
   return (
     <nav className={style.wrapper}>
       <ul>
@@ -29,15 +49,15 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
           <Link href="/about">About</Link>
         </li>
         <li className={style.productDevelopmentLi}>
-          <span>Product Development</span>
-          <ul className={style.productDevelopmentUl}>
-            <li className={style.productDevelopment}>
-              <Link href="/ui-ux-design">UI/UX Design</Link>
-            </li>
-            <li className={style.productDevelopment}>
-              <Link href="/ui-ux-design">FrontEnd Development</Link>
-            </li>
-          </ul>
+          <Accordion
+            title="Product development"
+            arrowColor="white"
+            variant="FAQ"
+            titleThickens="Light"
+            accClicked={toggleAcc}
+            show={toggleAccordion}
+            content={accordionLinks()}
+          />
         </li>
 
         <li className={style.getInTouch}>Lets get in touch</li>

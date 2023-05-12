@@ -5,17 +5,18 @@
   padding: 4rem 10rem 4rem 8rem;
   height: 100%;
 
- 
-
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
+  
     .productDevelopmentLi {
       display: flex;
       flex-direction: column;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      
       .productDevelopmentUl {
         margin-left: 2rem;
         a {
@@ -27,7 +28,7 @@
     li {
       display: flex;
       align-items: center;
-      min-width: 30rem;
+      min-width: 35rem;
 
       button {
         min-width: 3rem;

@@ -18,11 +18,18 @@
 
       .title {
         font-size: 3rem;
-        font-weight: 350;
-       line-height: 130%;
+        // font-weight: 350;
+        line-height: 130%;
         max-height: 3rem;
         transition: all 0.2s ease-in-out;
+      }
 
+      .titleLightThicknes {
+        font-family: $font-light;
+      }
+
+      .titleRegularThicknes {
+        font-family: $font-regular;
       }
 
       .titleBlack {
