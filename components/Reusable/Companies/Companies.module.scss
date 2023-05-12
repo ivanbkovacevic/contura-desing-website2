@@ -16,10 +16,10 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       row-gap: 7rem;
-      column-gap: 4rem;
-      max-width: clamp(100rem, 60%, 110rem);
-
+      column-gap: 8rem;
+      
       @include desktop {
+        max-width: clamp(100rem, 60%, 110rem);
         column-gap: 10rem;
       }
       .companiesWrapper {
@@ -59,7 +59,11 @@
   }
 
   .contentCenteredInSection {
-    width: 60%;
+    width: 100%;
+    @include desktop {
+      width: 60%;
+
+    }
   }
 }
 .backgroundWhite {
