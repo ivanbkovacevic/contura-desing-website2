@@ -1,22 +1,32 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
-  background-color: rgba($navigationGreen, 0.95);
-  padding: 4rem 10rem 4rem 8rem;
+  background-color: rgba($navigationGreen, 0.97);
+  padding: 10rem 6rem 10rem 5rem;
   height: 100%;
+  @include desktop {
+    background-color: rgba($navigationGreen, 0.95);
+    padding: 4rem 10rem 4rem 8rem;
+
+  }
 
   ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-  
+    height: 100%;
+    @include desktop {
+      height: unset;
+    }
+
     .productDevelopmentLi {
       display: flex;
       flex-direction: column;
       margin-top: 2rem;
       margin-left: 1rem;
-      
+
       .productDevelopmentUl {
         margin-left: 2rem;
         a {
@@ -40,7 +50,8 @@
       }
       color: $white;
       width: 100%;
-      a,span {
+      a,
+      span {
         display: block;
         padding: 2rem 0;
         width: 100%;
@@ -55,7 +66,7 @@
     }
 
     .getInTouch {
-      margin-top: 5rem;
+      margin-top: auto;
       font-weight: 800;
       font-family: $font-bold;
       font-size: 2.5rem;

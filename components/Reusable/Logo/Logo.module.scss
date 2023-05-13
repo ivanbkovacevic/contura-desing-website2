@@ -14,11 +14,16 @@
   }
 
   .cubesWrapper {
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 6.5rem;
     margin-left: 0rem;
     overflow: hidden;
     cursor: pointer;
+    @include desktop {
+      width: 9rem;
+      height: 9rem;
+
+    }
     svg {
       fill: $black;
     }
