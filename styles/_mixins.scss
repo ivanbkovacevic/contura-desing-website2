@@ -29,6 +29,7 @@
 
   @mixin imageWrapperProductDevlopment($height:100%,$width:100%, $marginLeft:0) {
     .imageWrapper {
+      padding-top: 5rem;
       padding-bottom: 10rem ;
       .image {
         width: $width;
@@ -44,6 +45,7 @@
         }
       }
       p {
+        padding: 2rem 0;
         margin-left: 0;
         color: gray;
         font-weight: 350;

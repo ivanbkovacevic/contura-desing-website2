@@ -19,10 +19,14 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
     return (
       <ul className={style.productDevelopmentUl}>
         <li className={style.productDevelopment}>
-          <Link href="/ui-ux-design">UI/UX Design</Link>
+          <Link onClick={close} href="/ui-ux-design">
+            UI/UX Design
+          </Link>
         </li>
         <li className={style.productDevelopment}>
-          <Link href="/ui-ux-design">FrontEnd Development</Link>
+          <Link onClick={close} href="/ui-ux-design">
+            FrontEnd Development
+          </Link>
         </li>
       </ul>
     );
@@ -32,7 +36,9 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
     <nav className={style.wrapper}>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link onClick={close} href="/">
+            Home
+          </Link>
           <button onClick={close}>
             <Image
               src={"./assets/icons/hamburgerClose.svg"}
@@ -43,10 +49,14 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
           </button>
         </li>
         <li>
-          <Link href="/work">Work</Link>
+          <Link onClick={close} href="/work">
+            Work
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link onClick={close} href="/about">
+            About
+          </Link>
         </li>
         <li className={style.productDevelopmentLi}>
           <Accordion
