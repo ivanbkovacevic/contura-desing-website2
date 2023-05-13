@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Testing.module.scss";
 import { TESTING } from "../constant";
 import Image from "next/image";
+import style from "./Testing.module.scss";
 
 const Testing = () => {
   return (
@@ -9,8 +9,8 @@ const Testing = () => {
       <h2>Testing and iteration</h2>
       <p>{TESTING[0]}</p>
       <p>{TESTING[1]}</p>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "68.5rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image1}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/invisionBoardsImge.png"
             alt="invisionBoardsImge"
@@ -19,8 +19,8 @@ const Testing = () => {
         </div>
         <p>invision Board screenshoot</p>
       </div>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "59.2rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image2}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/jiraImage.png"
             alt="jiraimage"
@@ -29,18 +29,17 @@ const Testing = () => {
         </div>
         <p>jira screenshoot</p>
       </div>
-      <div className={style.imageWrapper}>
-        <div
-          style={{ height: "79.3rem", width: "141rem", marginLeft: "-30rem" }}
-          className={style.image}
-        >
-          <Image
-            src="/assets/images/productDevelopment/zeplinImage.png"
-            alt="zeplin"
-            fill
-          />
+      <div className={style.image3}>
+        <div className={style.imageWrapper}>
+          <div className={style.image}>
+            <Image
+              src="/assets/images/productDevelopment/zeplinImage.png"
+              alt="zeplin"
+              fill
+            />
+          </div>
+          <p>zepllin.in illustration screen</p>
         </div>
-        <p>zepllin.in illustration screen</p>
       </div>
     </div>
   );

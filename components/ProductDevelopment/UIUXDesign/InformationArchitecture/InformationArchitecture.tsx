@@ -20,7 +20,7 @@ const InformationArchitecture = () => {
       <h2>{INFORMATION_ARCHITECTURE_HEADING}</h2>
       <p>{INFORMATION_ARCHITECTURE_PARAGRAPH}</p>
       <div className={style.imageWrapper}>
-        <div style={{ height: "96.7rem" }} className={style.image}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/informationArhitectureImage.png"
             alt=""

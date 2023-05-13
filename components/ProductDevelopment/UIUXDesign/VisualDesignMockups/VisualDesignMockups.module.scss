@@ -1,7 +1,17 @@
-
 @import "../../../../styles/mixins";
 
 .wrapper {
-    @include imageWrapperProductDevlopment;
+  @include imageWrapperProductDevlopment();
+  .image1 {
+    height: 56.8rem;
   }
-  
+  .image2 {
+    height: 90.8rem;
+  }
+  .image3 {
+    height: 93.2rem;
+  }
+  .image4 {
+    height: 64rem;
+  }
+}

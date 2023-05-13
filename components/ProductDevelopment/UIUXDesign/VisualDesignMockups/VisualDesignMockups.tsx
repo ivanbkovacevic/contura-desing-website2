@@ -15,8 +15,8 @@ const VisualDesignMockups = () => {
     <div className={style.wrapper}>
       <h2>Visual Design mockups</h2>
       <ul>{visualDesignMockups()}</ul>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "56.8rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image1}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/hocImage.png"
             alt="hoc image"
@@ -25,8 +25,8 @@ const VisualDesignMockups = () => {
         </div>
         <p>Visual directions example</p>
       </div>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "90.9rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image2}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/forwardizeImage.png"
             alt="forwardizeImage"
@@ -36,8 +36,8 @@ const VisualDesignMockups = () => {
         <p>Visual directions example</p>
       </div>
       <p>{VISUAL_DESIGN_PARAGRAPH}</p>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "93.2rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image3}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/roundtripImage.png"
             alt="roundtripImage"
@@ -46,8 +46,8 @@ const VisualDesignMockups = () => {
         </div>
         <p>Applied visual style example</p>
       </div>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "64rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image4}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/medicaImage.png"
             alt="medica"

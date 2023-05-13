@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Design.module.scss";
 import { DESIGN_HEADING, DESIGN_PARAGRAPH } from "../constant";
 import Image from "next/image";
+import style from "./Design.module.scss";
 
 const Design = () => {
   return (
@@ -9,7 +9,7 @@ const Design = () => {
       <h2>{DESIGN_HEADING}</h2>
       <p>{DESIGN_PARAGRAPH}</p>
       <div className={style.imageWrapper}>
-        <div style={{ height: "57.7rem" }} className={style.image}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/designImage.png"
             alt=""

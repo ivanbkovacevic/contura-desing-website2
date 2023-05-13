@@ -20,17 +20,18 @@ const ResearchAndDiscovery = () => {
       <h2>{RESEARCH_AND_DISCOVERY_HEADING}</h2>
       <p>{RESEARCH_AND_DISCOVERY_PARAGRAPH}</p>
       <div className={style.imageWrapper}>
-        <div style={{ height: "62.3rem", width: '118rem', marginLeft:'-15rem' }} className={style.image}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/researchImage.png"
             alt=""
             fill
           />
         </div>
-        <p>Help your team understand the strategy behind your research process</p>
+        <p>
+          Help your team understand the strategy behind your research process
+        </p>
       </div>
     </div>
-      
   );
 };
 

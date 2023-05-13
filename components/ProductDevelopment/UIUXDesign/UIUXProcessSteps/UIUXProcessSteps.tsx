@@ -7,6 +7,7 @@ import {
   PROCESS_STEPS_LAST_PARAGRAPH,
 } from "../constant";
 import Link from "next/link";
+import Image from "next/image";
 
 const UIUXProcessSteps = () => {
   const processSteps = () => {
@@ -22,6 +23,15 @@ const UIUXProcessSteps = () => {
   };
   return (
     <div className={style.wrapper}>
+      <div className={style.imageWrapper}>
+        <div className={style.image}>
+          <Image
+            src="/assets/images/productDevelopment/designImage.png"
+            alt=""
+            fill
+          />
+        </div>
+      </div>
       <h2>{PROCESS_STEPS_HEADING}</h2>
       {processSteps()}
       <p className={style.paragraphGreen}>{PROCESS_STEPS_LAST_PARAGRAPH}</p>

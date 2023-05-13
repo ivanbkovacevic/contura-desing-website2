@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./DesignSpecification.module.scss";
 import { DESIGN_SPECIFICATION } from "../constant";
 import Image from "next/image";
+import style from "./DesignSpecification.module.scss";
 
 const DesignSpecification = () => {
   return (
@@ -12,7 +12,7 @@ const DesignSpecification = () => {
         <li>{DESIGN_SPECIFICATION[1]}</li>
       </ul>
       <div className={style.imageWrapper}>
-        <div style={{ height: "92.5rem" }} className={style.image}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/designSpecification.png"
             alt="designSpecification"

@@ -2,7 +2,7 @@
 @import "../../../../styles/mixins";
 
 .wrapper {
-  @include imageWrapperProductDevlopment;
+  @include imageWrapperProductDevlopment(57.2rem);
   p {
     margin-bottom: 5rem;
     span {

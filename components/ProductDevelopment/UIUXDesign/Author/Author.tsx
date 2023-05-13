@@ -11,7 +11,7 @@ const Author = () => {
         width={75}
         height={75}
       />
-      <div>
+      <div className={style.authorName}>
         <h6>Igor Mijucic</h6>
         <p>CEO & Product Designer</p>
       </div>

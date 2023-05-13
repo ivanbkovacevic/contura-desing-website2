@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Prototyping.module.scss";
 import { PROTOTYPING } from "../constant";
 import Image from "next/image";
+import style from "./Prototyping.module.scss";
 
 const Prototyping = () => {
   return (
@@ -11,8 +11,8 @@ const Prototyping = () => {
         <li>{PROTOTYPING[0]}</li>
         <li>{PROTOTYPING[1]}</li>
       </ul>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "57.7rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image1}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/prototypingImage.png"
             alt="prototypingImage"
@@ -23,8 +23,8 @@ const Prototyping = () => {
           Help your team understand the strategy behind your prototype process
         </p>
       </div>
-      <div className={style.imageWrapper}>
-        <div style={{ height: "110rem" }} className={style.image}>
+      <div className={`${style.imageWrapper} ${style.image2}`}>
+        <div className={style.image}>
           <Image
             src="/assets/images/productDevelopment/figmaPrototypeImage.png"
             alt="figmaPrototypeImage"
