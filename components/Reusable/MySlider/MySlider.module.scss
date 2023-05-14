@@ -1,8 +1,8 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
-  margin-bottom: 3rem;
-  height: 45rem;
+  max-height: 45rem;
   position: relative;
   button {
     border: none;
@@ -72,7 +72,7 @@
       width: 100%;
       position: relative;
       overflow: hidden;
-      height: 43rem;
+      height: 45rem;
 
       img {
         object-fit: contain;
@@ -82,14 +82,19 @@
   }
 
   .slideSingleTestemonial {
+    height: 100%;
+
     p:nth-of-type(1) {
       max-width: 85rem;
       color: $white;
       font-family: $font-light;
       font-weight: 350;
-      font-size: 3rem;
+      font-size: 1.2rem;
       line-height: 136.3%;
       margin-bottom: 6.4rem;
+      @include desktop {
+        font-size: 3rem;
+      }
     }
     p {
       font-family: $font-light;

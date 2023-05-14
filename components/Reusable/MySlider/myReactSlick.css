@@ -1,8 +1,6 @@
-
 .testemonialSlider .slick-next {
   top: 0;
   right: -100px !important;
-
 }
 
 .testemonialSlider .slick-prev {
@@ -10,22 +8,43 @@
   left: 100% !important;
 }
 .testemonialSlider .slick-next::before {
-  content: url('/assets/icons/arrowRight.svg');
+  content: url("/assets/icons/arrowRight.svg");
+  display: none;
+  @media only screen and (width >= 1024px) {
+    display: block;
+  }
 }
 .testemonialSlider .slick-next:hover::before {
-  content: url('/assets/icons/arrowRightGreen.svg');
+  content: url("/assets/icons/arrowRightGreen.svg");
+}
+.testemonialSlider .slick-prev::before {
+  color: white;
+  content: url("/assets/icons/arrowLeft.svg");
+  display: none;
+  @media only screen and (width >= 1024px) {
+    display: block;
+  }
 }
 .testemonialSlider .slick-prev:hover::before {
-  content: url('/assets/icons/arrowLeftGreen.svg');
-
-}
-
-.testemonialSlider .slick-prev::before {
-  color: white ;
-  content: url('/assets/icons/arrowLeft.svg');
+  content: url("/assets/icons/arrowLeftGreen.svg");
 }
 
 .arrowPrevMyStyle {
   display: block;
-  background-color: blue;
- }
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: flex-start;
+}
+
+.slick-dots li {
+  margin: 0;
+  width: 1.5rem;
+}
+.slick-dots li button:before {
+  color: grey;
+}
+.slick-dots li.slick-active button:before {
+  color: white;
+}

@@ -19,10 +19,9 @@
   }
   .watWeDoSection {
     padding: 6rem;
-    
+
     @include desktop {
       padding: 14rem 0 5rem 0;
-
     }
   }
   .capabilitesSection {
@@ -32,18 +31,21 @@
     flex-direction: row;
     justify-content: center;
     padding: 6rem 6.3rem;
-    
+
     @include desktop {
       padding: 14rem 5rem;
-
     }
   }
   .clientsSection {
-    padding: 14rem 0 30rem 0;
+    padding: 6rem 5rem 9rem 5rem;
     background-color: $black;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include desktop {
+      padding: 14rem 0 30rem 0;
+    }
     .title {
       color: $white;
       margin-bottom: 7rem;
@@ -54,18 +56,36 @@
   .slidersSection {
     width: 100%;
     background-color: $black;
-    padding-bottom: 10rem;
-
+    padding-bottom: 5rem;
+    padding-inline: 5rem;
+    @include desktop {
+      padding-bottom: 10rem;
+      padding-inline: 0;
+    }
     .testemonialSlider {
       background-color: $black;
-      width: 60%;
+      width: 100%;
       margin: 0 auto;
+      min-height: 30rem;
+      @include desktop {
+        min-height: auto;
+        width: 60%;
+      }
     }
 
     .workSliderSection {
-      min-height: 30rem;
-      max-width: 90%;
+      max-height: 40rem;
+      width: calc(100% + 10rem);
+      max-width: calc(100% + 10rem);
       margin: 0 auto;
+      margin-left: -5rem;
+      overflow: hidden;
+      @include desktop {
+        max-height: unset;
+        width: auto;
+        margin-left: 0;
+        max-width: 100%;
+      }
     }
   }
 }

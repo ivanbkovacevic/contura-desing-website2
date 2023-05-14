@@ -1,59 +1,56 @@
 @mixin mobile {
-    @media only screen and (width < 640px) {
-      @content;
-    }
+  @media only screen and (width < 640px) {
+    @content;
   }
-  
-  
+}
 
-  @mixin tablet {
-    @media only screen and (640px <= width < 768px) {
-      @content;
-    }
+@mixin tablet {
+  @media only screen and (640px <= width < 768px) {
+    @content;
   }
+}
 
-  
-  @mixin laptop {
-    @media only screen and (768px <= width < 1024px) {
-      @content;
-    }
+@mixin laptop {
+  @media only screen and (768px <= width < 1024px) {
+    @content;
   }
-  
- 
-  
-  @mixin desktop {
-    @media only screen and (width >= 1024px) {
-      @content;
-    }
-  }
+}
 
-  @mixin imageWrapperProductDevlopment($height:100%,$width:100%, $marginLeft:0) {
-    .imageWrapper {
-      padding-top: 5rem;
-      padding-bottom: 10rem ;
-      .image {
-        width: $width;
-        height: $height;
-        position: relative;
-        overflow: hidden;
-        margin-left: $marginLeft;
-        img {
-          object-fit: contain;
-          max-width: 100%;
-          display: block;
-          object-position: center;
-        }
-      }
-      p {
-        padding: 2rem 0;
-        margin-left: 0;
-        color: gray;
-        font-weight: 350;
-        font-size: 1.6rem;
-        line-height: 161.8%;
-        letter-spacing: 0.01em;
+@mixin desktop {
+  @media only screen and (width >= 1024px) {
+    @content;
+  }
+}
+
+@mixin imageWrapperProductDevlopment(
+  $height: 100%,
+  $width: 100%,
+  $marginLeft: 0
+) {
+  .imageWrapper {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    .image {
+      width: $width;
+      height: $height;
+      position: relative;
+      overflow: hidden;
+      margin-left: $marginLeft;
+      img {
+        object-fit: contain;
+        max-width: 100%;
+        display: block;
+        object-position: center;
       }
     }
+    p {
+      padding: 2rem 0;
+      margin-left: 0;
+      color: gray;
+      font-weight: 350;
+      font-size: 1.6rem;
+      line-height: 161.8%;
+      letter-spacing: 0.01em;
+    }
   }
-  
-  
+}
