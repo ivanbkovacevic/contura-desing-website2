@@ -19,12 +19,10 @@ const Capabilites: React.FC = () => {
   };
   return (
     <div className={style.wrapper}>
-      <div className={style.innerWrapper}>
         <div className={style.heading}>
           <h3>Capabilites</h3>
         </div>
         <div className={style.capabilitiesList}>{generateCapabilities()}</div>
-      </div>
     </div>
   );
 };

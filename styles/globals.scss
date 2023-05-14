@@ -62,6 +62,7 @@ a {
 /* Remove border on images inside links */
 img {
   border-style: none;
+  display: block;
 }
 
 // /* Ensure that elements with animations and transitions are not affected by the reset */

@@ -1,8 +1,8 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
   width: 100%;
-
 
   .centralPart {
     width: $sectionCenteredWidth;
@@ -10,20 +10,35 @@
     margin: 0 auto;
     background-image: url("/assets/images/oblacicObject.png");
     background-repeat: no-repeat;
-    background-size: 230px 190px;
+    background-size: 79px 44px;
     background-position: center top;
     text-align: left;
 
+    @include desktop {
+      background-size: 230px 190px;
+      background-position: right top;
+    }
+
     h1 {
       font-weight: 700;
-      font-size: 9rem;
+      font-size: 2.6rem;
+      line-height: 115.8%;
       max-width: 66rem;
-      margin-bottom: 9rem;
+      margin-bottom: 3.6rem;
+
+      @include desktop {
+        margin-bottom: 9rem;
+        font-size: 9rem;
+      }
     }
     h4 {
       max-width: 76rem;
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 1.2rem;
+
+      @include desktop {
+        font-size: 3rem;
+      }
     }
   }
 }

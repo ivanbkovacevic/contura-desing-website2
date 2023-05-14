@@ -1,5 +1,5 @@
 import React from "react";
-import Clients from "../Reusable/Companies/Companies";
+import Companies from "../Reusable/Companies/Companies";
 import MySlider from "../Reusable/MySlider/MySlider";
 import WeAreContura from "./WeAreContura/WeAreContura";
 import Capabilites from "./Capabilities/Capabilities";
@@ -27,7 +27,7 @@ const About: React.FC<AboutProps> = () => {
         <h3 className={style.title} data-centered="yes">
           Clients
         </h3>
-        <Clients
+        <Companies
           backgroundtype="black"
           contentCentered="yes"
           companieType="clients"

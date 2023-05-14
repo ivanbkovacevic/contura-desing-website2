@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./WhatWeDo.module.scss";
 import Image from "next/image";
+import style from "./WhatWeDo.module.scss";
 
 const WhatWeDo: React.FC = ({}) => {
   return (
