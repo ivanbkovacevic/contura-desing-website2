@@ -71,6 +71,19 @@ const FooterGrid: React.FC<FooterGridProps> = () => {
                   />
                 </Link>
               </li>
+              <li>
+                <Link href="/ui-ux-design">
+                  <span>UI/UX Design</span>
+                </Link>
+                <Link href="/ui-ux-design">
+                  <Image
+                    src="/assets/icons/dribbbleIcon.svg"
+                    alt="instagram"
+                    width={20}
+                    height={20}
+                  />
+                </Link>
+              </li>
               <Waypoint
                 onEnter={handleFooterReached}
                 onLeave={handleFooterReached}

@@ -39,7 +39,7 @@ const Navigation: React.FC<NavigationProps> = ({ close }) => {
           <Link onClick={close} href="/">
             Home
           </Link>
-          <button onClick={close}>
+          <button className={style.closeBtn} onClick={close}>
             <Image
               src={"./assets/icons/hamburgerClose.svg"}
               alt="closemenu"
