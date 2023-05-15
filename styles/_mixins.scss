@@ -1,11 +1,11 @@
 @mixin mobile {
-  @media only screen and (width < 640px) {
+  @media only screen and (width < 480px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media only screen and (640px <= width < 768px) {
+  @media only screen and (480px <= width < 768px) {
     @content;
   }
 }

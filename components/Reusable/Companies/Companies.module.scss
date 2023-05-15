@@ -16,25 +16,24 @@
       flex-wrap: wrap;
       justify-content: space-between;
       row-gap: 7rem;
-      // column-gap: 3rem;
+      column-gap: 10%;
 
       @include desktop {
+        column-gap: 3%;
         max-width: clamp(100rem, 60%, 110rem);
-        // column-gap: 5rem;
       }
       .companiesWrapper {
         display: block;
       }
       .clients {
-        // width: 8rem;
         height: 5.5rem;
         width: 100%;
         max-width: 30%;
+        max-width: 6.7rem;
 
-        // @include desktop {
-        //   width: 100%;
-        //   max-width: 30%;
-        // }
+        @include desktop {
+          max-width: 16rem;
+        }
         &:hover svg {
           fill: darken($lavender, 10%);
         }
@@ -46,14 +45,12 @@
         }
       }
       .bigCompanies {
-        // width: 8rem;
         height: 5.5rem;
         width: 100%;
-        max-width: 30%;
-        // @include desktop {
-        //   width: 12rem;
-        //   height: 5.5rem;
-        // }
+        max-width: 7rem;
+        @include desktop {
+          max-width: 16rem;
+        }
         &:hover svg {
           fill: $lavender;
         }
