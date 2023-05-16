@@ -28,8 +28,10 @@
   $marginLeft: 0
 ) {
   .imageWrapper {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding: 2.5rem 0;
+    @include desktop {
+      padding-bottom: 5.3rem;
+    }
     .image {
       width: $width;
       height: $height;
@@ -44,13 +46,17 @@
       }
     }
     p {
-      padding: 2rem 0;
-      margin-left: 0;
+      padding: 0.7rem 0;
+      text-align: center;
       color: gray;
       font-weight: 350;
-      font-size: 1.6rem;
+      font-size: 0.6rem;
       line-height: 161.8%;
       letter-spacing: 0.01em;
+      @include desktop {
+        padding: 2rem 0;
+        font-size: 1.6rem;
+      }
     }
   }
 }

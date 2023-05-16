@@ -10,8 +10,8 @@ const DesignSystem = () => {
       <ul>
         <li>{DESIGN_SYSTEM[0]}</li>
       </ul>
-      <div className={`${style.imageWrapper} ${style.image1}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+        <div className={`${style.image} ${style.image1}`}>
           <Image
             src="/assets/images/productDevelopment/designSystemImage.png"
             alt="designsistem"
@@ -24,8 +24,8 @@ const DesignSystem = () => {
         <li>{DESIGN_SYSTEM[1]}</li>
         <li>{DESIGN_SYSTEM[2]}</li>
       </ul>
-      <div className={`${style.imageWrapper} ${style.image2}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+      <div className={`${style.image} ${style.image2}`}>
           <Image
             src="/assets/images/productDevelopment/designSystem02Image.png"
             alt="designSystem02Image"

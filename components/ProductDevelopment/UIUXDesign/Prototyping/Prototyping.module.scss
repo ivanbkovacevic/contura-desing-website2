@@ -4,9 +4,19 @@
   @include imageWrapperProductDevlopment;
 
   .image1 {
-    height: 77.7rem;
+    height: 15.7rem !important;
   }
   .image2 {
-    height: 130rem;
+    height: 27.4rem !important;
+  }
+  
+  @include desktop {
+    .image1 {
+      height: 77.7rem !important;
+    }
+    .image2 {
+      height: 130rem !important;
+    }
+    
   }
 }

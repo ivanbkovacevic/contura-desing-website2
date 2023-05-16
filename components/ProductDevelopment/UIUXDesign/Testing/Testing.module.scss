@@ -5,13 +5,26 @@
 
     @include imageWrapperProductDevlopment;
     .image1 {
-      height: 68.5rem;
+      height: 18.5rem !important;
     }
     .image2 {
-      height: 59.2rem;
+      height: 16.1rem !important;
     }
     .image3 {
-      @include imageWrapperProductDevlopment(79.3rem,141rem,-20rem);
+      @include imageWrapperProductDevlopment(15.3rem);
+    }
+
+    @include desktop {
+      @include imageWrapperProductDevlopment;
+      .image1 {
+        height: 68.5rem !important;
+      }
+      .image2 {
+        height: 59.2rem !important;
+      }
+      .image3 {
+        @include imageWrapperProductDevlopment(79.3rem,141rem,-20rem);
+      }
     }
   }
   

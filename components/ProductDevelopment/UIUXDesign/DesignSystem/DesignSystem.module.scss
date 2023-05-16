@@ -3,9 +3,18 @@
 .wrapper {
   @include imageWrapperProductDevlopment;
   .image1 {
-    height: 69.1rem;
+    height: 18.8rem !important;
   }
   .image2 {
-    height: 104rem;
+    height: 28.9rem !important;
   }
+  @include desktop {
+    .image1 {
+      height: 69.1rem !important;
+    }
+    .image2 {
+      height: 104rem !important;
+    }
+  }
+
 }

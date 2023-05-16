@@ -1,4 +1,5 @@
 @import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapper {
   position: relative;
@@ -8,12 +9,22 @@
   padding-top: $headerHeight;
   margin: 0 auto;
   max-width: $pagesMaxWidth;
+  padding: 0 4.3rem;
+  @include desktop {
+    padding: 0;
+
+  }
   h2 {
     font-weight: 700;
-    font-size: 5rem;
-    line-height: 130.3%;
+    line-height: 138.3%;
+    font-size: 1.8rem;
     color: $jet;
     margin-bottom: 5rem;
+    
+    @include desktop {
+      line-height: 130.3%;
+      font-size: 5rem;
+    }
   }
 
   p {
@@ -34,6 +45,11 @@
       background-color: $navigationGreen;
       left: -2rem;
       top: 1rem;
+      
+      @include desktop {
+        display: block;
+
+      }
     }
   }
 }

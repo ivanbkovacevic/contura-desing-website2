@@ -11,8 +11,8 @@ const Prototyping = () => {
         <li>{PROTOTYPING[0]}</li>
         <li>{PROTOTYPING[1]}</li>
       </ul>
-      <div className={`${style.imageWrapper} ${style.image1}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+        <div className={`${style.image} ${style.image1}`}>
           <Image
             src="/assets/images/productDevelopment/prototypingImage.png"
             alt="prototypingImage"
@@ -23,8 +23,8 @@ const Prototyping = () => {
           Help your team understand the strategy behind your prototype process
         </p>
       </div>
-      <div className={`${style.imageWrapper} ${style.image2}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+        <div className={`${style.image} ${style.image2}`}>
           <Image
             src="/assets/images/productDevelopment/figmaPrototypeImage.png"
             alt="figmaPrototypeImage"

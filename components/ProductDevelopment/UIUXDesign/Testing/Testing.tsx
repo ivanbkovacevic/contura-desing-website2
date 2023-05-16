@@ -9,8 +9,8 @@ const Testing = () => {
       <h2>Testing and iteration</h2>
       <p>{TESTING[0]}</p>
       <p>{TESTING[1]}</p>
-      <div className={`${style.imageWrapper} ${style.image1}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+        <div className={`${style.image} ${style.image1}`}>
           <Image
             src="/assets/images/productDevelopment/invisionBoardsImge.png"
             alt="invisionBoardsImge"
@@ -19,8 +19,8 @@ const Testing = () => {
         </div>
         <p>invision Board screenshoot</p>
       </div>
-      <div className={`${style.imageWrapper} ${style.image2}`}>
-        <div className={style.image}>
+      <div className={style.imageWrapper}>
+        <div className={`${style.image} ${style.image2}`}>
           <Image
             src="/assets/images/productDevelopment/jiraImage.png"
             alt="jiraimage"

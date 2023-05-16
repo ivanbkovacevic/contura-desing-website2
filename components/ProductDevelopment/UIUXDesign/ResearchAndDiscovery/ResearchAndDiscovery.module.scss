@@ -2,9 +2,14 @@
 @import "../../../../styles/mixins";
 
 .wrapper {
-  padding: 2rem 0;
+  padding-top: 8rem;
+  @include imageWrapperProductDevlopment(14.7rem);
+  @include desktop {
+    padding: 2rem 0;
+    @include imageWrapperProductDevlopment(62.3rem, 118rem,-15rem);
+  }
   p {
     margin-bottom: 10rem;
   }
-  @include imageWrapperProductDevlopment(62.3rem, 118rem,-15rem);
+
 }

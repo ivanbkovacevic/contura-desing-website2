@@ -4,5 +4,9 @@
   @include imageWrapperProductDevlopment;
 
   padding: 10rem 0;
-  border-bottom: 1px solid $navigationGreen;
+  border-bottom: 2px solid $navigationGreen;
+
+  @include desktop {
+    border-bottom: 1px solid $navigationGreen;
+  }
 }
