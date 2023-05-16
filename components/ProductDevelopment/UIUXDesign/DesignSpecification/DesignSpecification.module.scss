@@ -1,8 +1,6 @@
 @import "../../../../styles/mixins";
 
 .wrapper {
-  @include imageWrapperProductDevlopment(25.4rem);
-  @include desktop {
-    @include imageWrapperProductDevlopment(92.5rem);
-  }
+  @include imageWrapperProductDevlopment(925,1004);
+
 }

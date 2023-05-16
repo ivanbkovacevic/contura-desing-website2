@@ -2,11 +2,8 @@
 @import "../../../../styles/mixins";
 
 .wrapper {
+  @include imageWrapperProductDevlopment(593, 1180);
 
-  @include imageWrapperProductDevlopment(18rem, calc(100% + 8.6rem), -4.3rem);
-  @include desktop {
-    @include imageWrapperProductDevlopment(57.2rem);
-  }
   padding: 10rem 0;
   a {
     width: max-content;
@@ -17,11 +14,10 @@
     line-height: 155.8%;
     margin-bottom: 5rem;
     transition: all 0.4s ease-in-out;
-    
+
     @include desktop {
       margin-bottom: 0;
       font-size: 3rem;
-
     }
 
     &:hover::after {

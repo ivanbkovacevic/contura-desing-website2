@@ -3,18 +3,9 @@
 .wrapper {
   @include imageWrapperProductDevlopment;
   .image1 {
-    height: 18.8rem !important;
+    aspect-ratio: 1007/691 !important;
   }
   .image2 {
-    height: 28.9rem !important;
+    aspect-ratio: 1007/1040 !important;
   }
-  @include desktop {
-    .image1 {
-      height: 69.1rem !important;
-    }
-    .image2 {
-      height: 104rem !important;
-    }
-  }
-
 }

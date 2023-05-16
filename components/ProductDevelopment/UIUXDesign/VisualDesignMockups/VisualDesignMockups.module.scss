@@ -3,30 +3,16 @@
 .wrapper {
   @include imageWrapperProductDevlopment();
   .image1 {
-    height: 15.4rem !important;
+    aspect-ratio: 1010/568 !important;
   }
   .image2 {
-    height: 24.6rem !important;
+    aspect-ratio: 1010/909  !important;
   }
   .image3 {
-    height: 25.7rem !important;
+    aspect-ratio: 1007/932 !important;
   }
   .image4 {
-    height: 17.4rem !important;
+    aspect-ratio:1007/640  !important;
   }
 
-  @include desktop {
-    .image1 {
-      height: 56.8rem !important;
-    }
-    .image2 {
-      height: 90.8rem !important;
-    }
-    .image3 {
-      height: 93.2rem !important;
-    }
-    .image4 {
-      height: 64rem !important;
-    }
-  }
 }

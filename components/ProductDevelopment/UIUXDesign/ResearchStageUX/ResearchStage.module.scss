@@ -2,11 +2,8 @@
 @import "../../../../styles/mixins";
 
 .wrapper {
-  @include imageWrapperProductDevlopment(18rem);
-  @include desktop {
-    @include imageWrapperProductDevlopment(57.2rem);
+  @include imageWrapperProductDevlopment(762,1010);
 
-  }
   p {
     margin-bottom: 5rem;
     span {
