@@ -30,7 +30,7 @@ const Logo = () => {
           />
         </Link>
       );
-    } else if (footerReached) {
+    } else if (footerReached && window.innerWidth > 480) {
       return (
         <div onClick={handleClick} className={style.fullLogo}>
           <FullLogo />
