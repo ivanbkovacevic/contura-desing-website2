@@ -39,9 +39,9 @@
       justify-content: flex-start;
 
       .descriptionText {
-        padding: 4rem;
+        padding: 4rem 0;
         order: 2;
-        max-width: 70rem;
+        max-width: 80rem;
 
         @include desktop {
           order: 2;

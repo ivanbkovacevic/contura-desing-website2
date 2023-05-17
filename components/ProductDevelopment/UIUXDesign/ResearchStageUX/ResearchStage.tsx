@@ -28,7 +28,7 @@ const ResearchStage = () => {
       <div className={style.imageWrapper}>
         <div className={style.image}>
           <Image
-            src="/assets/images/productDevelopment/designImage.png"
+            src="/assets/images/productDevelopment/uiImage.png"
             alt=""
             fill
           />

@@ -25,10 +25,14 @@
       position: absolute;
       right: 25%;
       top: 0;
-      width: 10rem;
-      height: 5rem;
+      width: 7rem;
+      height: 3rem;
       transition: all 0.2s ease-in-out;
       z-index: 950;
+      @include desktop {
+        width: 10rem;
+        height: 5rem;
+      }
       svg {
         width: 100%;
         height: 100%;
@@ -52,10 +56,14 @@
       position: absolute;
       left: 25%;
       top: 0;
-      width: 10rem;
-      height: 5rem;
+      width: 7rem;
+      height: 3rem;
       transition: all 0.2s ease-in-out;
       z-index: 950;
+      @include desktop {
+        width: 10rem;
+        height: 5rem;
+      }
       svg {
         width: 100%;
         height: 100%;

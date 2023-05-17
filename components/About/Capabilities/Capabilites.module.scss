@@ -18,9 +18,11 @@
     font-size: 1.6rem;
     line-height: 116.8%;
     letter-spacing: 0.015em;
+    flex-grow: 1;
 
     @include desktop {
       font-size: 2rem;
+      margin-right: 8rem;
     }
   }
 

@@ -17,9 +17,10 @@
       justify-content: space-between;
       row-gap: 7rem;
       column-gap: 10%;
-
+      
       @include desktop {
-        column-gap: 3%;
+        row-gap: 10rem;
+        column-gap: 5%;
         max-width: clamp(100rem, 60%, 110rem);
       }
       .companiesWrapper {
@@ -28,14 +29,13 @@
       .clients {
         height: 5.5rem;
         width: 100%;
-        max-width: 30%;
         max-width: 6.7rem;
 
         @include desktop {
-          max-width: 16rem;
+          max-width: 15rem;
         }
         &:hover svg {
-          fill: darken($lavender, 10%);
+          fill: darken($lavender, 20%);
         }
         svg {
           display: block;
@@ -52,11 +52,11 @@
           max-width: 15rem;
         }
         &:hover svg {
-          fill: $lavender;
+          fill: darken($lavender, 20%);
         }
         svg {
           display: block;
-          fill: $ghostWhite;
+          fill: darken($ghostWhite,10%);
           width: 100%;
           height: 100%;
         }

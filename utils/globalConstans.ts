@@ -24,6 +24,7 @@ export const COLORS = {
   RED_WOOD_E19: "#DF0D00",
   OXFORD_BLUE: "#0A2540",
   GHOST_WHITE: '#F2F4FE',
+  BUS_SCHOOL_YELLOW: '#FFDE21',
 };
 
 export enum ORDER {

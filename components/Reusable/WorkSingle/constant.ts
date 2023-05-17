@@ -48,7 +48,7 @@ export const WORK_LIST_HOME: Work[] = [
     title: "OpenSea",
     subtitle: 'Illustration, ',
     img: "/assets/images/workSections/cryptoCreazyBeavers.png",
-    color: COLORS.MAGNOLIA_DARK,
+    color: COLORS.BUS_SCHOOL_YELLOW,
     order: ORDER.PICTURE_UP,
     link: "https://dribbble.com/shots/17424751-cryptoCrazy-Beavers-NFT",
   },
