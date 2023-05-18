@@ -43,7 +43,7 @@
     }
     .description {
       padding: 6rem 2rem;
-
+flex-grow: 1;
       h3 {
         font-weight: 500;
         font-size: 3.2rem;
@@ -51,16 +51,65 @@
         max-width: 65%;
       }
     }
-    .image {
-      z-index: -1;
-      width: 100%;
-      flex-grow: 1;
-      height: 45rem;
-      position: relative;
-      overflow: hidden;
-      img {
-        object-fit: cover;
-      }
+    // .image {
+    //   z-index: -1;
+    //   width: 100%;
+    //   flex-grow: 1;
+    //   height: 45rem;
+    //   position: relative;
+    //   overflow: hidden;
+    //   img {
+    //     object-fit: cover;
+    //   }
+    // }
+    @include imageWorkSingle();
+    .image1 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image2 {
+      aspect-ratio: 416/300 !important;
+    }
+    .image3 {
+      aspect-ratio: 432/397 !important;
+    }
+    .image4 {
+      aspect-ratio: 521/423 !important;
+    }
+    .image5 {
+      aspect-ratio:  432/324 !important;
+    }
+    .image6 {
+      aspect-ratio:  432/311!important;
+    }
+    .image7 {
+      aspect-ratio: 432/311 !important;
+    }
+    .image8 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image9 {
+      aspect-ratio: 432/311 !important;
+    }
+    .image10 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image11 {
+      aspect-ratio: 432/311 !important;
+    }
+    .image12 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image13 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image14 {
+      aspect-ratio: 432/311 !important;
+    }
+    .image15 {
+      aspect-ratio: 432/324 !important;
+    }
+    .image16 {
+      aspect-ratio: 432/324 !important;
     }
   }
 

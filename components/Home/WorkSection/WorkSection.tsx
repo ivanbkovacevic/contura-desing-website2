@@ -17,6 +17,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({list}) => {
           title={item.title}
           subtitle={item.subtitle}
           img={item.img}
+          imgClass={item.imgClass}
           color={item.color}
           order={item.order}
           key={item.title}

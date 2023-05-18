@@ -11,6 +11,7 @@ const WorkSingle: React.FC<Work> = ({
   title,
   subtitle,
   img,
+  imgClass,
   color,
   order,
   link,
@@ -69,7 +70,7 @@ const WorkSingle: React.FC<Work> = ({
         <div className={style.description} style={{ backgroundColor: color }}>
           <h3 style={{ color: descFontColor }}>{description}</h3>
         </div>
-        <div className={style.image}>
+        <div className={`${style.image} ${style[imgClass]}`}>
           <Image src={img} fill alt={title} quality={100} />
         </div>
       </div>

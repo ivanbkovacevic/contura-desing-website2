@@ -22,11 +22,7 @@
   }
 }
 
-@mixin imageWrapperProductDevlopment(
-  $height: 1,
-  $width: 1,
-  $marginLeft: 0
-) {
+@mixin imageWrapperProductDevlopment($height: 1, $width: 1, $marginLeft: 0) {
   .imageWrapper {
     padding: 2.5rem 0;
     @include desktop {
@@ -57,6 +53,24 @@
         padding: 2rem 0;
         font-size: 1.6rem;
       }
+    }
+  }
+}
+
+@mixin imageWorkSingle($width: 1, $height: 1, $marginLeft: 0) {
+  .image {
+    width: 100%;
+    aspect-ratio: $width/$height;
+    position: relative;
+    overflow: hidden;
+    margin-left: $marginLeft;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      display: block;
+      object-position: center;
     }
   }
 }
