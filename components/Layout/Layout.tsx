@@ -12,16 +12,17 @@ type Props = {
 };
 
 const Layout = ({ children, title = "Contura Design" }: Props) => {
-  const [black, setBlack] = useState(true);
+  const [black, setBlack] = useState('');
   useEffect(() => {
     AOS.init({});
+    const userInput = window.prompt('Enter the code that I have give you:');
+   
+    setBlack(userInput)
   }, []);
-
-  setTimeout(() => setBlack(false), 3000);
-
+   
   return (
     <div className={style.wrapper}>
-      {black && (
+      {black === "MishaIViktorijaSkacuPoBarama" && (
         <>
           <Head>
             <title>{title}</title>
