@@ -66,12 +66,6 @@ img {
   display: block;
 }
 
-// /* Ensure that elements with animations and transitions are not affected by the reset */
-// :not(style) {
-//   animation: none !important;
-//   transition: none !important;
-// }
-
 button {
   font-family: $font-regular;
   cursor: pointer;
